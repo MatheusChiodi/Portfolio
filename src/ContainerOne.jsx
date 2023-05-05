@@ -1,7 +1,7 @@
 export default function ContainerOne() {
     return (
         <div className="px-6 w-full mt-[80px]">
-            <div className="text-[45px] text-center md:text-left">
+            <div className="md:text-[45px] text-[30px] text-center md:text-left">
                 <h1 className="m-0 p-0">
                     My name is
                 </h1>
@@ -12,7 +12,7 @@ export default function ContainerOne() {
                     <span className="text-[#FF5555] font-medium">&gt;</span>
                 </h1>
             </div>
-            <p className="text-center md:text-left">
+            <p className="text-center md:text-[20px] text-[15px] md:text-left">
                 I am a professional programmer with <br/>
                 more than 2 years of experience 
             </p>
@@ -20,7 +20,7 @@ export default function ContainerOne() {
                 <a className="inline-block text-sm px-7 py-2 leading-none border rounded-xl border-[#FF5555] text-gray font-bold bg-[#FF5555]">
                     SQL
                 </a>
-                <a className="mx-3 inline-block text-sm px-7 py-2 leading-none border rounded-xl border-[#FFB86C] text-gray font-bold bg-[#FFB86C]">
+                <a className="mt-3 mx-3 inline-block text-sm px-7 py-2 leading-none border rounded-xl border-[#FFB86C] text-gray font-bold bg-[#FFB86C]">
                     CodeIgniter 3
                 </a>
             </p>

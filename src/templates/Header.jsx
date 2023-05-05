@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <header className="fixed top-0 w-full m-0 p-0 bg-white">
-            <nav className="flex items-center justify-between flex-wrap  px-6 md:border-none border-b border-b-[#44475A] rounded-b-[20px]">
+            <nav className="flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px]">
                 <div className="block md:hidden w-[100%]">
                     <div className="flex justify-between flex-row w-[100%] p-0 m-0">
                         <div className="flex justify-center pt-1 p-0 m-0 w-5/12">
@@ -30,13 +30,13 @@ export default function Header() {
                             </label>
                         </div>
                         <div className="flex justify-cemter pt-1 p-0 m-0 w-2/12">
-                            <p className="text-[#44475A] h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
+                            <p className="h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
                                 <img src='logo.png' className="w-[40px] h-[40px] ml-2" />
                             </p>
                         </div>
                         <div className="flex justify-cemter pt-1 p-0 m-0 w-5/12">
                             <p className="text-[#44475A] h-[39px] mx-auto rounded-[80px] flex items-center justify-center">
-                            <a href="#" className="inline-block text-sm px-7 py-2 leading-none border rounded-xl border-[#44475A] text-white font-medium bg-gray">Contact</a>
+                                <a href="#" className="inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-gray">Contact</a>
                             </p>
                         </div>
                     </div>
