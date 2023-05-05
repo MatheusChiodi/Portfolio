@@ -91,13 +91,4 @@ body{
   stroke-dashoffset: -32.42;
 }
 
-/* Formater */
 
-.clip-polygon{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.bg-clip-padding {
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
