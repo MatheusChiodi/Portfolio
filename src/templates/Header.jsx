@@ -31,7 +31,7 @@ export default function Header() {
                         </div>
                         <div className="flex justify-cemter pt-1 p-0 m-0 w-2/12">
                             <p className="text-[#44475A] h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
-                                <img src='/public/logo.png' className="w-[40px] h-[40px] ml-2" />
+                                <img src='logo.png' className="w-[40px] h-[40px] ml-2" />
                             </p>
                         </div>
                         <div className="flex justify-cemter pt-1 p-0 m-0 w-5/12">
@@ -56,7 +56,7 @@ export default function Header() {
                         </a>
                     </div>
                     <div className="px-2 w-[10%] text-center hidden md:block">
-                        <img src='/public/logo.png' className="w-[40px] h-[40px]" />
+                        <img src='logo.png' className="w-[40px] h-[40px]" />
                     </div>
                     <div className="md:w-[60%] md-[100%] text-center md:text-right mt-2 hidden md:block">
                         <a href="#" className="inline-block text-sm px-7 py-2 leading-none border rounded-xl border-[#44475A] text-white font-medium bg-gray">Contact</a>
