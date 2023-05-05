@@ -20,7 +20,7 @@ export default function Header() {
             <nav className="flex items-center justify-between flex-wrap  px-6 md:border-none border-b border-b-[#44475A] rounded-b-[20px]">
                 <div className="block md:hidden w-[100%]">
                     <div className="flex justify-between flex-row w-[100%] p-0 m-0">
-                        <div className="flex justify-center pt-1 p-0 m-0 w-3/12">
+                        <div className="flex justify-center pt-1 p-0 m-0 w-1/12">
                             <label className="hamburger mt-[-10px] p-0">
                                 <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
                                 <svg viewBox="0 0 32 32">
@@ -29,12 +29,12 @@ export default function Header() {
                                 </svg>
                             </label>
                         </div>
-                        <div className="flex justify-cemter pt-1 p-0 m-0 w-6/12">
+                        <div className="flex justify-cemter pt-1 p-0 m-0 w-7/12">
                             <p className="text-[#44475A] h-[39px] mx-auto rounded-[80px] flex items-center justify-center">
                                 <span className="text-[#FF5555] font-medium">&lt;</span>Matheus Chiodi <span className="text-[#FF5555]">/</span><span className="text-[#FF5555] font-medium"> &gt;</span>
                             </p>
                         </div>
-                        <div className="flex justify-cemter pt-1 p-0 m-0 w-3/12">
+                        <div className="flex justify-cemter pt-1 p-0 m-0 w-4/12">
                             <p className="text-[#44475A] h-[39px] mx-auto rounded-[80px] flex items-center justify-center">
                             <a href="#" className="inline-block text-sm px-7 py-2 leading-none border rounded-xl border-[#44475A] text-white font-medium bg-gray">Contact</a>
                             </p>
