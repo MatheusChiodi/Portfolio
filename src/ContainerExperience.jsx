@@ -1,4 +1,4 @@
-export default function containerThree() {
+export default function ContainerExperience() {
     return (
         <div className="w-full lg:w-[90%] mx-auto m-0 p-0">
             <div className="p-3 text-[#44475A] lg:text-[#F8F8F2] flex justify-center items-center">
