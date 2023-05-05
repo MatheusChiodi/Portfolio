@@ -1,5 +1,4 @@
 export default function ContainerOne() {
-   
     return (
         <div className="px-6 w-full mt-[80px]">
             <div className="text-[45px] text-center md:text-left">
