@@ -32,7 +32,7 @@ body{
 
 .text-gray{ color: #44475A;  }
 .text-black{ color: #282A36; }
-.text-white{ color: #F8F8F2; }
+.text-white{ color: #F8F8F2 !important; }
 .text-dark-blue{ color: #6272A4; }
 .text-light-blue{ color: #8BE9FD; }
 .text-dark-purple{ color: #BD93F9; }
@@ -89,4 +89,15 @@ body{
 .hamburger input:checked + svg .line-top-bottom {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42;
+}
+
+/* Formater */
+
+.clip-polygon{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.bg-clip-padding {
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }

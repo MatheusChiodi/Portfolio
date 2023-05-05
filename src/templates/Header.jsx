@@ -45,14 +45,14 @@ export default function Header() {
                 {isOpen ? (
                 <div className="w-full flex-grow md:flex md:items-center md:w-auto" id="menu">
                     <div className="md:w-[60%] w-full text-center md:text-left md:mb-0 mb-2">
-                        <a href="#responsive-header" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0">
-                        About
+                        <a href="#ContainerTwo" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0">
+                            About
                         </a>
                         <a href="#responsive-header" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0">
-                        Portfolio
+                            Portfolio
                         </a>
                         <a href="#responsive-header" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium">
-                        Experience
+                            Experience
                         </a>
                     </div>
                     <div className="px-2 w-[10%] text-center hidden md:block">
