@@ -49,7 +49,7 @@ export default function Header() {
                                 </p>
                             </div>
                             <div className="flex justify-center items-center pt-1 p-0 m-0 w-5/12">
-                                <label htmlFor="toggleContactModal" className="w-5/12 h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-gray cursor-pointer">Contact</label>
+                                <label htmlFor="toggleContactModal" className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-gray cursor-pointer">Contact</label>
                                 <input type="checkbox" name="toggleContactModal" id="toggleContactModal" checked={isOpenContact} onChange={toggleMenuContact}  className="hidden"/>
                             </div>
                         </div>
