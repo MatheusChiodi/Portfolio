@@ -1,11 +1,16 @@
 export default function ContainerExperience() {
     return (
-        <div className="w-full lg:w-[90%] mx-auto m-0 p-0" id="ContainerExperience">
+        <div className="w-full lg:w-[90%] mx-auto m-0 p-0" id="ContainerExperience ">
             <div className="p-3 text-[#44475A] lg:text-[#F8F8F2] flex justify-center items-center">
                 <div className="flex justify-between flex-col lg:flex-row w-[100%] p-0 m-0">
-                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3 rounded-tl-[50px]">
-                        <div className="text-start mb-2 mt-2 title">
-                            2017 - 2021
+                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3 rounded-tl-[50px] rounded-bl-[50px]">
+                        <div className="title text-left lg:text-center mb-2 mt-2">
+                            <div className="border-[1.5px] border-[#FF5555] mb-[-17px]">
+
+                            </div>
+                            <span className="font2 fw-bold font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
+                                2017 - 2021
+                            </span>
                         </div>
                         <p className="text-justify">
                             Studying at the Federal Institute of Araraquara, I carried out projects such as my final course work, 
@@ -15,6 +20,7 @@ export default function ContainerExperience() {
                     </div>
                     <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3">
                         <div className="title text-end lg:text-center mb-2 mt-2">
+                            <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
                             <span className="font2 fw-bold font-medium ps-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
                                 2021 - Present
                             </span>
@@ -25,10 +31,11 @@ export default function ContainerExperience() {
                             I also worked on search-related issues and possible bug fixes.
                         </p>
                     </div>
-                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 m-0 p-3 rounded-tr-[50px]">
+                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 m-0 p-3 rounded-tr-[50px] rounded-br-[50px]">
                         <div className="title text-center mb-2 mt-2">
+                            <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
                             <span className="font2 fw-bold font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
-                                Infinit
+                                Today
                             </span>
                         </div>
                         <p>

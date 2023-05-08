@@ -61,7 +61,7 @@ export default function Header() {
                             <a href="#ContainerAbout" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0">
                                 About
                             </a>
-                            <a href="#responsive-header" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0">
+                            <a href="#ContainerPorfolio" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0">
                                 Portfolio
                             </a>
                             <a href="#ContainerExperience" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium">

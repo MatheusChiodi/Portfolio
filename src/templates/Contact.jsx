@@ -9,7 +9,7 @@ export default function Contact() {
     return (
         <>
         {isOpen && (
-            <div className="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity ease-out duration-300 z-10 overflow-y-auto">
+            <div className="flex justify-center items-center fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity ease-out duration-300 z-10 overflow-y-auto">
                 <div className="relative bg-[#44475A] rounded-lg mx-auto mt-10 max-w-[250px] overflow-hidden shadow-xl">
                     <div className="px-6 pt-2 pb-3">
                         <div className="flex justify-end items-center">
