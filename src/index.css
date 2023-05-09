@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 body{
-    background: #F8F8F2 !important;
+  background: #F8F8F2 !important;
+  max-width: 2000px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* Background color classes */

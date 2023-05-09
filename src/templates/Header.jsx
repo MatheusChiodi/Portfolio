@@ -29,9 +29,9 @@ export default function Header() {
     }
 
     return (
-        <>
+        <div className="m-0 p-0 fixed top-0 bg-white mx-auto">
             <header className="fixed top-0 w-full m-0 p-0 bg-white">
-                <nav className="flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px]">
+                <nav className="flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px] max-w-[2000px]">
                     <div className="block md:hidden w-[100%]">
                         <div className="flex justify-between flex-row w-[100%] p-0 m-0">
                             <div className="flex justify-center pt-1 p-0 m-0 w-5/12">
@@ -45,7 +45,7 @@ export default function Header() {
                             </div>
                             <div className="flex justify-cemter pt-1 p-0 m-0 w-2/12">
                                 <p className="h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
-                                    <img src='logo.png' className="w-[40px] h-[40px] ml-2" />
+                                    <img src='logo.png' className="w-[40px] h-[40px] ml-2 mt-2" />
                                 </p>
                             </div>
                             <div className="flex justify-center items-center pt-1 p-0 m-0 w-5/12">
@@ -71,7 +71,7 @@ export default function Header() {
                         <div className="px-2 w-[10%] text-center hidden md:block">
                             <img src='logo.png' className="w-[40px] h-[40px]" />
                         </div>
-                        <div className="md:w-[60%] md-[100%] text-center md:text-right mt-2 hidden md:block">
+                        <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
                             <label htmlFor="toggleContactModal" className="inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-gray cursor-pointer">Contact</label>
                             <input type="checkbox" name="toggleContactModal" id="toggleContactModal" checked={isOpenContact} onChange={toggleMenuContact}  className="hidden"/>
                         </div>
@@ -81,7 +81,7 @@ export default function Header() {
             </header>
 
             {isOpenContact && <Contact key={contactKey}/> }
-        </>
+        </div>
         
     )
 }
