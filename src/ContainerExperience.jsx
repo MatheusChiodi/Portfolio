@@ -1,14 +1,12 @@
 export default function ContainerExperience() {
     return (
-        <div className="w-full lg:w-[90%] mx-auto m-0 p-0" id="ContainerExperience">
-            <div className="p-3 text-[#44475A] lg:text-[#F8F8F2] flex justify-center items-center">
+        <div className="w-full mx-auto m-0 p-0" id="ContainerExperience">
+            <div className="text-[#44475A] lg:text-[#F8F8F2] flex justify-center items-center">
                 <div className="flex justify-between flex-col lg:flex-row w-[100%] p-0 m-0">
-                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3 rounded-tl-[50px] rounded-bl-[50px]">
+                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3 rounded-tl-[50px]">
                         <div className="title text-left lg:text-center mb-2 mt-2">
-                            <div className="border-[1.5px] border-[#FF5555] mb-[-17px]">
-
-                            </div>
-                            <span className="font2 fw-bold font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
+                            <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
+                            <span className="font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
                                 2017 - 2021
                             </span>
                         </div>
@@ -21,7 +19,7 @@ export default function ContainerExperience() {
                     <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3">
                         <div className="title text-end lg:text-center mb-2 mt-2">
                             <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
-                            <span className="font2 fw-bold font-medium ps-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
+                            <span className="font-medium ps-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
                                 2021 - Present
                             </span>
                         </div>
@@ -31,14 +29,14 @@ export default function ContainerExperience() {
                             I also worked on search-related issues and possible bug fixes.
                         </p>
                     </div>
-                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 m-0 p-3 rounded-tr-[50px] rounded-br-[50px]">
+                    <div className="lg:bg-[#FF5555] w-full lg:w-4/12 m-0 p-3 rounded-tr-[50px]">
                         <div className="title text-center mb-2 mt-2">
                             <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
-                            <span className="font2 fw-bold font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
+                            <span className="font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
                                 Today
                             </span>
                         </div>
-                        <p>
+                        <p className="text-justify">
                             I am a programmer who is constantly seeking to learn and improve my skills. 
                             I am passionate about the field of programming and am always striving to expand my knowledge and take on new challenges. 
                             With a strong drive to learn and a motivation to succeed, I am committed to being the best programmer I can be. 

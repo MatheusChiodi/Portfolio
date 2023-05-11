@@ -19,8 +19,8 @@ export default function ContainerAbout() {
                     more than 2 years of experience 
                 </p>
                 <p className="lg:mt-[50px] mt-[30px] text-center md:text-left md:text-[20px] lg:text-[25px] xl:text-[30px] text-[15px]">
-                    <a className="inline-block px-7 py-2 leading-none border rounded-xl border-[#FF5555] text-gray font-bold bg-[#FF5555]">
-                        SQL
+                    <a className="lg:mt-3 md:mt-2 mt-1 inline-block px-7 py-2 leading-none border rounded-xl border-[#F1FA8C] text-gray font-bold bg-[#F1FA8C]">
+                        javascript
                     </a>
                     <a className="mt-3 mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#FFB86C] text-gray font-bold bg-[#FFB86C]">
                         CodeIgniter 3
@@ -30,8 +30,11 @@ export default function ContainerAbout() {
                     <a className="inline-block px-7 py-2 leading-none border rounded-xl border-[#44475A] text-white font-bold bg-[#44475A]">
                         php
                     </a>
-                    <a className="lg:mt-3 md:mt-2 mt-1 mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#F1FA8C] text-gray font-bold bg-[#F1FA8C]">
-                        javascript
+                    <a className="inline-block mx-3 px-7 py-2 leading-none border rounded-xl border-[#FF5555] text-gray font-bold bg-[#FF5555]">
+                        SQL
+                    </a>
+                    <a className="lg:mt-3 md:mt-2 mt-1 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#44475A] font-bold bg-[#44475A]">
+                        ReactJS
                     </a>
                 </p>
                 </div>

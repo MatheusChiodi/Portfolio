@@ -58,13 +58,13 @@ export default function Header() {
                     {isOpen ? (
                     <div className="w-full flex-grow md:flex md:items-center md:w-auto" id="menu">
                         <div className="md:w-[60%] w-full text-center md:text-left md:mb-0 mb-2">
-                            <a href="#ContainerAbout" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0">
+                            <a href="#ContainerAbout" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu">
                                 About
                             </a>
-                            <a href="#ContainerPorfolio" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0">
+                            <a href="#ContainerPortfolio" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0 linkMenu">
                                 Portfolio
                             </a>
-                            <a href="#ContainerExperience" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium">
+                            <a href="#ContainerExperience" className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium linkMenu">
                                 Experience
                             </a>
                         </div>
@@ -72,7 +72,7 @@ export default function Header() {
                             <img src='logo.png' className="w-[40px] h-[40px]" />
                         </div>
                         <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
-                            <label htmlFor="toggleContactModal" className="inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-gray cursor-pointer">Contact</label>
+                            <label htmlFor="toggleContactModal" className="inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] text-white md:text-[13px] lg:text-[15px] xl:text-[18px]  bg-gray cursor-pointer">Contact</label>
                             <input type="checkbox" name="toggleContactModal" id="toggleContactModal" checked={isOpenContact} onChange={toggleMenuContact}  className="hidden"/>
                         </div>
                     </div>

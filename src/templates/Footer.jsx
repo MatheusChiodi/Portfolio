@@ -41,7 +41,7 @@ export default function Footer() {
                         </a>
                     </p>
                     <p className="text-[0.8rem]">
-                        <a href="#ContainerPorfolio" className="hover:text-[#FF5555]">
+                        <a href="#ContainerPortfolio" className="hover:text-[#FF5555]">
                             Portfolio
                         </a>
                     </p>
