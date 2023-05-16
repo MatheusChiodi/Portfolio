@@ -1,4 +1,4 @@
-export default function ContainerExperience() {
+const ContainerExperience = () => {
     return (
         <div className="w-full mx-auto m-0 p-0" id="ContainerExperience">
             <div className="text-[#44475A] lg:text-[#F8F8F2] flex justify-center items-center">
@@ -47,5 +47,7 @@ export default function ContainerExperience() {
         </div>
     )
 }
+
+export default ContainerExperience
   
   

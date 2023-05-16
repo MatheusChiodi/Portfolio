@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Contact from './Contact';
 
-export default function Header() {
+const Header = () => {
     // se o tamanho da tela for maior que 1024 entao useState fica como true
     // se o tamanho da tela for menor que 1024 entao useState fica como false
     var status = false;
@@ -85,5 +85,7 @@ export default function Header() {
         
     )
 }
+
+export default Header
   
   

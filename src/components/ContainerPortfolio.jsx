@@ -1,4 +1,4 @@
-export default function ContainerPortfolio() {
+const ContainerPortfolio = () => {
     return (
         <div className="w-full mx-auto m-0 p-0 lg:mb-[-80px] mb-0 lg:mt-0 mt-10" id="ContainerPortfolio">
             <div className="w-full lg:bg-slate-700 lg:pb-[100px] pt-[10px]">
@@ -58,5 +58,7 @@ export default function ContainerPortfolio() {
         </div>
     )
 }
+
+export default ContainerPortfolio
   
   
