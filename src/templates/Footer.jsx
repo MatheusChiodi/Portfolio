@@ -1,4 +1,4 @@
-const Footer = () => {
+export default function Footer() {
     return (
         <div className="justify-center items-center w-full bg-[#44475A] border-t-[3px] border-[#FF5555]">
             <div className="grid md:grid-cols-3 grid-cols-1 w-full mt-[10px] justify-center items-center">
@@ -68,7 +68,5 @@ const Footer = () => {
         </div>
     )
 }
-
-export default Footer
   
   

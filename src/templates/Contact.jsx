@@ -1,8 +1,6 @@
 import { useState } from 'react';
-//importar css 
-import '../assets/styles/contact.css';
 
-const Contact = () => {
+export default function Contact() {
     const [isOpen, setIsOpen] = useState(true);
 
     const handleClose = () => {
@@ -49,7 +47,5 @@ const Contact = () => {
         
     )
 }
-
-export default Contact
   
   

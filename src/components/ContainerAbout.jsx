@@ -1,4 +1,4 @@
-const ContainerAbout = () => {
+export default function ContainerAbout() {
     return (
         <div className="px-6 w-full mt-[80px] lg:mb-0 mb-3 lg:h-screen h-auto lg:max-h-[550px] m-0 p-0" id="ContainerAbout">
             <div className="m-0 p-0 md:grid md:grid-cols-2">
@@ -49,7 +49,5 @@ const ContainerAbout = () => {
         </div>
     )
 }
-
-export default ContainerAbout
   
   
