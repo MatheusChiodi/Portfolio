@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Contact() {
+const Contact = () => {
     const [isOpen, setIsOpen] = useState(true);
 
     const handleClose = () => {
@@ -47,5 +47,7 @@ export default function Contact() {
         
     )
 }
+
+export default Contact
   
   
