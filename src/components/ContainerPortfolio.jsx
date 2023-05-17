@@ -31,7 +31,7 @@ export default function ContainerPortfolio() {
                                 
                             </div>
                         </div>
-                        <div className="w-[250px] h-[250px] mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto">
+                        <div className="w-[250px] h-[250px] mt-4 md:mt-0 mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto">
                             <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
                                 <img src="./projectShop.png" alt="image" className="w-full rounded-br-[40px] h-[140px] text-[#F8F8F2] rounded-t-[20px] rounded-b-[-200px]"/>
                             </div>
@@ -41,15 +41,17 @@ export default function ContainerPortfolio() {
                                 </p>
                                 <div className="m-0 p-0 text-[16px]">
                                     <p className="w-full text-center">
-                                    
+                                    Project created as a way to demonstrate the home page
                                     </p>
                                     <p className="restTextCard w-full text-center mt-4">
+                                        Was created as a demonstration and has no functionality
+                                    </p>
+                                    <p className="restTextCard w-full text-center mt-2">
                                         <a href="https://matheuschiodi.github.io/Project-Shop/" target="_blank" rel="noopener noreferrer" className="text-[#F8F8F2] lg:text-[#44475A] hover:text-[#FF5555]">
                                             <i className="fas fa-eye"></i>
                                         </a>
                                     </p>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
