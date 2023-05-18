@@ -1,9 +1,9 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .up {
@@ -25,8 +25,9 @@
   border: none;
   background: white;
   border-radius: 90px 5px 5px 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
 }
 
 .e-mail {
@@ -41,13 +42,14 @@
   border: none;
   background: white;
   border-radius: 5px 90px 5px 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
 }
 
 .linkedin {
-    margin-top: 1.5em;
-    margin-left: 1.2em;
+  margin-top: 1.5em;
+  margin-left: 1.2em;
 }
 
 .card3 {
@@ -57,13 +59,14 @@
   border: none;
   background: white;
   border-radius: 5px 5px 5px 90px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
 }
 
 .github {
-    margin-top: 1em;
-    margin-left: 1.5em;
+  margin-top: 1em;
+  margin-left: 1.5em;
 }
 
 .card4 {
@@ -73,13 +76,14 @@
   border: none;
   background: white;
   border-radius: 5px 5px 90px 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
 }
 
 .whatsapp {
-    margin-top: 1em;
-    margin-left: 1.2em;
+  margin-top: 1em;
+  margin-left: 1.2em;
 }
 
 .card1:hover {

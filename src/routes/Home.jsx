@@ -4,13 +4,13 @@ import ContainerExperience from "../components/ContainerExperience";
 import ContainerPortfolio from "../components/ContainerPortfolio";
 
 const Home = () => {
-    return (
-        <>
-            <ContainerAbout />
-            <ContainerExperience />
-            <ContainerPortfolio />
-        </>
-    );
+  return (
+    <>
+      <ContainerAbout />
+      <ContainerExperience />
+      <ContainerPortfolio />
+    </>
+  );
 };
 
 export default Home;
