@@ -6,7 +6,7 @@ export default function ContainerAbout() {
     >
       <div className="m-0 p-0 md:grid md:grid-cols-2">
         <div>
-          <div className="md:text-[45px] lg:text-[55px] xl:text-[65px] text-[30px] text-center md:text-left">
+          <div className="md:text-[45px] lg:text-[50px] xl:text-[60px] text-[30px] text-center md:text-left">
             <h1 className="m-0 p-0">My name is</h1>
             <h1 className="m-0 p-0 font-medium">
               <span className="text-[#FF5555] font-medium">&lt;</span>
