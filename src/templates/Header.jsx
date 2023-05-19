@@ -85,33 +85,33 @@ const Header = () => {
               className="w-full flex-grow md:flex md:items-center md:w-auto"
               id="menu"
             >
-              <div className="md:w-[60%] w-full text-center md:text-left md:mb-0 mb-2">
+              <div className="md:w-[60%] w-full text-center md:text-left md:mb-0 mb-2 text-[20px] lg:text-[25px] xl:text-[30px]">
                 <a
                   href="#ContainerAbout"
-                  className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu"
+                  className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu"
                 >
                   About
                 </a>
                 <a
                   href="#ContainerPortfolio"
-                  className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0 linkMenu"
+                  className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0 linkMenu"
                 >
                   Portfolio
                 </a>
                 <a
                   href="#ContainerExperience"
-                  className="text-md block mt-1 md:mt-0 md:inline-block text-gray font-medium linkMenu"
+                  className="text-md block md:inline-block text-gray font-medium linkMenu"
                 >
                   Experience
                 </a>
               </div>
               <div className="px-2 w-[10%] text-center hidden md:block">
-                <img src="logo.png" className="w-[40px] h-[40px]" />
+                <img src="logo.png" className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" />
               </div>
               <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
                 <label
                   htmlFor="toggleContactModal"
-                  className="inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[15px] xl:text-[18px] cursor-pointer transition-all"
+                  className="inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all"
                 >
                   Contact
                 </label>
