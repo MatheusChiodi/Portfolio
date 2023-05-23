@@ -1,6 +1,3 @@
-import { Plus } from "lucide-react";
-import { Link } from "react-router-dom";
-
 export default function ContainerPortfolio() {
   const projects = [
     {
@@ -84,12 +81,6 @@ export default function ContainerPortfolio() {
               </div>
             ))}
           </div>
-          <Link
-            to="/Portfolio/Projects"
-            className="mb-2 lg:mb-0 w-[110px] text-center block mt-4 text-[#44475A] lg:text-[#F8F8F2] hover:text-[#FF5555] transition-colors mx-auto">
-            Ver mais 
-            <Plus className="inline-block ml-1" size={20} />
-          </Link>
         </div>
       </div>
     </div>

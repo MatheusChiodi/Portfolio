@@ -1,6 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import Header from "../templates/Header";
-
 
 const Projects = () => {
 
@@ -43,7 +41,6 @@ const Projects = () => {
   ];
   return (
     <>
-    <Header />
     <div className="w-full mt-10">
       {projects.map((project) => (
         <div key={project.id} className="grid grid-cols-1 md:grid-cols-2 p-5 w-full">

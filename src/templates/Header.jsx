@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Contact from "./Contact";
-import { Link } from 'react-router-dom';
 
 const Header = () => {
   // se o tamanho da tela for maior que 1024 entao useState fica como true
@@ -28,6 +27,11 @@ const Header = () => {
     setIsOpenContact(!isOpenContact);
     setContactKey(Math.random()); // gera um novo valor aleatório para a key do componente
   }
+
+  const handleVerMaisClick = () => {
+    // faz refresh na página
+    window.location.reload();
+  };
 
   return (
     <div className="m-0 p-0 fixed top-0 bg-white mx-auto">
@@ -87,29 +91,32 @@ const Header = () => {
               id="menu"
             >
               <div className="md:w-[60%] w-full text-center md:text-left md:mb-0 mb-2 text-[20px] lg:text-[25px] xl:text-[30px]">
-                <Link
-                  to="/Portfolio/#ContainerAbout"
+                <a
+                  href="#ContainerAbout"
                   className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu"
+                  onClick={handleVerMaisClick}
                 >
                   About
-                </Link>
-                <Link
-                  to="/Portfolio/#ContainerPortfolio"
+                </a>
+                <a
                   href="#ContainerPortfolio"
                   className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0 linkMenu"
+                  onClick={handleVerMaisClick}
                 >
                   Portfolio
-                </Link>
-                <Link
-                  to="/Portfolio/#ContainerExperience"
+                </a>
+                <a
                   href="#ContainerExperience"
                   className="text-md block md:inline-block text-gray font-medium linkMenu"
+                  onClick={handleVerMaisClick}
                 >
                   Experience
-                </Link>
+                </a>
               </div>
               <div className="px-2 w-[10%] text-center hidden md:block">
-                <img src={`${import.meta.env.BASE_URL}/logo.png`} className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" 
+                <img 
+                  src={`${import.meta.env.BASE_URL}/logo.png`}
+                  className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" 
                 />
               </div>
               <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
