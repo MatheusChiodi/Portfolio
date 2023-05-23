@@ -1,13 +1,8 @@
+import { Plus } from "lucide-react";
+import { Link } from "react-router-dom";
+
 export default function ContainerPortfolio() {
   const projects = [
-    {
-      id: '1',
-      title: 'Home do Instagram',
-      description: 'Project was created for learning purposes and knowledge',
-      subdescription: '',
-      link: 'https://matheuschiodi.github.io/Recriando-Home-Instagram/',
-      image: './recriando_home_instagram.png',
-    },
     {
       id: '2',
       title: 'NLW Spacetime',
@@ -55,7 +50,7 @@ export default function ContainerPortfolio() {
               My Projects
             </span>
           </div>
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {projects.map((project) => (
               <div key={project.id} className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto">
                 <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
@@ -89,6 +84,12 @@ export default function ContainerPortfolio() {
               </div>
             ))}
           </div>
+          <Link
+            to="/Portfolio/projets/"
+            className="mb-2 lg:mb-0 w-[110px] text-center block mt-4 text-[#44475A] lg:text-[#F8F8F2] hover:text-[#FF5555] transition-colors mx-auto">
+            Ver mais 
+            <Plus className="inline-block ml-1" size={20} />
+          </Link>
         </div>
       </div>
     </div>

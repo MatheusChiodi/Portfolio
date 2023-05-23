@@ -1,3 +1,4 @@
+import { AtSign, Github, Linkedin, Phone } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -34,7 +35,7 @@ const Contact = () => {
                       className="card1 hover:text-[#F8F8F2]"
                       title="E-mail"
                     >
-                      <i className="fas fa-at e-mail text-[25px]"></i>
+                      <AtSign className="e-mail text-[25px]"></AtSign>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/matheus-chiodi-b484581aa"
@@ -43,7 +44,7 @@ const Contact = () => {
                       className="card2 hover:text-[#F8F8F2]"
                       title="Linkedin"
                     >
-                      <i className="fab fa-linkedin-in linkedin text-[25px]"></i>
+                      <Linkedin className="linkedin text-[25px]"></Linkedin>
                     </a>
                   </div>
                   <div className="down">
@@ -53,7 +54,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="card3 hover:text-[#F8F8F2]"
                     >
-                      <i className="fab fa-github-square github text-[25px]"></i>
+                      <Github className="github text-[25px]"></Github>
                     </a>
                     <a
                       href="https://api.whatsapp.com/send/?phone=5516988400100&type=phone_number&app_absent=0"
@@ -61,7 +62,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="card4 hover:text-[#F8F8F2]"
                     >
-                      <i className="fab fa-whatsapp whatsapp text-[25px] font-bold"></i>
+                      <Phone className="whatsapp text-[25px]"></Phone>
                     </a>
                   </div>
                 </div>

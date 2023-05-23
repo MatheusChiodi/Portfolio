@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Contact from "./Contact";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   // se o tamanho da tela for maior que 1024 entao useState fica como true
@@ -86,27 +87,29 @@ const Header = () => {
               id="menu"
             >
               <div className="md:w-[60%] w-full text-center md:text-left md:mb-0 mb-2 text-[20px] lg:text-[25px] xl:text-[30px]">
-                <a
-                  href="#ContainerAbout"
+                <Link
+                  to="/Portfolio/#ContainerAbout"
                   className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu"
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
+                  to="/Portfolio/#ContainerPortfolio"
                   href="#ContainerPortfolio"
                   className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0 linkMenu"
                 >
                   Portfolio
-                </a>
-                <a
+                </Link>
+                <Link
+                  to="/Portfolio/#ContainerExperience"
                   href="#ContainerExperience"
                   className="text-md block md:inline-block text-gray font-medium linkMenu"
                 >
                   Experience
-                </a>
+                </Link>
               </div>
               <div className="px-2 w-[10%] text-center hidden md:block">
-                <img src="logo.png" className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" />
+                <img src="/public/logo.png" className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" />
               </div>
               <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
                 <label
