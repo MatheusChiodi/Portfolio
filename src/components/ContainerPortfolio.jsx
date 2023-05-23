@@ -32,6 +32,14 @@ export default function ContainerPortfolio() {
       link: 'https://github.com/MatheusChiodi/TccParqueVivoV1', 
       image: './parquevivo.png',
     },
+    {
+      id: '5',
+      title: 'Project Tic Tac Toe',
+      description: 'Project created game Tic Tac Toe',
+      subdescription: 'Was created simple project',
+      link: 'https://matheuschiodi.github.io/tic-tac-toe/',
+      image: './tic_tac_toe.png',
+    },
   ];
 
   return (
@@ -47,7 +55,7 @@ export default function ContainerPortfolio() {
               My Projects
             </span>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 mx-auto m-0 p-0 w-full my-[5px] justify-center items-center">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {projects.map((project) => (
               <div key={project.id} className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto">
                 <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
