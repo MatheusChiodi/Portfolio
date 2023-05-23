@@ -60,7 +60,7 @@ const Header = () => {
               </div>
               <div className="flex justify-cemter pt-1 p-0 m-0 w-2/12">
                 <p className="h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
-                  <img src="logo.png" className="w-[40px] h-[40px] ml-2 mt-2" />
+                  <img src={`${import.meta.env.BASE_URL}/logo.png`} className="w-[40px] h-[40px] ml-2 mt-2" />
                 </p>
               </div>
               <div className="flex justify-center items-center pt-1 p-0 m-0 w-5/12">
@@ -109,7 +109,8 @@ const Header = () => {
                 </Link>
               </div>
               <div className="px-2 w-[10%] text-center hidden md:block">
-                <img src="/public/logo.png" className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" />
+                <img src={`${import.meta.env.BASE_URL}/logo.png`} className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" 
+                />
               </div>
               <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
                 <label

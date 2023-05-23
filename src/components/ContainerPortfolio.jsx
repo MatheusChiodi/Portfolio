@@ -55,7 +55,7 @@ export default function ContainerPortfolio() {
               <div key={project.id} className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto">
                 <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
                   <img
-                    src={project.image}
+                    src={`${import.meta.env.BASE_URL}/${project.image}`}
                     alt="image"
                     className="w-full rounded-br-[40px] h-[140px] text-[#F8F8F2] rounded-t-[20px] rounded-b-[-200px]"
                   />
