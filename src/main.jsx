@@ -10,7 +10,7 @@ import Footer from "./templates/Footer";
 
 const router = createBrowserRouter([
   { path: "/Portfolio/", element: <Home />},
-  { path: "/Portfolio/projets/", element: <Projects /> },
+  { path: "/Portfolio/Projects", element: <Projects /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

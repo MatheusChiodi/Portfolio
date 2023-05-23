@@ -85,7 +85,7 @@ export default function ContainerPortfolio() {
             ))}
           </div>
           <Link
-            to="/Portfolio/projets/"
+            to="/Portfolio/Projects"
             className="mb-2 lg:mb-0 w-[110px] text-center block mt-4 text-[#44475A] lg:text-[#F8F8F2] hover:text-[#FF5555] transition-colors mx-auto">
             Ver mais 
             <Plus className="inline-block ml-1" size={20} />
