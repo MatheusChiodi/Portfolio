@@ -46,7 +46,7 @@ const Projects = () => {
       {projects.map((project) => (
         <div key={project.id} className="grid grid-cols-1 md:grid-cols-2 p-5 w-full">
           <div>
-            <img src={`${import.meta.env.BASE_URL}/${project.image}`} className=" aspect-video object-cover rounded-t-xl md:rounded-tr-[0px] roudend-s-[0px] md:rounded-s-xl"/>
+            <img src={`${import.meta.env.BASE_URL}${project.image}`} className=" aspect-video object-cover rounded-t-xl md:rounded-tr-[0px] roudend-s-[0px] md:rounded-s-xl"/>
           </div>
           <div className="p-3 border-2 rounded-b-xl lg:rounded-bl-[0px] md:border-l-0 md:rounded-e-xl text-[#44475A]">
             <h1 className="text-center text-xl font-bold mb-3">
