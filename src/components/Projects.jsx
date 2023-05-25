@@ -55,7 +55,7 @@ const Projects = () => {
               {project.description}
             </p>
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="lg:text-[15px] xl:text-[20px] hover:text-[#FF5555] transition-all duration-300">
-              Acessar
+              Access
               <ArrowRight className="inline-block ml-1" size={20} />
             </a>
           </div>

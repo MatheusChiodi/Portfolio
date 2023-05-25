@@ -31,7 +31,7 @@ const Home = () => {
             onClick={handleVerMaisClick}
             className="pb-5 lg:mb-0 w-[110px] text-center block mt-4 text-[#44475A] lg:text-[#F8F8F2] hover:text-[#FF5555] transition-colors mx-auto"
           >
-            Ver mais
+            View more
             <Plus className="inline-block ml-1" size={20} />
           </button>
         ) : null}
