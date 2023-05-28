@@ -29,7 +29,7 @@ const Home = () => {
         {!isExpanded ? (
           <button
             onClick={handleVerMaisClick}
-            className="flex items-center lg:mb-0 w-[120px] text-center mt-4 text-[#44475A] lg:text-[#F8F8F2] hover:text-[#FF5555] transition-colors mx-auto"
+            className="flex items-center lg:mb-0 w-[140px] text-center mt-4 text-[#44475A] lg:text-[#F8F8F2] hover:text-[#FF5555] transition-colors mx-auto"
           >
             View more
             <Plus className="inline-block ml-1" size={20} />
