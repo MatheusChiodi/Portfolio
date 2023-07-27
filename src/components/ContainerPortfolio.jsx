@@ -1,15 +1,15 @@
 export default function ContainerPortfolio() {
   const projects = [
     {
-      id: '2',
+      id: '1',
       title: 'NLW Spacetime',
-      description:'NLW Spacetime, a one-week project conducted by Rocketseat',
-      subdescription:'',
+      description: 'NLW Spacetime, a one-week project conducted by Rocketseat',
+      subdescription: '',
       link: 'https://matheuschiodi.github.io/NLW-Spacetime-not-Prisma/',
       image: './spacetime.png',
     },
     {
-      id: '3',
+      id: '2',
       title: 'Project Shop',
       description: 'Project created as a way to demonstrate the home page',
       subdescription: 'Was created as a demonstration and has no functionality',
@@ -17,20 +17,21 @@ export default function ContainerPortfolio() {
       image: './projectShop.png',
     },
     {
-      id: '4',
+      id: '3',
       title: 'TCC Parque Vivo',
-      description: "TCC Parque Vivo, a project developed for the conclusion",
-      subdescription: 'To see more details about the project, it is necessary to access the project file',
-      link: 'https://github.com/MatheusChiodi/TccParqueVivoV1', 
+      description: 'TCC Parque Vivo, a project developed for the conclusion',
+      subdescription:
+        'To see more details about the project, it is necessary to access the project file',
+      link: 'https://github.com/MatheusChiodi/TccParqueVivoV1',
       image: './parquevivo.png',
     },
     {
-      id: '5',
-      title: 'Project Tic Tac Toe',
-      description: 'Project created game Tic Tac Toe',
-      subdescription: 'Was created simple project',
-      link: 'https://matheuschiodi.github.io/tic-tac-toe/',
-      image: './tic_tac_toe.png',
+      id: '4',
+      title: 'Project Windows',
+      description: 'Windows 11 Beta',
+      subdescription: 'This was a ReactJS project to learn various language utilization techniques',
+      link: 'https://matheuschiodi.github.io/windows/',
+      image: './windows.png',
     },
   ];
 
@@ -49,7 +50,10 @@ export default function ContainerPortfolio() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {projects.map((project) => (
-              <div key={project.id} className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto">
+              <div
+                key={project.id}
+                className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto"
+              >
                 <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
                   <img
                     src={`${import.meta.env.BASE_URL}/${project.image}`}

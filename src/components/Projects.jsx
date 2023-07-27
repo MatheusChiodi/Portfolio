@@ -38,6 +38,13 @@ const Projects = () => {
       link: 'https://matheuschiodi.github.io/tic-tac-toe/',
       image: '/tic_tac_toe.png',
     },
+    {
+      id: '6',
+      title: 'Project Windows',
+      description: 'This was a ReactJS project with the purpose of learning different techniques of utilizing the language. My idea was to create various components within the Windows system, and everything was built entirely using custom code, without the use of pre-built APIs.',
+      link: 'https://matheuschiodi.github.io/windows/',
+      image: '/windows.png',
+    },
   ];
   return (
     <>

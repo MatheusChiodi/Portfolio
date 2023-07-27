@@ -40,6 +40,13 @@ const Projects = () => {
       link: 'https://matheuschiodi.github.io/tic-tac-toe/',
       image: '/tic_tac_toe.png',
     },
+    {
+      id: '6',
+      title: 'Project Windows',
+      description: 'Windows 11 Beta',
+      link: 'https://matheuschiodi.github.io/windows/',
+      image: '/windows.png',
+    },
   ];
   return (
     <>
