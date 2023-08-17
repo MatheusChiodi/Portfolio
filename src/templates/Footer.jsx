@@ -40,13 +40,13 @@ const Footer = () => {
           </div>
           <p className="text-[0.8rem]">
             <a
-              href="mailto:matheuschiodi20@gmail.com"
+              href="mailto:mchiodidev@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#FF5555]"
               title="E-mail"
             >
-              matheuschiodi20@gmail.com
+              mchiodidev@gmail.com
             </a>
           </p>
         </div>

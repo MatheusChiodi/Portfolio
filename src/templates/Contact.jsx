@@ -1,5 +1,5 @@
-import { AtSign, Github, Linkedin, Phone } from "lucide-react";
-import { useState } from "react";
+import { AtSign, Github, Linkedin, Phone } from 'lucide-react';
+import { useState } from 'react';
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="main">
                   <div className="up">
                     <a
-                      href="mailto:matheuschiodi20@gmail.com"
+                      href="mailto:mchiodidev@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="card1 hover:text-[#F8F8F2]"
