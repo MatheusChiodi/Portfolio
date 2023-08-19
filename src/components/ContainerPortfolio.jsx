@@ -2,37 +2,38 @@ export default function ContainerPortfolio() {
   const projects = [
     {
       id: '1',
-      title: 'NLW Spacetime',
-      description: 'NLW Spacetime, a one-week project conducted by Rocketseat',
-      subdescription: '',
-      link: 'https://matheuschiodi.github.io/NLW-Spacetime-not-Prisma/',
-      image: './spacetime.png',
-    },
-    {
-      id: '2',
-      title: 'Project Shop',
-      description: 'Project created as a way to demonstrate the home page',
-      subdescription: 'Was created as a demonstration and has no functionality',
-      link: 'https://matheuschiodi.github.io/Project-Shop/',
-      image: './projectShop.png',
-    },
-    {
-      id: '3',
-      title: 'TCC Parque Vivo',
-      description: 'TCC Parque Vivo, a project developed for the conclusion',
-      subdescription:
-        'To see more details about the project, it is necessary to access the project file',
-      link: 'https://github.com/MatheusChiodi/TccParqueVivoV1',
-      image: './parquevivo.png',
-    },
-    {
-      id: '4',
       title: 'Project Windows',
       description: 'Windows 11 Beta',
       subdescription: 'This was a ReactJS project to learn various language utilization techniques',
       link: 'https://matheuschiodi.github.io/windows/',
       image: './windows.png',
     },
+    {
+      id: '2',
+      title: 'Pomodoro Prime Timer',
+      description: 'Project created with the intention of helping learning',
+      subdescription: 'First app in React Native App',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
+      image: './pomodoro_prime_timer.png',
+    },
+    {
+      id: '3',
+      title: 'Diversão em Dupla',
+      description: 'Application intended to be light and simple to play',
+      subdescription: 'Main idea was to have games to play with friend',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
+      image: './dualgame.png',
+    },
+    {
+      id: '4',
+      title: 'Project Shop',
+      description: 'A project was created to showcase an online marketplace',
+      subdescription:
+        'It involved exploring skills in web design',
+      link: 'https://matheuschiodi.github.io/Project-Shop/',
+      image: './projectShop.png',
+    },
+    
   ];
 
   return (

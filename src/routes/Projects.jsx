@@ -47,6 +47,20 @@ const Projects = () => {
       link: 'https://matheuschiodi.github.io/windows/',
       image: '/windows.png',
     },
+    {
+      id: '7',
+      title: 'Pomodoro Prime Timer',
+      description: 'Project created with the intention of helping learning',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
+      image: '/pomodoro_prime_timer.png',
+    },
+    {
+      id: '8',
+      title: 'Diversão em Dupla jogos de 2',
+      description: 'Application intended to be light and simple to play',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
+      image: '/dualgame.png',
+    }
   ];
   return (
     <>

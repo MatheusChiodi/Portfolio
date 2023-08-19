@@ -45,6 +45,20 @@ const Projects = () => {
       link: 'https://matheuschiodi.github.io/windows/',
       image: '/windows.png',
     },
+    {
+      id: '7',
+      title: 'Pomodoro Prime Timer',
+      description: 'The Pomodoro Prime Timer project was created with the intention of helping people learn and improve their productivity. It is a simple and intuitive application that allows users to set a timer for their tasks, helping them to focus and manage their time more efficiently. The project was developed using React Native, and it is available for download on the Google Play Store.',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
+      image: '/pomodoro_prime_timer.png',
+    },
+    {
+      id: '8',
+      title: 'Diversão em Dupla jogos de 2',
+      description: 'The Diversão em Dupla project was intended to be light and simple to play. The main idea was to have games to play with friends, and it was developed using React Native. The project is available for download on the Google Play Store.',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
+      image: '/dualgame.png',
+    }
   ];
   return (
     <>
