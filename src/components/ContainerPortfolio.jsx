@@ -4,7 +4,8 @@ export default function ContainerPortfolio() {
       id: '1',
       title: 'Project Windows',
       description: 'Windows 11 Beta',
-      subdescription: 'This was a ReactJS project to learn various language utilization techniques',
+      subdescription:
+        'This was a ReactJS project to learn various language utilization techniques',
       link: 'https://matheuschiodi.github.io/windows/',
       image: './windows.png',
     },
@@ -26,14 +27,12 @@ export default function ContainerPortfolio() {
     },
     {
       id: '4',
-      title: 'Project Shop',
-      description: 'A project was created to showcase an online marketplace',
-      subdescription:
-        'It involved exploring skills in web design',
-      link: 'https://matheuschiodi.github.io/Project-Shop/',
-      image: './projectShop.png',
+      title: 'Futuro Garantido',
+      description: 'Application focused on helping students',
+      subdescription: '',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido',
+      image: '/futurogarantido.png',
     },
-    
   ];
 
   return (

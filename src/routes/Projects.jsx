@@ -60,6 +60,13 @@ const Projects = () => {
       description: 'Application intended to be light and simple to play',
       link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
       image: '/dualgame.png',
+    },
+    {
+      id: '9',
+      title: 'Futuro Garantido',
+      description: 'Application focused on helping students',
+      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido',
+      image: '/futurogarantido.png',
     }
   ];
   return (
