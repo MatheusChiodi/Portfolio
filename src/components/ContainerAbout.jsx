@@ -21,10 +21,10 @@ export default function ContainerAbout() {
           </p>
           <p className="lg:mt-[50px] mt-[30px] text-center md:text-left md:text-[20px] lg:text-[25px] xl:text-[30px] text-[15px]">
             <a className="lg:mt-3 md:mt-2 mt-1 inline-block px-7 py-2 leading-none border rounded-xl border-[#F1FA8C] text-gray font-bold bg-[#F1FA8C]">
-              javascript
+              React Native
             </a>
             <a className="mt-3 mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#FFB86C] text-gray font-bold bg-[#FFB86C]">
-              CodeIgniter 3
+              ReactJS
             </a>
           </p>
           <p
@@ -38,7 +38,7 @@ export default function ContainerAbout() {
               SQL
             </a>
             <a className="lg:mt-3 md:mt-2 mt-1 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#44475A] font-bold bg-[#44475A]">
-              ReactJS
+              CodeIgniter 3
             </a>
           </p>
         </div>

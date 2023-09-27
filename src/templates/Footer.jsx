@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
         <div className="justify-center items-center text-center text-[#F8F8F2] mt-5 md:mt-0">
           <h2 className="font-medium">Languages</h2>
-          <p className="text-[0.8rem]">React JS</p>
+          <p className="text-[0.8rem]">React JS, React Native</p>
           <p className="text-[0.8rem]">Codeigniter 3, SQL e PHP</p>
           <p className="text-[0.8rem]">HTML, CSS e Javascript</p>
         </div>
