@@ -39,18 +39,6 @@ const Footer = () => {
             >
               <i className="fab fa-whatsapp-square"></i>
             </a>
-
-            <div className="bg-[#fff] h-[20.1px] w-[21.14px] mx-2 m-0 rounded-[2px] flex justify-center items-center hover:bg-[#FF5555]">
-              <a
-                href="https://play.google.com/store/apps/dev?id=8115131743129012258"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#44475A]"
-                title="Google Play Store"
-              >
-                <i className="fab fa-google-play text-[0.9rem] mb-[14px]"></i>
-              </a>
-            </div>
           </div>
           <p className="text-[0.8rem]">
             <a
