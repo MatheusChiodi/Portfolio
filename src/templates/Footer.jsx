@@ -1,4 +1,6 @@
 const Footer = () => {
+  // pego o ano atual
+  const anoAtual = new Date().getFullYear();
   return (
     <div className="justify-center items-center w-full bg-[#44475A] border-t-[3px] border-[#FF5555]">
       <div className="grid md:grid-cols-3 grid-cols-1 w-full mt-[10px] justify-center items-center">
@@ -9,7 +11,7 @@ const Footer = () => {
             <span className="text-[#FF5555] font-medium"> /</span>
             <span className="text-[#FF5555] font-medium">&gt;</span>
           </h2>
-          <div className="text-[1.5rem]">
+          <div className="text-[1.5rem] flex justify-center items-center">
             <a
               href="https://www.linkedin.com/in/matheus-chiodi-b484581aa"
               target="_blank"
@@ -37,6 +39,18 @@ const Footer = () => {
             >
               <i className="fab fa-whatsapp-square"></i>
             </a>
+
+            <div className="bg-[#fff] h-[22px] w-[21.14px] mx-2 m-0 rounded-[2px] flex justify-center items-center hover:bg-[#FF5555]">
+              <a
+                href="https://play.google.com/store/apps/dev?id=8115131743129012258"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#44475A]"
+                title="Google Play Store"
+              >
+                <i className="fab fa-google-play text-[1rem] mb-[13.1px]"></i>
+              </a>
+            </div>
           </div>
           <p className="text-[0.8rem]">
             <a
@@ -76,7 +90,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex items-center justify-between text-center text-[#F8F8F2] w-full text-[12px] mt-[10px] pb-[5px] border-t-[1px] border-[#FF5555]">
-        <p className="m-2">© 2023 Matheus Chiodi</p>
+        <p className="m-2">© {anoAtual} Matheus Chiodi</p>
         <p className="m-2">All rights reserved</p>
       </div>
     </div>
