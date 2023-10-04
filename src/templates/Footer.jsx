@@ -1,6 +1,9 @@
 const Footer = () => {
-  // pego o ano atual
   const anoAtual = new Date().getFullYear();
+
+  const handleVerMaisClick = () => {
+    window.location.reload();
+  };
   return (
     <div className="justify-center items-center w-full bg-[#44475A] border-t-[3px] border-[#FF5555]">
       <div className="grid md:grid-cols-3 grid-cols-1 w-full mt-[10px] justify-center items-center">
@@ -39,6 +42,17 @@ const Footer = () => {
             >
               <i className="fab fa-whatsapp-square"></i>
             </a>
+            <a
+              data-tip="Seu Tooltip Aqui"
+              href="Curriculo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#FF5555] mx-2"
+              title="Curriculum"
+            >
+              <i className="far fa-id-card"></i>
+            </a>
+            
           </div>
           <p className="text-[0.8rem]">
             <a
@@ -55,18 +69,30 @@ const Footer = () => {
         <div className="justify-center items-center text-center text-[#F8F8F2] mt-5 md:mt-0">
           <h2 className="font-medium">Information</h2>
           <p className="text-[0.8rem]">
-            <a href="#ContainerAbout" className="hover:text-[#FF5555]">
+            <a
+              href="#ContainerAbout"
+              className="hover:text-[#FF5555]"
+              onClick={handleVerMaisClick}
+            >
               About
             </a>
           </p>
           <p className="text-[0.8rem]">
-            <a href="#ContainerExperience" className="hover:text-[#FF5555]">
+            <a
+              href="#ContainerExperience"
+              className="hover:text-[#FF5555]"
+              onClick={handleVerMaisClick}
+            >
               Experience
             </a>
           </p>
           <p className="text-[0.8rem]">
-            <a href="#ContainerPortfolio" className="hover:text-[#FF5555]">
-              Portfolio
+            <a
+              href="#ContainerProjects"
+              className="hover:text-[#FF5555]"
+              onClick={handleVerMaisClick}
+            >
+              Projects
             </a>
           </p>
         </div>

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Contact from "./Contact";
+import { useState } from 'react';
+import Contact from './Contact';
 
 const Header = () => {
   // se o tamanho da tela for maior que 1024 entao useState fica como true
@@ -29,7 +29,6 @@ const Header = () => {
   }
 
   const handleVerMaisClick = () => {
-    // faz refresh na página
     window.location.reload();
   };
 
@@ -50,13 +49,13 @@ const Header = () => {
                     <path
                       className={
                         isOpen
-                          ? "line line-top-bottom open"
-                          : "line line-top-bottom"
+                          ? 'line line-top-bottom open'
+                          : 'line line-top-bottom'
                       }
                       d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
                     ></path>
                     <path
-                      className={isOpen ? "line open" : "line"}
+                      className={isOpen ? 'line open' : 'line'}
                       d="M7 16 27 16"
                     ></path>
                   </svg>
@@ -64,7 +63,10 @@ const Header = () => {
               </div>
               <div className="flex justify-cemter pt-1 p-0 m-0 w-2/12">
                 <p className="h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
-                  <img src={`${import.meta.env.BASE_URL}/logo.png`} className="w-[40px] h-[40px] ml-2 mt-2" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}/logo.png`}
+                    className="w-[40px] h-[40px] ml-2 mt-2"
+                  />
                 </p>
               </div>
               <div className="flex justify-center items-center pt-1 p-0 m-0 w-5/12">
@@ -99,24 +101,24 @@ const Header = () => {
                   About
                 </a>
                 <a
-                  href="#ContainerPortfolio"
-                  className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 mb-0 linkMenu"
-                  onClick={handleVerMaisClick}
-                >
-                  Portfolio
-                </a>
-                <a
                   href="#ContainerExperience"
                   className="text-md block md:inline-block text-gray font-medium linkMenu"
                   onClick={handleVerMaisClick}
                 >
                   Experience
                 </a>
+                <a
+                  href="#ContainerProjects"
+                  className="text-md block md:inline-block text-gray font-medium md:ml-4 mr-0 mb-0 linkMenu"
+                  onClick={handleVerMaisClick}
+                >
+                  Projects
+                </a>
               </div>
               <div className="px-2 w-[10%] text-center hidden md:block">
-                <img 
+                <img
                   src={`${import.meta.env.BASE_URL}/logo.png`}
-                  className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]" 
+                  className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]"
                 />
               </div>
               <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
