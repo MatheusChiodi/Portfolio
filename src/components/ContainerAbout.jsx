@@ -16,7 +16,7 @@ export default function ContainerAbout() {
             </h1>
           </div>
           <p className="text-center md:text-[20px] lg:text-[25px] xl:text-[30px] text-[15px] md:text-left">
-            I am a professional programmer <span className="text-[#FF5555] font-medium">Fullstack</span> with <br />
+            I am a professional programmer <span className="text-[#FF5555] font-medium">Fullstack</span> with
             more than 2 years of experience
           </p>
           <p className="lg:mt-[50px] mt-[30px] text-center md:text-left md:text-[20px] lg:text-[25px] xl:text-[30px] text-[15px]">
