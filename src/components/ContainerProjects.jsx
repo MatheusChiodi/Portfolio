@@ -37,16 +37,16 @@ export default function ContainerProjects() {
 
   return (
     <div
-      className="w-full mx-auto m-0 p-0 lg:mb-[-80px] mb-0 lg:mt-[40px] mt-[200px]"
+      className="w-full mx-auto m-0 p-0 lg:mb-[-80px] mb-0 lg:mt-[40px]"
       id="ContainerProjects"
     >
       <div className="w-full lg:bg-slate-700 lg:pb-[100px] pt-[10px]">
         <div className="w-full mx-auto m-0 p-0">
-          <div className="title text-center mb-2 mt-2">
-            <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
-            <span className="font-bold font-lg px-1 bg-[#F8F8F2] lg:bg-slate-700 lg:text-[#F8F8F2] text-[#44475A] ">
-              My Projects
-            </span>
+          <div className="text-center mb-2 mt-2">
+            <div className="border-[2px] border-[#FF5555] mb-[-17px]"></div>
+            <div className="w-[200px] mx-auto font-bold text-[25px] md:text-[30px] px-2 mt-[-22px] bg-[#F8F8F2] lg:bg-slate-700">
+              <p className="lg:text-[#F8F8F2] text-[#44475A]">My Projects</p>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {projects.map((project) => (
@@ -66,7 +66,9 @@ export default function ContainerProjects() {
                     {project.title}
                   </p>
                   <div className="m-0 p-0 text-[16px]">
-                    <p className="w-full text-center text-[#F8F8F2] lg:text-[#44475A]">{project.description}</p>
+                    <p className="w-full text-center text-[#F8F8F2] lg:text-[#44475A]">
+                      {project.description}
+                    </p>
                     <p className="restTextCard w-full text-center mt-4 text-[#F8F8F2] lg:text-[#44475A]">
                       {project.subdescription}
                     </p>
