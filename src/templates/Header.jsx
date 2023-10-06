@@ -2,8 +2,6 @@ import { useState } from 'react';
 import Contact from './Contact';
 
 const Header = () => {
-  // se o tamanho da tela for maior que 1024 entao useState fica como true
-  // se o tamanho da tela for menor que 1024 entao useState fica como false
   var status = false;
 
   if (window.innerWidth > 992) {
@@ -16,16 +14,12 @@ const Header = () => {
     setIsOpen(!isOpen);
   }
 
-  //vou verificar o button contact e ver se ele esta aberto ou fechado
-  //se ele estiver fechado eu vou abri-lo
-  //ao abrir ele mostra o componente Contact
-
   const [isOpenContact, setIsOpenContact] = useState(false);
   const [contactKey, setContactKey] = useState(Math.random());
 
   function toggleMenuContact() {
     setIsOpenContact(!isOpenContact);
-    setContactKey(Math.random()); // gera um novo valor aleatório para a key do componente
+    setContactKey(Math.random());
   }
 
   const handleVerMaisClick = () => {
@@ -33,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <div className="m-0 p-0 fixed top-0 bg-white mx-auto">
+    <div className="m-0 p-0 fixed top-0 bg-white mx-auto z-50">
       <header className="fixed top-0 w-full m-0 p-0 bg-white">
         <nav className="flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px] max-w-[2000px]">
           <div className="block md:hidden w-[100%]">
@@ -73,7 +67,12 @@ const Header = () => {
                 <label
                   htmlFor="toggleContactModal"
                   className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white text-[13px] cursor-pointer transition-all"
+                  style={{
+                    boxShadow:
+                      '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                  }}
                 >
+                  {' '}
                   Contact
                 </label>
                 <input
@@ -115,7 +114,7 @@ const Header = () => {
                   Projects
                 </a>
               </div>
-              <div className="px-2 w-[10%] text-center hidden md:block">
+              <div className="px-2 w-[10%] text-center hidden md:block ">
                 <img
                   src={`${import.meta.env.BASE_URL}/logo.png`}
                   className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]"
@@ -125,6 +124,10 @@ const Header = () => {
                 <label
                   htmlFor="toggleContactModal"
                   className="inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all"
+                  style={{
+                    boxShadow:
+                      '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                  }}
                 >
                   Contact
                 </label>
@@ -142,7 +145,9 @@ const Header = () => {
         </nav>
       </header>
 
-      {isOpenContact && <Contact key={contactKey} />}
+      {isOpenContact && (
+        <Contact key={contactKey} setIsOpenContact={setIsOpenContact} />
+      )}
     </div>
   );
 };

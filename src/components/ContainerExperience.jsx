@@ -1,55 +1,237 @@
-export default function ContainerExperience() {
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+
+export default function Experience() {
+  const [isStory, setIsStory] = useState(1);
+  const [isStoryActive, setIsStoryActive] = useState(1);
+
+  // funcao mudar de historia
+  function alternStory(id) {
+    setIsStory(id);
+    setIsStoryActive(id);
+  }
+
   return (
-    <div className="w-full mx-auto m-0 p-0" id="ContainerExperience">
-      <div className="text-[#44475A] lg:text-[#F8F8F2] flex justify-center items-center">
-        <div className="flex justify-between flex-col lg:flex-row w-[100%] p-0 m-0">
-          <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3 rounded-tl-[50px]">
-            <div className="title text-left lg:text-center mb-2 mt-2">
-              <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
-              <span className="font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
-                2017 - 2021
-              </span>
-            </div>
-            <p className="text-justify">
-              Studying at the Federal Institute of Araraquara, I carried out
-              projects such as my final course work, which was based on creating
-              an institutional website for the ONG Parque Vivo. The main
-              objective was to provide quick access to information on events and
-              contacts with its members.
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { delay: 1.4 } }}
+        className="mx-auto px-[20px] w-full mt-[90px] xl:mt-[120px] lg:mb-0 mb-3 m-0 p-0"
+        id="ContainerExperience"
+      >
+        <p className="text-[50px] font-semibold hidden lg:block">Timeline</p>
+        <div className="block lg:hidden">
+          <div className=""></div>
+          <div className="w-[100%] ml-auto flex justify-between items-center mt-[-30px] lineInitial2">
+            <p className="text-[30px] md:text-[50px] font-semibold mt-[-15px] md:mt-[-25px] bg-[#f8f8f2] pe-1 text-[#44475a]">
+              Timeline
             </p>
-          </div>
-          <div className="lg:bg-[#FF5555] w-full lg:w-4/12 border-r border-[#F8F8F2] m-0 p-3">
-            <div className="title text-end lg:text-center mb-2 mt-2">
-              <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
-              <span className="font-medium ps-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
-                2021 - Present
-              </span>
+            <div
+              className="w-[60px] h-[60px] rounded-[50%] flex justify-center items-center"
+              style={{
+                backgroundColor: isStoryActive === 1 ? '#ff5555' : '#44475a',
+                boxShadow:
+                  '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+              }}
+            >
+              <button
+                className="absolute w-[50px] h-[50px] bg-white rounded-[50%] overflow-hidden"
+                onClick={() => alternStory(1)}
+              >
+                <img src="ifsp.jpg" className="w-[100%] h-[100%]" />
+              </button>
             </div>
-            <p className="text-justify">
-              I worked as a full-stack developer at the company, creating
-              institutional websites, developing file management systems,
-              creating platforms for LGPD-related issues, performing website
-              maintenance, and improving management on e-commerce sites. I also
-              worked on search-related issues and possible bug fixes.
-            </p>
-          </div>
-          <div className="lg:bg-[#FF5555] w-full lg:w-4/12 m-0 p-3 rounded-tr-[50px]">
-            <div className="title text-center mb-2 mt-2">
-              <div className="border-[1.5px] border-[#FF5555] mb-[-17px]"></div>
-              <span className="font-medium px-1 lg:ps-0 bg-[#F8F8F2] lg:bg-[#FF5555]">
-                Today
-              </span>
+            <div
+              className="w-[60px] h-[60px] rounded-[50%] flex items-center justify-center"
+              style={{
+                backgroundColor: isStoryActive === 2 ? '#ff5555' : '#44475a',
+                boxShadow:
+                  '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+              }}
+            >
+              <button
+                className="absolute w-[50px] h-[50px] bg-white rounded-[50%] overflow-hidden p-2 flex items-center justify-center"
+                onClick={() => alternStory(2)}
+              >
+                <img src="FISistemas.png" className="w-[100%] h-[100%]" />
+              </button>
             </div>
-            <p className="text-justify">
-              I am a programmer who is constantly seeking to learn and improve
-              my skills. I am passionate about the field of programming and am
-              always striving to expand my knowledge and take on new challenges.
-              With a strong drive to learn and a motivation to succeed, I am
-              committed to being the best programmer I can be.
-            </p>
+            <div
+              className="w-[60px] h-[60px] bg-[#44475a] rounded-[50%] flex items-center justify-center"
+              style={{
+                backgroundColor: isStoryActive === 3 ? '#ff5555' : '#44475a',
+                boxShadow:
+                  '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+              }}
+            >
+              <button
+                className="absolute w-[50px] h-[50px] bg-white rounded-[50%] overflow-hidden"
+                onClick={() => alternStory(3)}
+              >
+                <img src="infinit.jpeg" className="w-[100%] h-[100%]" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div className="lineInitial hidden lg:block">
+          <div
+            className="w-[100px] h-[100px] rounded-[50%] mt-[-20px] ml-[85px] flex items-center justify-center"
+            style={{
+              backgroundColor: isStoryActive === 1 ? '#ff5555' : '#44475a',
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            }}
+          >
+            <button
+              className="absolute w-[90px] h-[90px] bg-white rounded-[50%] overflow-hidden"
+              onClick={() => alternStory(1)}
+            >
+              <img src="ifsp.jpg" className="w-[100%] h-[100%]" />
+            </button>
+          </div>
+        </div>
+
+        <div className="lg:flex-row flex-col flex w-100 ">
+          <div className="pl-[40px] mt-[-140px] hidden lg:block">
+            <div className="line1"></div>
+            <div className="line2">
+              <div
+                className="w-[100px] h-[100px] rounded-[50%] mt-[30px] ml-[-50px]  flex items-center justify-center"
+                style={{
+                  backgroundColor: isStoryActive === 2 ? '#ff5555' : '#44475a',
+                  boxShadow:
+                    '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                }}
+              >
+                <button
+                  className="absolute w-[90px] h-[90px] bg-white rounded-[50%] overflow-hidden p-2 flex items-center justify-center"
+                  onClick={() => alternStory(2)}
+                >
+                  <img src="FISistemas.png" className="w-[100%] h-[100%]" />
+                </button>
+              </div>
+            </div>
+            <div className="line3">
+              <div
+                className="w-[100px] h-[100px] bg-[#44475a] rounded-[50%] mt-[30px] ml-[200px]  flex items-center justify-center"
+                style={{
+                  backgroundColor: isStoryActive === 3 ? '#ff5555' : '#44475a',
+                  boxShadow:
+                    '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                }}
+              >
+                <button
+                  className="absolute w-[90px] h-[90px] bg-white rounded-[50%] overflow-hidden"
+                  onClick={() => alternStory(3)}
+                >
+                  <img src="infinit.jpeg" className="w-[100%] h-[100%]" />
+                </button>
+              </div>
+            </div>
+            <div className="line4">
+              <i className="fas fa-arrow-down iconArrow"></i>
+            </div>
+          </div>
+
+          {isStory === 1 && (
+            <div className="lg:pl-[80px] lg:mt-0 mt-[150px]">
+              <h1 className="text-[30px] md:text-[50px] mt-[-120px] m-0 p-0 flex items-center">
+                IFSP - Araraquara{' '}
+              </h1>
+              <p className="m-0 p-0 text-[10px] md:text-[20px] mt-[-12px]">
+                (2017 - 2021)
+              </p>
+              <p className="text-[20px] xl:text-[30px] mt-3">
+                During my years of study at the Federal Institute of Araraquara,
+                I completed a technical course integrated with high school,
+                which lasted four years. It was during this time that I had my
+                first exposure to and learned programming languages, including
+                <span className="text-[#ff5555]"> HTML</span>,
+                <span className="text-[#ff5555]"> CSS</span>,
+                <span className="text-[#ff5555]"> PHP</span>,
+                <span className="text-[#ff5555]"> SQL</span>,
+                <span className="text-[#ff5555]"> JavaScript</span>,
+                <span className="text-[#ff5555]"> AJAX</span> and
+                <span className="text-[#ff5555]"> jQuery</span>.
+              </p>
+              <p className="text-[20px] xl:text-[30px] mt-3">
+                This course provided me with a solid foundation of both basic
+                and technological knowledge. As part of my course completion, I
+                developed a{' '}
+                <span className="text-[#ff5555]"> special project</span>. The
+                primary goal of this project was to integrate and apply the
+                knowledge acquired throughout my education. I chose to create an
+                initiative aimed at the{' '}
+                <span className="text-[#ff5555]">
+                  {' '}
+                  non-profit organization "Parque Vivo"
+                </span>
+                . In this project, I managed to combine my technical and
+                academic learnings, contributing significantly to a relevant and
+                beneficial cause for the community. Not only did this experience
+                solidify my knowledge, but it also allowed me to witness
+                firsthand the practical possibilities of applying technology to
+                impactful social projects.
+              </p>
+            </div>
+          )}
+          {isStory === 2 && (
+            <div className="lg:pl-[80px] lg:mt-0 mt-[150px]">
+              <h1 className="text-[30px] md:text-[50px] mt-[-120px] m-0 p-0 flex items-center">
+                First job{' '}
+              </h1>
+              <p className="m-0 p-0 text-[10px] md:text-[20px] mt-[-5px] lg:mt-[-10px]">
+                (2021 - Present)
+              </p>
+              <p className="text-[20px] xl:text-[30px] mt-3">
+                As I embarked on the journey of my first job as a Fullstack
+                Developer, I notice that each line of code I write is imbued
+                with effort, continuous learning, and a commitment to
+                excellence.{' '}
+                <span className="text-[#ff5555]">My responsibilities</span> are
+                weighty; they involve crafting vital institutional websites,
+                developing crucial systems for file management, and implementing
+                platforms that rigorously comply with LGPD.
+              </p>
+              <p className="text-[20px] xl:text-[30px] mt-3">
+                This position demands not only refined technical skill in
+                <span className="text-[#ff5555]"> languages such as </span>{' '}
+                CodeIgniter, Web Development, JavaScript, SQL, PHP, HTML5, and
+                CSS but also a deep operational understanding of the practical
+                issues end-users face. I am the one who optimizes and maintains
+                websites running seamlessly, and I am the intervener when
+                unexpected bugs arise, diligently working to resolve each issue
+                and ensure a flawless user experience.
+              </p>
+            </div>
+          )}
+          {isStory === 3 && (
+            <div className="lg:pl-[80px] lg:mt-0 mt-[150px]">
+              <h1 className="text-[30px] md:text-[50px] mt-[-120px]">
+                Curses Infinit
+              </h1>
+              <p className="text-[20px] xl:text-[30px]">
+                Upon concluding my studies at the Federal Institute, I embraced
+                the perpetual and captivating journey of learning. With
+                dedicated effort, I engaged in various courses offered by
+                platforms like Dio, significantly sharpening and broadening my
+                skills.
+              </p>
+              <p className="text-[20px] xl:text-[30px] mt-3">
+                Presently, <span className="text-[#ff5555]">my focus</span> is
+                sharpening my proficiency in{' '}
+                <span className="text-[#ff5555]">React Js</span> and{' '}
+                <span className="text-[#ff5555]">React Native</span>. This
+                continuous investment in self-knowledge and improvement extends
+                beyond gaining technical skills. It's about fostering a
+                resilient and innovative mindset capable of navigating and
+                surmounting the challenges presented by the dynamic and
+                ever-evolving professional landscape I am part of.
+              </p>
+            </div>
+          )}
+        </div>
+      </motion.div>
+    </>
   );
 }

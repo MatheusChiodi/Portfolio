@@ -1,11 +1,11 @@
 import { AtSign, Github, Linkedin, Phone } from 'lucide-react';
-import { useState } from 'react';
 
-const Contact = () => {
-  const [isOpen, setIsOpen] = useState(true);
+const Contact = ({ setIsOpenContact }) => {
+
+  const isOpen = setIsOpenContact;
 
   const handleClose = () => {
-    setIsOpen(false);
+    setIsOpenContact(false);
   };
   return (
     <>

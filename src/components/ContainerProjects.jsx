@@ -37,7 +37,7 @@ export default function ContainerProjects() {
 
   return (
     <div
-      className="w-full mx-auto m-0 p-0 lg:mb-[-80px] mb-0 lg:mt-0 mt-10"
+      className="w-full mx-auto m-0 p-0 lg:mb-[-80px] mb-0 lg:mt-[40px] mt-[200px]"
       id="ContainerProjects"
     >
       <div className="w-full lg:bg-slate-700 lg:pb-[100px] pt-[10px]">
@@ -66,8 +66,8 @@ export default function ContainerProjects() {
                     {project.title}
                   </p>
                   <div className="m-0 p-0 text-[16px]">
-                    <p className="w-full text-center">{project.description}</p>
-                    <p className="restTextCard w-full text-center mt-4">
+                    <p className="w-full text-center text-[#F8F8F2] lg:text-[#44475A]">{project.description}</p>
+                    <p className="restTextCard w-full text-center mt-4 text-[#F8F8F2] lg:text-[#44475A]">
                       {project.subdescription}
                     </p>
                     <p className="restTextCard w-full text-center mt-2">

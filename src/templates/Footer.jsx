@@ -59,7 +59,7 @@ const Footer = () => {
               href="mailto:mchiodidev@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#FF5555]"
+              className="hover:text-[#FF5555] text-[#F8F8F2]"
               title="E-mail"
             >
               mchiodidev@gmail.com
@@ -71,7 +71,7 @@ const Footer = () => {
           <p className="text-[0.8rem]">
             <a
               href="#ContainerAbout"
-              className="hover:text-[#FF5555]"
+              className="hover:text-[#FF5555] text-[#F8F8F2]"
               onClick={handleVerMaisClick}
             >
               About
@@ -80,7 +80,7 @@ const Footer = () => {
           <p className="text-[0.8rem]">
             <a
               href="#ContainerExperience"
-              className="hover:text-[#FF5555]"
+              className="hover:text-[#FF5555] text-[#F8F8F2]"
               onClick={handleVerMaisClick}
             >
               Experience
@@ -89,7 +89,7 @@ const Footer = () => {
           <p className="text-[0.8rem]">
             <a
               href="#ContainerProjects"
-              className="hover:text-[#FF5555]"
+              className="hover:text-[#FF5555] text-[#F8F8F2]"
               onClick={handleVerMaisClick}
             >
               Projects
@@ -97,15 +97,15 @@ const Footer = () => {
           </p>
         </div>
         <div className="justify-center items-center text-center text-[#F8F8F2] mt-5 md:mt-0">
-          <h2 className="font-medium">Languages</h2>
-          <p className="text-[0.8rem]">React JS, React Native</p>
-          <p className="text-[0.8rem]">Codeigniter 3, SQL e PHP</p>
-          <p className="text-[0.8rem]">HTML, CSS e Javascript</p>
+          <h2 className="font-medium text-[#F8F8F2]">Languages</h2>
+          <p className="text-[0.8rem] text-[#F8F8F2]">React JS, React Native</p>
+          <p className="text-[0.8rem] text-[#F8F8F2]">Codeigniter 3, SQL e PHP</p>
+          <p className="text-[0.8rem] text-[#F8F8F2]">HTML, CSS e Javascript</p>
         </div>
       </div>
       <div className="flex items-center justify-between text-center text-[#F8F8F2] w-full text-[12px] mt-[10px] pb-[5px] border-t-[1px] border-[#FF5555]">
-        <p className="m-2">© {anoAtual} Matheus Chiodi</p>
-        <p className="m-2">All rights reserved</p>
+        <p className="m-2 text-[#F8F8F2]">© {anoAtual} Matheus Chiodi</p>
+        <p className="m-2 text-[#F8F8F2]">All rights reserved</p>
       </div>
     </div>
   );

@@ -9,6 +9,10 @@ body {
   margin-right: auto !important;
 }
 
+p,spam,h1{
+  color: #44475a;
+}
+
 /* Background color classes */
 
 .bg-gray {
@@ -222,4 +226,71 @@ body {
 
 .card:hover .restTextCard {
   display: block;
+}
+.lineInitial {
+  width: 140px;
+  height: 80px;
+  border-right: 5px dashed #44475A;
+  border-top: 5px dashed #44475A;
+  border-radius: 0px 50px 0px 0px;
+  margin-left: 205px;
+  margin-top: -30px
+}
+.lineInitial2 {
+  height: 5px;
+  border-top: 5px dashed #44475A;
+  border-radius: 0px 50px 0px 0px;
+}
+
+
+.line1 {
+  margin-top: 100px;
+  width: 250px;
+  height: 50px;
+  border-right: 5px dashed #44475A;
+  border-bottom: 5px dashed #44475A;
+  border-radius: 0px 0px 50px 0px;
+  margin-left: 52.6px;
+  margin-top: 150px;
+}	
+
+.line2 {
+  width: 250px;
+  height: 170px;
+  border-left: 5px dashed #44475A;
+  border-top: 5px dashed #44475A;
+  border-bottom: 5px dashed #44475A;
+  border-radius: 50px 5px 0px 50px;
+  margin-top: -5px;
+  zIndex: 10;
+  background: #f8f8f2;
+}
+.line3 {
+  width: 250px;
+  height: 170px;
+  border-right: 5px dashed #44475A;
+  border-top: 5px dashed #44475A;
+  border-bottom: 5px dashed #44475A;
+  border-radius: 0px 50px 50px 0px;
+  margin-top: -5px;
+  zIndex: 10;
+  background: #f8f8f2;
+  margin-left: 52.6px;
+}
+.line4 {
+  width: 250px;
+  height: 100px;
+  border-left: 5px dashed #44475A;
+  border-top: 5px dashed #44475A;
+  border-radius: 50px 0px 0px 0px;
+  margin-top: -5px;
+  zIndex: 10;
+  background: #f8f8f2;
+}
+
+.iconArrow{
+  margin-top:97px;
+  margin-left: -15px;
+  font-size: 27px;
+  color: #44475A;
 }
