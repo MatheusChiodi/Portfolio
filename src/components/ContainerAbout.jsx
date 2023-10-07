@@ -35,14 +35,14 @@ export default function About() {
             animate={{ opacity: 1, transition: { delay: 0.6 } }}
           >
             I am a professional programmer{' '}
-            <span className="text-[#FF5555] font-medium">Fullstack</span> with
+            <span className="text-[#FF5555] font-bold">Fullstack</span> with
             more than 2 years of experience
           </motion.p>
 
           <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <p className="lg:mt-[50px] mt-[30px] text-center md:text-left md:text-[20px] lg:text-[25px] xl:text-[30px] text-[15px]">
               <motion.a
-                className="inline-block px-7 py-2 leading-none border rounded-xl border-[#F1FA8C] text-gray font-bold bg-[#F1FA8C]"
+                className="inline-block px-7 py-2 leading-none border rounded-xl border-[#FF5555] text-white font-bold bg-[#FF5555]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.2 } }}
                 style={{
@@ -53,7 +53,7 @@ export default function About() {
                 React Native
               </motion.a>
               <motion.a
-                className="mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#FFB86C] text-gray font-bold bg-[#FFB86C]"
+                className="mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#6272A4] text-white font-bold bg-[#6272A4]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.4 } }}
                 style={{
@@ -69,7 +69,7 @@ export default function About() {
               id="ContainerTwo"
             >
               <motion.a
-                className="inline-block px-7 py-2 leading-none border rounded-xl border-[#44475A] text-white font-bold bg-[#44475A]"
+                className="inline-block px-7 py-2 leading-none border rounded-xl border-[#FFB86C] text-white font-bold bg-[#FFB86C]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.6 } }}
                 style={{
@@ -77,10 +77,10 @@ export default function About() {
                     '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
                 }}
               >
-                php
+                CodeIgniter 3
               </motion.a>
               <motion.a
-                className="inline-block mx-3 px-7 py-2 leading-none border rounded-xl border-[#FF5555] text-gray font-bold bg-[#FF5555]"
+                className="inline-block mx-3 px-7 py-2 leading-none border rounded-xl border-[#BD93F9] text-white font-bold bg-[#BD93F9]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.8 } }}
                 style={{
@@ -88,10 +88,10 @@ export default function About() {
                     '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
                 }}
               >
-                SQL
+                Php
               </motion.a>
               <motion.a
-                className="lg:mt-3 md:mt-2 mt-1 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#44475A] font-bold bg-[#44475A]"
+                className="lg:mt-3 md:mt-2 mt-1 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#282A36] font-bold bg-[#282A36]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 1 } }}
                 style={{
