@@ -53,7 +53,7 @@ export default function About() {
                 React Native
               </motion.a>
               <motion.a
-                className="mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#6272A4] text-white font-bold bg-[#6272A4]"
+                className="mt-2 lg:mt-0 mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#6272A4] text-white font-bold bg-[#6272A4]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.4 } }}
                 style={{
@@ -91,7 +91,7 @@ export default function About() {
                 Php
               </motion.a>
               <motion.a
-                className="lg:mt-3 md:mt-2 mt-1 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#282A36] font-bold bg-[#282A36]"
+                className="lg:mt-3 mt-2 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#282A36] font-bold bg-[#282A36]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 1 } }}
                 style={{

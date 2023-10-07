@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ArrowDown, ChevronDown } from 'lucide-react';
 
 export default function ContainerProjects() {
   const projects = [
@@ -39,61 +40,82 @@ export default function ContainerProjects() {
 
   return (
     <>
-      
-      <div
-        className="w-full mx-auto m-0 p-0 lg:mb-[-80px] mb-0 lg:mt-[40px]"
+      <motion.div
+        className="w-100  m-0 p-0 mt-[50px] px-2"
         id="ContainerProjects"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { delay: 1.6 } }}
       >
-        <div className="w-full lg:bg-slate-700 lg:pb-[100px] pt-[10px]">
-          <div className="w-full mx-auto m-0 p-0">
-            <div className="text-center mb-2 mt-2">
-              <div className="border-[2px] border-[#FF5555] mb-[-17px]"></div>
-              <div className="w-[200px] mx-auto font-bold text-[25px] md:text-[30px] px-2 mt-[-22px] bg-[#F8F8F2] lg:bg-slate-700">
-                <p className="lg:text-[#F8F8F2] text-[#44475A]">My Projects</p>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {projects.map((project) => (
-                <div
-                  key={project.id}
-                  className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] lg:bg-white bg-slate-700 rounded-t-[20px] rounded-b-[20px] card mx-auto"
-                >
-                  <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
-                    <img
-                      src={`${import.meta.env.BASE_URL}/${project.image}`}
-                      alt="image"
-                      className="w-full rounded-br-[40px] h-[140px] text-[#F8F8F2] rounded-t-[20px] rounded-b-[-200px]"
-                    />
-                  </div>
-                  <div className="rounded-br-[40px] h-[140px] lg:text-[#44475A] text-[#F8F8F2] rounded-b-[20px] textCard">
-                    <p className="w-full text-center font-medium text-[20px] text-[#FF5555] mt-2">
-                      {project.title}
-                    </p>
-                    <div className="m-0 p-0 text-[16px]">
-                      <p className="w-full text-center text-[#F8F8F2] lg:text-[#44475A]">
-                        {project.description}
-                      </p>
-                      <p className="restTextCard w-full text-center mt-4 text-[#F8F8F2] lg:text-[#44475A]">
-                        {project.subdescription}
-                      </p>
-                      <p className="restTextCard w-full text-center mt-2">
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#F8F8F2] lg:text-[#44475A] hover:text-[#FF5555]"
-                        >
-                          <i className="fas fa-eye"></i>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <div className="lg:flex hidden">
+          <div
+            className="border-[5px] w-[300px] border-dashed border-[#44475A] rounded-[20px]"
+            style={{
+              boxShadow:
+                '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            }}
+          >
+            <h1 className="lg:text-[50px] text-[30px] font-semibold w-full text-center">
+              My Projects
+            </h1>
+          </div>
+          <div className="lineMyProjects">
+            <ChevronDown sizex={40} className="iconArrow2" />
           </div>
         </div>
-      </div>
+
+        <div className="w-full mx-auto justify-center lg:hidden flex">
+          <div className="bg-[#f8f8f2] z-30 absolute w-[200px]">
+            <h1 className="lg:text-[50px] text-[30px] font-semibold w-full text-center mt-[-20px]">
+              My Projects
+            </h1>
+          </div>
+          <div className="border-[5px] w-[100%] border-dashed border-[#44475A] rounded-[20px]"></div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-[30px]">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] bg-[#44475A] rounded-t-[20px] rounded-b-[20px] card mx-auto"
+              style={{
+                boxShadow:
+                  '2px 5px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+              }}
+            >
+              <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
+                <img
+                  src={`${import.meta.env.BASE_URL}/${project.image}`}
+                  alt="image"
+                  className="w-full rounded-br-[40px] h-[140px] text-[#F8F8F2] rounded-t-[20px] rounded-b-[-200px]"
+                />
+              </div>
+              <div className="rounded-br-[40px] h-[140px] lg:text-[#44475A] text-[#F8F8F2] rounded-b-[20px] textCard">
+                <p className="w-full text-center font-medium text-[20px] text-[#FF5555] mt-2">
+                  {project.title}
+                </p>
+                <div className="m-0 p-0 text-[16px]">
+                  <p className="w-full text-center text-[#F8F8F2]">
+                    {project.description}
+                  </p>
+                  <p className="restTextCard w-full text-center mt-4 text-[#F8F8F2]">
+                    {project.subdescription}
+                  </p>
+                  <p className="restTextCard w-full text-center mt-2">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#F8F8F2] hover:text-[#FF5555]"
+                    >
+                      <i className="fas fa-eye"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </>
   );
 }
