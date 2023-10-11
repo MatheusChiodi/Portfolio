@@ -53,6 +53,7 @@ const Contact = ({ setIsOpenContact }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="card3 hover:text-[#F8F8F2]"
+                      title="Github"
                     >
                       <Github className="github text-[25px]"></Github>
                     </a>
@@ -61,6 +62,7 @@ const Contact = ({ setIsOpenContact }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="card4 hover:text-[#F8F8F2]"
+                      title="Whatsapp"
                     >
                       <Phone className="whatsapp text-[25px]"></Phone>
                     </a>
