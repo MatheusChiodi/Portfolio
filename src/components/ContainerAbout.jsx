@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function About() {
   const fadeIn = {
@@ -6,8 +7,25 @@ export default function About() {
     visible: { opacity: 1 },
   };
 
-  const title = 'My Name is';
-  const name = 'Matheus Chiodi';
+  const translations = {
+    en: {
+      title: 'My Name is',
+      name: 'Matheus Chiodi',
+      description1:
+        'I am a professional programmer',
+      description2:
+        'with more than 2 years of experience',
+    },
+    pt: {
+      title: 'Meu nome é',
+      name: 'Matheus Chiodi',
+      description1:
+        'Sou programador profissional',
+      description2: 'com mais de 2 anos de experiência',
+    },
+  };
+
+  const [language, setLanguage] = useState('en');
 
   return (
     <>
@@ -19,12 +37,12 @@ export default function About() {
       >
         <div className="m-0 p-0">
           <h1 className="md:text-[45px] lg:text-[40px] xl:text-[60px] text-[30px] text-center md:text-left">
-            {title}
+            {translations[language].title}
           </h1>
 
           <h1 className="md:text-[45px] lg:text-[45px] text-[30px] text-center md:text-left font-medium text-[#44475a]">
             <span className="text-[#FF5555] font-medium">&lt;</span>
-            {name}
+            {translations[language].name}
             <span className="text-[#FF5555] font-medium"> /</span>
             <span className="text-[#FF5555] font-medium">&gt;</span>
           </h1>
@@ -34,9 +52,9 @@ export default function About() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 0.6 } }}
           >
-            I am a professional programmer{' '}
-            <span className="text-[#FF5555] font-bold">Fullstack</span> with
-            more than 2 years of experience
+            {translations[language].description1}{' '}
+            <span className="text-[#FF5555] font-bold">Fullstack</span>{' '}
+            {translations[language].description2}
           </motion.p>
 
           <motion.div initial="hidden" animate="visible" variants={fadeIn}>
