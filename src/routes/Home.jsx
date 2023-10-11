@@ -14,6 +14,17 @@ const Home = () => {
     setIsExpanded(true);
   };
 
+  const translations = {
+    en: {
+      click: 'View more',
+    },
+    pt: {
+      click: 'Ver mais',
+    },
+  };
+
+  const [language, setLanguage] = useState('en');
+
   return (
     <>
       <Header />
@@ -29,9 +40,9 @@ const Home = () => {
         {!isExpanded ? (
           <button
             onClick={handleVerMaisClick}
-            className="flex items-center mb-[20px] w-[140px] text-center font-bold text-[#44475A] hover:text-[#FF5555] transition-colors mx-auto"
+            className="flex items-center w-[140px] text-center font-bold text-[#44475A] hover:text-[#FF5555] transition-colors mx-auto"
           >
-            View more
+            {translations[language].click}
             <Plus className="inline-block ml-1" size={20} />
           </button>
         ) : null}
