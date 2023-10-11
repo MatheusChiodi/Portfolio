@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Contact from './Contact';
 
-const Header = () => {
+const Header = ({ onLanguage }) => {
   var status = false;
 
   if (window.innerWidth > 992) {
@@ -28,7 +28,7 @@ const Header = () => {
 
   const translations = {
     en: {
-      item1: 'About',    
+      item1: 'About',
       item2: 'Experience',
       item3: 'Projects',
       item4: 'Contact',
@@ -42,6 +42,12 @@ const Header = () => {
   };
 
   const [language, setLanguage] = useState('en');
+
+  // cria uma função para alterar o estado de language
+  const handleLangue = (langue) => {
+    setLanguage(langue);
+    onLanguage(langue);
+  };
 
   return (
     <div className="m-0 p-0 fixed top-0 bg-white mx-auto z-50">
@@ -109,6 +115,23 @@ const Header = () => {
               id="menu"
             >
               <div className="md:w-[60%] w-full text-center md:text-left md:mb-0 mb-2 text-[20px] lg:text-[25px] xl:text-[30px]">
+                <a className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu block md:hidden">
+                  {language === 'en' ? (
+                    <span
+                      onClick={() => handleLangue('pt')}
+                      className="cursor-pointer"
+                    >
+                      Change to Portuguese
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => handleLangue('en')}
+                      className="cursor-pointer"
+                    >
+                      Mudar para Inglês
+                    </span>
+                  )}
+                </a>
                 <a
                   href="#ContainerAbout"
                   className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu"
@@ -137,7 +160,49 @@ const Header = () => {
                   className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]"
                 />
               </div>
-              <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:block items-center">
+              <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:flex justify-end items-center">
+                <button
+                  className="mx-2 inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all"
+                  style={{
+                    boxShadow:
+                      '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                  }}
+                >
+                  {language === 'en' ? (
+                    <span
+                      onClick={() => handleLangue('pt')}
+                      className="cursor-pointer"
+                    >
+                      Inglês
+                    </span>
+                  ) : (
+                    <span
+                      onClick={() => handleLangue('en')}
+                      className="cursor-pointer"
+                    >
+                      Português
+                    </span>
+                  )}
+                </button>
+
+                <div className="mx-[10px] hidden">
+                  <div className="toggleWrapper">
+                    <input type="checkbox" className="dn" id="dn" />
+                    <label htmlFor="dn" className="toggleTheme">
+                      <span className="toggle__handler">
+                        <span className="crater crater--1"></span>
+                        <span className="crater crater--2"></span>
+                        <span className="crater crater--3"></span>
+                      </span>
+                      <span className="star star--1"></span>
+                      <span className="star star--2"></span>
+                      <span className="star star--3"></span>
+                      <span className="star star--4"></span>
+                      <span className="star star--5"></span>
+                      <span className="star star--6"></span>
+                    </label>
+                  </div>
+                </div>
                 <label
                   htmlFor="toggleContactModal"
                   className="inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all"

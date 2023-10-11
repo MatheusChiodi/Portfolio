@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-export default function Experience() {
+export default function Experience({language}) {
   const [isStory, setIsStory] = useState(1);
   const [isStoryActive, setIsStoryActive] = useState(1);
 
@@ -51,8 +51,6 @@ export default function Experience() {
         'Atualmente, meu foco é aprimorar minha proficiência em React Js e React Native. Este investimento contínuo em autoconhecimento e melhoria vai além da aquisição de habilidades técnicas. Trata-se de promover uma mentalidade resiliente e inovadora capaz de navegar e superar os desafios apresentados pelo cenário profissional dinâmico e em constante evolução do qual faço parte.',
     },
   };
-
-  const [language, setLanguage] = useState('en');
 
   const renderHighlightedText = (text) => {
     const wordsToHighlight = [

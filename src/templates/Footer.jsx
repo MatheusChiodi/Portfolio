@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Footer = () => {
+const Footer = ({language}) => {
 
   const translations = {
     en: {
@@ -22,8 +22,6 @@ const Footer = () => {
       item5: 'Currículo'
     },
   };
-
-  const [language, setLanguage] = useState('en');
 
   const currentYear = new Date().getFullYear();
 

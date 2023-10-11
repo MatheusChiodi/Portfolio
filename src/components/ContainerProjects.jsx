@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
-export default function ContainerProjects() {
+export default function ContainerProjects({language}) {
 
   const translations2 = {
     en: {
@@ -78,8 +78,6 @@ export default function ContainerProjects() {
       },
     },
   };
-
-  const [language, setLanguage] = useState('en');
 
   return (
     <>

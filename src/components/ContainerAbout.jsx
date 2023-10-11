@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-export default function About() {
+export default function About({language}) {
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -24,8 +24,6 @@ export default function About() {
       description2: 'com mais de 2 anos de experiência',
     },
   };
-
-  const [language, setLanguage] = useState('en');
 
   return (
     <>

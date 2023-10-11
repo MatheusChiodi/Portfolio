@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
-const Projects = () => {
+const Projects = ({language}) => {
   const projects = [
     {
       id: '1',
@@ -219,8 +219,6 @@ const Projects = () => {
       button: 'Acessar',
     },
   };
-
-  const [language, setLanguage] = useState('en');
 
   const renderHighlightedText = (text) => {
     const wordsToHighlight = [

@@ -3,6 +3,7 @@ import ContainerExperience from '../components/ContainerExperience';
 import ContainerProjects from '../components/ContainerProjects';
 import Projects from '../components/Projects';
 import Header from '../templates/Header';
+import Footer from '../templates/Footer';
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
 import ScrollToTopButton from '../components/ScrollToTopButton';
@@ -25,14 +26,19 @@ const Home = () => {
 
   const [language, setLanguage] = useState('en');
 
+  // cria uma função para alterar o estado de language
+  const handleLangue = (langue) => {
+    setLanguage(langue);
+  };
+
   return (
     <>
-      <Header />
+      <Header onLanguage={handleLangue}/>
       {!isExpanded ? (
         <>
-          <ContainerAbout />
-          <ContainerExperience />
-          <ContainerProjects />
+          <ContainerAbout  language={language}/>
+          <ContainerExperience language={language}/>
+          <ContainerProjects language={language}/>
         </>
       ) : null}
       <div className="flex mb-1 p-0">
@@ -49,8 +55,9 @@ const Home = () => {
       </div>
 
       {/* Conteúdo do componente Projects */}
-      {isExpanded ? <Projects /> : null}
+      {isExpanded ? <Projects language={language}/> : null}
       <ScrollToTopButton />
+      <Footer language={language}/>
     </>
   );
 };
