@@ -1,42 +1,85 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
 
 export default function ContainerProjects() {
-  const projects = [
-    {
-      id: '1',
-      title: 'Project Windows',
-      description: 'Windows 11 Beta',
-      subdescription:
-        'This was a ReactJS project to learn various language utilization techniques',
-      link: 'https://matheuschiodi.github.io/windows/',
-      image: './windows.png',
+
+  const translations2 = {
+    en: {
+      title: 'My Projects',
+      
     },
-    {
-      id: '2',
-      title: 'Pomodoro Prime Timer',
-      description: 'Project created with the intention of helping learning',
-      subdescription: 'First app in React Native App',
-      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
-      image: './pomodoro_prime_timer.png',
+    pt: {
+      title: 'Projetos',
     },
-    {
-      id: '3',
-      title: 'Diversão em Dupla',
-      description: 'Application intended to be light and simple to play',
-      subdescription: 'Main idea was to have games to play with friend',
-      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
-      image: './dualgame.png',
+  };
+
+  const translations = {
+    en: {
+      1: {
+        title: 'Project Windows',
+        description: 'Windows 11 Beta',
+        subdescription:
+          'This was a ReactJS project to learn various language utilization techniques',
+        link: 'https://matheuschiodi.github.io/windows/',
+        image: './windows.png',
+      },
+      2: {
+        title: 'Pomodoro Prime Timer',
+        description: 'Project created with the intention of helping learning',
+        subdescription: 'First app in React Native App',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
+        image: './pomodoro_prime_timer.png',
+      },
+      3: {
+        title: 'Dual Game',
+        description: 'Application intended to be light and simple to play',
+        subdescription: 'Main idea was to have games to play with friend',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
+        image: './dualgame.png',
+      },
+      4: {
+        title: 'Guaranteed Future',
+        description: 'Application focused on helping students',
+        subdescription: '',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido',
+        image: '/futurogarantido.png',
+      },
     },
-    {
-      id: '4',
-      title: 'Futuro Garantido',
-      description: 'Application focused on helping students',
-      subdescription: '',
-      link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido',
-      image: '/futurogarantido.png',
+    pt: {
+      1: {
+        title: 'Projeto Windows',
+        description: 'Beta do Windows 11',
+        subdescription:
+          'Este foi um projeto em ReactJS para aprender técnicas de utilização de várias linguagens',
+        link: 'https://matheuschiodi.github.io/windows/',
+        image: './windows.png',
+      },
+      2: {
+        title: 'Pomodoro',
+        description: 'Projeto criado com o intuito de ajudar no aprendizado',
+        subdescription: 'Primeiro aplicativo em React Native',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
+        image: './pomodoro_prime_timer.png',
+      },
+      3: {
+        title: 'Diversão em Dupla',
+        description: 'Aplicativo com a intenção de ser leve e simples de jogar',
+        subdescription: 'Ideia principal era ter jogos para jogar com amigo',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
+        image: './dualgame.png',
+      },
+      4: {
+        title: 'Futuro Garantido',
+        description: 'Aplicativo focado em ajudar estudantes',
+        subdescription: '',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido',
+        image: '/futurogarantido.png',
+      },
     },
-  ];
+  };
+
+  const [language, setLanguage] = useState('en');
 
   return (
     <>
@@ -55,7 +98,7 @@ export default function ContainerProjects() {
             }}
           >
             <h1 className="lg:text-[50px] text-[30px] font-semibold w-full text-center">
-              My Projects
+            {translations2[language].title}
             </h1>
           </div>
           <div className="lineMyProjects">
@@ -73,7 +116,7 @@ export default function ContainerProjects() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-[30px]">
-          {projects.map((project) => (
+          {Object.values(translations[language]).map((project) => (
             <div
               key={project.id}
               className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] bg-[#44475A] rounded-t-[20px] rounded-b-[20px] card mx-auto"

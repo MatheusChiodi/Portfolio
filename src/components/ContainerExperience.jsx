@@ -16,6 +16,7 @@ export default function Experience() {
       title: 'Timeline',
       line1_title: 'IFSP - Araraquara',
       line2_title: 'First job',
+      line2_subtitle: '(2021 - Present)',
       line3_title: 'Curses Infinit',
       line1_text1:
         'During my years of study at the Federal Institute of Araraquara, I completed a technical course integrated with high school, which lasted four years. It was during this time that I had my first exposure to and learned programming languages, including HTML, CSS, PHP, SQL, JavaScript, AJAX and jQuery.',
@@ -34,6 +35,7 @@ export default function Experience() {
       title: 'Jornada',
       line1_title: 'IFSP - Araraquara',
       line2_title: 'Primeiro emprego',
+      line2_subtitle: '(2021 - Presente)',
       line3_title: 'Cursos Infinitos',
       line1_text1:
         'Durante meus anos de estudo no Instituto Federal de Araraquara, concluí um curso técnico integrado ao ensino médio, que durou quatro anos. Foi durante esse período que tive minha primeira exposição e aprendi linguagens de programação, incluindo HTML, CSS, PHP, SQL, JavaScript, AJAX e jQuery.',
@@ -50,7 +52,7 @@ export default function Experience() {
     },
   };
 
-  const [language, setLanguage] = useState('pt');
+  const [language, setLanguage] = useState('en');
 
   const renderHighlightedText = (text) => {
     const wordsToHighlight = [
@@ -244,7 +246,7 @@ export default function Experience() {
                 {(translations[language].line2_title)}
               </h1>
               <p className="m-0 p-0 text-[10px] md:text-[20px] mt-[-5px] lg:mt-[-10px]">
-                (2021 - Present)
+                {(translations[language].line2_subtitle)}
               </p>
               <p className="text-[20px] xl:text-[30px] mt-3">
                 {renderHighlightedText(translations[language].line2_text1)}
