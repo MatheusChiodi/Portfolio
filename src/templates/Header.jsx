@@ -26,6 +26,23 @@ const Header = () => {
     window.location.reload();
   };
 
+  const translations = {
+    en: {
+      item1: 'About',    
+      item2: 'Experience',
+      item3: 'Projects',
+      item4: 'Contact',
+    },
+    pt: {
+      item1: 'Sobre',
+      item2: 'Experiência',
+      item3: 'Projetos',
+      item4: 'Contato',
+    },
+  };
+
+  const [language, setLanguage] = useState('en');
+
   return (
     <div className="m-0 p-0 fixed top-0 bg-white mx-auto z-50">
       <header className="fixed top-0 w-full m-0 p-0 bg-white">
@@ -73,7 +90,7 @@ const Header = () => {
                   }}
                 >
                   {' '}
-                  Contact
+                  {translations[language].item4}
                 </label>
                 <input
                   type="checkbox"
@@ -97,21 +114,21 @@ const Header = () => {
                   className="text-md block md:inline-block text-gray font-medium md:mr-4 mr-0 linkMenu"
                   onClick={handleVerMaisClick}
                 >
-                  About
+                  {translations[language].item1}
                 </a>
                 <a
-                  href="#ContainerExperience"
+                  href="#Container{translations[language].item2}"
                   className="text-md block md:inline-block text-gray font-medium linkMenu"
                   onClick={handleVerMaisClick}
                 >
-                  Experience
+                  {translations[language].item2}
                 </a>
                 <a
                   href="#ContainerProjects"
                   className="text-md block md:inline-block text-gray font-medium md:ml-4 mr-0 mb-0 linkMenu"
                   onClick={handleVerMaisClick}
                 >
-                  Projects
+                  {translations[language].item3}
                 </a>
               </div>
               <div className="px-2 w-[10%] text-center hidden md:block ">
@@ -129,7 +146,7 @@ const Header = () => {
                       '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
                   }}
                 >
-                  Contact
+                  {translations[language].item4}
                 </label>
                 <input
                   type="checkbox"
