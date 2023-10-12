@@ -237,6 +237,7 @@ const Projects = ({language}) => {
       'MySQL,',
       'PHP,',
       'Ajax',
+      'Ajax,',
       'Rocketseat',
       '"Parque',
       'Vivo",',
