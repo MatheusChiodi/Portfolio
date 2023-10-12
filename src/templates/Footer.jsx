@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Footer = ({language}) => {
+const Footer = ({language, onHandleClick}) => {
 
   const translations = {
     en: {
@@ -26,7 +26,7 @@ const Footer = ({language}) => {
   const currentYear = new Date().getFullYear();
 
   const handleVerMaisClick = () => {
-    window.location.reload();
+    onHandleClick(false);
   };
   return (
     <div className="justify-center items-center w-full bg-[#44475A] border-t-[3px] border-[#FF5555]">

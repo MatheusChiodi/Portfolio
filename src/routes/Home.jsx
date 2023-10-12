@@ -11,10 +11,6 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 const Home = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleVerMaisClick = () => {
-    setIsExpanded(true);
-  };
-
   const translations = {
     en: {
       click: 'View more',
@@ -31,21 +27,25 @@ const Home = () => {
     setLanguage(langue);
   };
 
+  const handleVerMaisClick = (status) => {
+    setIsExpanded(status);
+  };
+
   return (
     <>
-      <Header onLanguage={handleLangue}/>
+      <Header onLanguage={handleLangue} onHandleClick={handleVerMaisClick} />
       {!isExpanded ? (
         <>
-          <ContainerAbout  language={language}/>
-          <ContainerExperience language={language}/>
-          <ContainerProjects language={language}/>
+          <ContainerAbout language={language} />
+          <ContainerExperience language={language} />
+          <ContainerProjects language={language} />
         </>
       ) : null}
       <div className="flex mb-1 p-0">
         {/* Conteúdo do componente Projects */}
         {!isExpanded ? (
           <button
-            onClick={handleVerMaisClick}
+            onClick={() => setIsExpanded(true)}
             className="flex items-center w-[140px] text-center font-bold text-[#44475A] hover:text-[#FF5555] transition-colors mx-auto"
           >
             {translations[language].click}
@@ -55,9 +55,9 @@ const Home = () => {
       </div>
 
       {/* Conteúdo do componente Projects */}
-      {isExpanded ? <Projects language={language}/> : null}
+      {isExpanded ? <Projects language={language} /> : null}
       <ScrollToTopButton />
-      <Footer language={language}/>
+      <Footer language={language} onHandleClick={handleVerMaisClick} />
     </>
   );
 };

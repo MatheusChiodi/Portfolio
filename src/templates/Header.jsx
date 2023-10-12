@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Contact from './Contact';
 
-const Header = ({ onLanguage }) => {
+const Header = ({ onLanguage,onHandleClick }) => {
   var status = false;
 
   if (window.innerWidth > 992) {
@@ -23,7 +23,7 @@ const Header = ({ onLanguage }) => {
   }
 
   const handleVerMaisClick = () => {
-    window.location.reload();
+    onHandleClick(false);
   };
 
   const translations = {
@@ -140,7 +140,7 @@ const Header = ({ onLanguage }) => {
                   {translations[language].item1}
                 </a>
                 <a
-                  href="#Container{translations[language].item2}"
+                  href="#ContainerExperience"
                   className="text-md block md:inline-block text-gray font-medium linkMenu"
                   onClick={handleVerMaisClick}
                 >
