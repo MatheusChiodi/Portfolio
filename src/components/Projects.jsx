@@ -102,6 +102,15 @@ const Projects = ({ language }) => {
         ti: 'ReactJS',
         rank: 2,
       },
+      12: {
+        title: 'New Spotify beta',
+        description:
+          'This project was developed using ReactJS and TailwindCSS, offering a fluid and responsive web experience for its users. It was inspired by the Spotify platform, and it provides a rich user experience for music lovers. Serving as both an enjoyable tool for entertainment and a valuable resource for ReactJS study.',
+        link: 'https://matheuschiodi.github.io/spotify/',
+        image: '/spotify.png',
+        ti: 'ReactJS',
+        rank: 2,
+      }
     },
 
     pt: {
@@ -204,6 +213,15 @@ const Projects = ({ language }) => {
         ti: 'ReactJS',
         rank: 2,
       },
+      12: {
+        title: 'Novo Spotify beta',
+        description:
+          'Este projeto foi desenvolvido usando ReactJS e TailwindCSS, oferecendo uma experiência web fluida e responsiva para seus usuários. Ele foi inspirado na plataforma Spotify e oferece uma rica experiência para os amantes da música. Servindo como uma ferramenta divertida para entretenimento e um recurso valioso para o estudo do ReactJS.',
+        link: 'https://matheuschiodi.github.io/spotify/',
+        image: '/spotify.png',
+        ti: 'ReactJS',
+        rank: 2,
+      }
     },
   };
 
@@ -241,6 +259,7 @@ const Projects = ({ language }) => {
       'Play',
       'Store,',
       'Store.',
+      'TailwindCSS,',
     ];
 
     const tokens = text.split(/(\s+)/).map((word) => {
