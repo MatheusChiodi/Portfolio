@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-import { useState } from 'react';
 
 const Projects = ({ language }) => {
   const translations = {
@@ -11,6 +10,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido',
         image: '/futurogarantido.png',
         ti: 'React Native',
+        rank: 1,
       },
       2: {
         title: 'Dual Game',
@@ -19,6 +19,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
         image: '/dualgame.png',
         ti: 'React Native',
+        rank: 1,
       },
       3: {
         title: 'Pomodoro Prime Timer',
@@ -27,6 +28,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
         image: '/pomodoro_prime_timer.png',
         ti: 'React Native',
+        rank: 1,
       },
       4: {
         title: 'MChiodi - Training Record',
@@ -35,6 +37,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.TrainingRecord',
         image: '/trainingrecord.png',
         ti: 'React Native',
+        rank: 1,
       },
       5: {
         title: 'Project Windows',
@@ -43,6 +46,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/windows/',
         image: '/windows.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       6: {
         title: 'Project Shop',
@@ -51,6 +55,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/Project-Shop/',
         image: '/projectShop.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       7: {
         title: 'Project Tic Tac Toe',
@@ -59,6 +64,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/tic-tac-toe/',
         image: '/tic_tac_toe.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       8: {
         title: 'NLW Spacetime',
@@ -67,6 +73,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/NLW-Spacetime-not-Prisma/',
         image: '/spacetime.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       9: {
         title: 'TCC Parque Vivo',
@@ -75,6 +82,7 @@ const Projects = ({ language }) => {
         link: 'https://github.com/MatheusChiodi/TccParqueVivoV1',
         image: '/parquevivo.png',
         ti: 'HTML',
+        rank: 3,
       },
       10: {
         title: 'Home do Instagram',
@@ -83,6 +91,16 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/Recriando-Home-Instagram/',
         image: '/recriando_home_instagram.png',
         ti: 'HTML',
+        rank: 3,
+      },
+      11: {
+        title: 'Training Record version web',
+        description:
+          'The "Training Record version web" project was meticulously developed using the ReactJS library, offering a fluid and responsive web experience for its users. Its noteworthy to mention that this system was inspired by and based on another project named "MChiodi - Training Record," which was originally developed using React Native technology. This transition and recreation attest to the flexibility and adaptability of React tools, providing consistent solutions for both mobile and web platforms.',
+        link: 'https://matheuschiodi.github.io/Training/',
+        image: '/trainingrecordweb.png',
+        ti: 'ReactJS',
+        rank: 2,
       },
     },
 
@@ -94,6 +112,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido',
         image: '/futurogarantido.png',
         ti: 'React Native',
+        rank: 1,
       },
       2: {
         title: 'Diversão em Dupla: Jogos para Dois',
@@ -102,6 +121,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
         image: '/dualgame.png',
         ti: 'React Native',
+        rank: 1,
       },
       3: {
         title: 'Pomodoro Prime Timer',
@@ -110,6 +130,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
         image: '/pomodoro_prime_timer.png',
         ti: 'React Native',
+        rank: 1,
       },
       4: {
         title: 'MChiodi - Training Record',
@@ -118,6 +139,7 @@ const Projects = ({ language }) => {
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.TrainingRecord',
         image: '/trainingrecord.png',
         ti: 'React Native',
+        rank: 1,
       },
       5: {
         title: 'Projeto Windows',
@@ -126,6 +148,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/windows/',
         image: '/windows.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       6: {
         title: 'Projeto Loja',
@@ -134,6 +157,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/Project-Shop/',
         image: '/projectShop.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       7: {
         title: 'Projeto Jogo da Velha',
@@ -142,6 +166,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/tic-tac-toe/',
         image: '/tic_tac_toe.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       8: {
         title: 'NLW Spacetime',
@@ -150,6 +175,7 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/NLW-Spacetime-not-Prisma/',
         image: '/spacetime.png',
         ti: 'ReactJS',
+        rank: 2,
       },
       9: {
         title: 'TCC Parque Vivo',
@@ -158,6 +184,7 @@ const Projects = ({ language }) => {
         link: 'https://github.com/MatheusChiodi/TccParqueVivoV1',
         image: '/parquevivo.png',
         ti: 'HTML',
+        rank: 3,
       },
       10: {
         title: 'Home do Instagram',
@@ -166,6 +193,16 @@ const Projects = ({ language }) => {
         link: 'https://matheuschiodi.github.io/Recriando-Home-Instagram/',
         image: '/recriando_home_instagram.png',
         ti: 'HTML',
+        rank: 3,
+      },
+      11: {
+        title: 'Training Record versão web',
+        description:
+          'O projeto "Training Record versão web" foi meticulosamente desenvolvido usando a biblioteca ReactJS, oferecendo uma experiência web fluida e responsiva para seus usuários. Vale ressaltar que este sistema foi inspirado e baseado em outro projeto chamado "MChiodi - Training Record", que foi originalmente desenvolvido usando a tecnologia React Native. Essa transição e recriação atestam a flexibilidade e adaptabilidade das ferramentas React, fornecendo soluções consistentes para plataformas móveis e web.',
+        link: 'https://matheuschiodi.github.io/Training/',
+        image: '/trainingrecordweb.png',
+        ti: 'ReactJS',
+        rank: 2,
       },
     },
   };
@@ -218,37 +255,39 @@ const Projects = ({ language }) => {
 
   return (
     <>
-      <div className="w-full mt-10">
-        {Object.values(translations[language]).map((project) => (
-          <div
-            key={project.id}
-            className="grid grid-cols-1 lg:grid-cols-2 p-5 w-full"
-          >
-            <div>
-              <img
-                src={`${import.meta.env.BASE_URL}${project.image}`}
-                className="border-2 aspect-video object-cover rounded-t-xl lg:rounded-tr-[0px] roudend-s-[0px] lg:rounded-s-xl"
-              />
+      <div className="w-full mt-10 ">
+        {Object.values(translations[language])
+          .sort((a, b) => a.rank - b.rank)
+          .map((project) => (
+            <div
+              key={project.id}
+              className="grid grid-cols-1 lg:grid-cols-2 w-full px-5 py-3"
+            >
+              <div>
+                <img
+                  src={`${import.meta.env.BASE_URL}${project.image}`}
+                  className="border-2 aspect-video object-cover rounded-t-xl lg:rounded-tr-[0px] roudend-s-[0px] lg:rounded-s-xl"
+                />
+              </div>
+              <div className="p-3 border-2 rounded-b-xl lg:rounded-bl-[0px] lg:border-l-0 lg:rounded-e-xl text-[#44475A]">
+                <h1 className="text-center text-xl font-bold mb-2 lg:text-[20px] xl:text-[25px]">
+                  {project.title}
+                </h1>
+                <p className=" leading-relaxed lg:text-[15px] xl:text-[20px] text-justify">
+                  {renderHighlightedText(project.description)}
+                </p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="lg:text-[15px] xl:text-[20px] hover:text-[#FF5555] transition-all duration-300"
+                >
+                  {translations2[language].button}{' '}
+                  <ArrowRight className="inline-block ml-1" size={20} />
+                </a>
+              </div>
             </div>
-            <div className="p-3 border-2 rounded-b-xl lg:rounded-bl-[0px] lg:border-l-0 lg:rounded-e-xl text-[#44475A]">
-              <h1 className="text-center text-xl font-bold mb-2 lg:text-[20px] xl:text-[25px]">
-                {project.title}
-              </h1>
-              <p className=" leading-relaxed lg:text-[15px] xl:text-[20px] text-justify">
-                {renderHighlightedText(project.description)}
-              </p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="lg:text-[15px] xl:text-[20px] hover:text-[#FF5555] transition-all duration-300"
-              >
-                {translations2[language].button}{' '}
-                <ArrowRight className="inline-block ml-1" size={20} />
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
       </div>
     </>
   );
