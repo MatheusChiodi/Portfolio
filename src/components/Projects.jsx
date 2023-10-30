@@ -1,6 +1,19 @@
 import { ArrowRight } from 'lucide-react';
+import { useState } from 'react';
 
 const Projects = ({ language }) => {
+  const [technology, setTechnology] = useState('');
+  const [modalTechnology, setModalTechnology] = useState(false);
+
+  const handleModalTechnology = () => {
+    setModalTechnology(!modalTechnology);
+  };
+
+  const handleTechnology = (technology) => {
+    setTechnology(technology);
+    setModalTechnology(!modalTechnology);
+  };
+
   const translations = {
     en: {
       1: {
@@ -110,7 +123,7 @@ const Projects = ({ language }) => {
         image: '/spotify.png',
         ti: 'ReactJS',
         rank: 2,
-      }
+      },
     },
 
     pt: {
@@ -221,15 +234,19 @@ const Projects = ({ language }) => {
         image: '/spotify.png',
         ti: 'ReactJS',
         rank: 2,
-      }
+      },
     },
   };
 
   const translations2 = {
     en: {
+      title: 'Choose a technology',
+      subtitle: 'All',
       button: 'Access',
     },
     pt: {
+      title: 'Escolha uma tecnologia',
+      subtitle: 'Todas',
       button: 'Acessar',
     },
   };
@@ -274,9 +291,110 @@ const Projects = ({ language }) => {
 
   return (
     <>
-      <div className="w-full mt-10 ">
+      {modalTechnology ? (
+        <div className="flex justify-center items-center fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity ease-out duration-300 z-50 overflow-y-auto">
+          <div className="relative bg-[#44475A] rounded-lg mx-auto mt-10 w-[300px] overflow-hidden shadow-xl">
+            <div className="pt-2 pb-3">
+              <div className="flex justify-around items-center border-b pb-1">
+                <p className="text-[#F8F8F2]">
+                  {translations2[language].title}
+                </p>
+                <button
+                  className="text-[#F8F8F2] hover:text-[#FF5555] focus:outline-none focus:text-gray-400"
+                  aria-label="Close"
+                  id="closeContact"
+                  onClick={handleModalTechnology}
+                >
+                  <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M18.2929 5.70711C18.6834 6.09763 18.6834 6.7308 18.2929 7.12132L13.1213 12.2929L18.2929 17.4645C18.6834 17.855 18.6834 18.4882 18.2929 18.8787C17.9024 19.2692 17.2692 19.2692 16.8787 18.8787L12.7071 13.7071L7.53553 18.8787C7.14503 19.2692 6.51184 19.2692 6.12132 18.8787C5.7308 18.4882 5.7308 17.855 6.12132 17.4645L11.2929 12.2929L6.12132 7.12132C5.7308 6.7308 5.7308 6.09763 6.12132 5.70711C6.51184 5.31658 7.14503 5.31658 7.53553 5.70711L12.7071 10.8787L16.8787 6.70711C17.2692 6.31658 17.9024 6.31658 18.2929 6.70711Z" />
+                  </svg>
+                </button>
+              </div>
+              <div className="mt-2">
+                <div className="flex justify-center items-center">
+                  <button
+                    className="inline-block px-2 py-1 leading-none border rounded-xl border-[#FF5555] text-white font-bold bg-[#ea4e4e] hoverBrightness"
+                    onClick={() => handleTechnology('React Native')}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
+                  >
+                    React Native
+                  </button>
+                  <button
+                    className="inline-block px-2 py-1 leading-none border rounded-xl border-[#6272A4] text-white font-bold bg-[#6272A4] ml-2 hoverBrightness"
+                    onClick={() => handleTechnology('ReactJS')}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
+                  >
+                    ReactJS
+                  </button>
+                </div>
+                <div className="flex justify-center items-center mt-2">
+                  <button
+                    className="inline-block px-2 py-1 leading-none border rounded-xl border-[#FFB86C] font-bold bg-[#FFB86C] text-[#282A36] hoverBrightness"
+                    onClick={() => handleTechnology('HTML, Css e JavaScript')}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
+                  >
+                    HTML, Css e JavaScript
+                  </button>
+                </div>
+                <div className="flex justify-center items-center mt-2">
+                  <button
+                    className="inline-block px-2 py-1 leading-none border rounded-xl border-[#BD93F9] font-bold bg-[#BD93F9] text-[#282A36] hoverBrightness"
+                    onClick={() => handleTechnology('')}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
+                  >
+                    {translations2[language].subtitle}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
+      <div className="w-full mt-9">
+        <div
+          className="fixed bottom-2 left-2 h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white text-[13px] cursor-pointer transition-all duration-500"
+          style={{
+            boxShadow:
+              '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+          }}
+          onClick={handleModalTechnology}
+        >
+          <h1 className="text-[#F8F8F2]">
+            {technology === '' ? (
+              <span>{translations2[language].title}</span>
+            ) : (
+              <span>{technology}</span>
+            )}
+          </h1>
+        </div>
         {Object.values(translations[language])
           .sort((a, b) => a.rank - b.rank)
+          .filter((project) => {
+            if (technology === '') {
+              return project;
+            } else if (technology === 'HTML, Css e JavaScript') {
+              return project.ti === 'HTML';
+            } else if (technology === 'React Native') {
+              return project.ti === 'React Native';
+            } else if (technology === 'ReactJS') {
+              return project.ti === 'ReactJS';
+            } else {
+              return project.ti === technology;
+            }
+          })
+
           .map((project) => (
             <div
               key={project.id}

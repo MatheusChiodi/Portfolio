@@ -328,3 +328,9 @@ h1 {
   transition: background-color 0.5s ease;
   duration: 0.5s;
 }
+
+.hoverBrightness:hover{
+  filter: brightness(0.8);
+  transition: filter 0.5s ease;
+  duration: 0.5s;
+}

@@ -89,7 +89,7 @@ const Header = ({ onLanguage,onHandleClick }) => {
               <div className="flex justify-center items-center pt-1 p-0 m-0 w-5/12">
                 <label
                   htmlFor="toggleContactModal"
-                  className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white text-[13px] cursor-pointer transition-all"
+                  className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white text-[13px] cursor-pointer transition-all duration-500"
                   style={{
                     boxShadow:
                       '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
@@ -162,7 +162,7 @@ const Header = ({ onLanguage,onHandleClick }) => {
               </div>
               <div className="md:w-[60%] md-[100%] text-center md:text-right hidden md:flex justify-end items-center">
                 <button
-                  className="mx-2 inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all"
+                  className="mx-2 inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all duration-500"
                   style={{
                     boxShadow:
                       '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
@@ -205,7 +205,7 @@ const Header = ({ onLanguage,onHandleClick }) => {
                 </div>
                 <label
                   htmlFor="toggleContactModal"
-                  className="inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all"
+                  className="inline-block px-4 lg:px-5 py-1 lg:py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white md:text-[13px] lg:text-[18px] xl:text-[20px] cursor-pointer transition-all duration-500"
                   style={{
                     boxShadow:
                       '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
