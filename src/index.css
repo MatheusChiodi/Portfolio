@@ -313,7 +313,7 @@ h1 {
 
 .buttonScroll {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
   background-color: #44475a;
   padding: 5px 5px;

@@ -364,7 +364,7 @@ const Projects = ({ language }) => {
       ) : null}
       <div className="w-full mt-9">
         <div
-          className="fixed bottom-2 left-2 h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white text-[13px] cursor-pointer transition-all duration-500"
+          className="fixed bottom-[11px] left-[20px] h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] bg-[#44475A] hover:bg-[#FF5555] hover:border-[#FF5555] text-white text-[13px] cursor-pointer transition-all duration-500"
           style={{
             boxShadow:
               '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
