@@ -38,7 +38,7 @@ const Contact = ({ setIsOpenContact }) => {
                       <AtSign className="e-mail text-[25px]"></AtSign>
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/matheus-chiodi-b484581aa"
+                      href="https://www.linkedin.com/in/matheus-chiodi/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="card2 hover:text-[#F8F8F2]"

@@ -40,7 +40,7 @@ const Footer = ({language, onHandleClick}) => {
           </h2>
           <div className="text-[1.5rem] flex justify-center items-center">
             <a
-              href="https://www.linkedin.com/in/matheus-chiodi-b484581aa"
+              href="https://www.linkedin.com/in/matheus-chiodi/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#FF5555]"
