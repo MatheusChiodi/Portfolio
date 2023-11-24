@@ -98,15 +98,6 @@ const Projects = ({ language }) => {
         rank: 3,
       },
       10: {
-        title: 'Home do Instagram',
-        description:
-          'Welcome to the Home of Instagram! This project was meticulously crafted with the aim of rekindling the spark of past content while igniting new inspiration. Utilizing HTML and CSS, I’ve constructed an engaging platform right here on the Instagram homepage. This space is not only nostalgic but also educational, offering you a unique experience meticulously designed and brought to life by me.',
-        link: 'https://matheuschiodi.github.io/Recriando-Home-Instagram/',
-        image: '/recriando_home_instagram.png',
-        ti: 'HTML',
-        rank: 3,
-      },
-      11: {
         title: 'Training Record version web',
         description:
           'The "Training Record version web" project was meticulously developed using the ReactJS library, offering a fluid and responsive web experience for its users. Its noteworthy to mention that this system was inspired by and based on another project named "MChiodi - Training Record," which was originally developed using React Native technology. This transition and recreation attest to the flexibility and adaptability of React tools, providing consistent solutions for both mobile and web platforms.',
@@ -115,7 +106,7 @@ const Projects = ({ language }) => {
         ti: 'ReactJS',
         rank: 2,
       },
-      12: {
+      11: {
         title: 'New Spotify beta',
         description:
           'This project was developed using ReactJS and TailwindCSS, offering a fluid and responsive web experience for its users. It was inspired by the Spotify platform, and it provides a rich user experience for music lovers. Serving as both an enjoyable tool for entertainment and a valuable resource for ReactJS study.',
@@ -209,15 +200,6 @@ const Projects = ({ language }) => {
         rank: 3,
       },
       10: {
-        title: 'Home do Instagram',
-        description:
-          'Bem-vindo à Home do Instagram! Este projeto foi meticulosamente criado com o objetivo de reacender a chama de conteúdos passados enquanto inspira novas ideias. Utilizando HTML e CSS, construí uma plataforma cativante diretamente na homepage do Instagram. Este espaço não é apenas nostálgico, mas também educativo, oferecendo uma experiência única meticulosamente projetada e trazida à vida por mim.',
-        link: 'https://matheuschiodi.github.io/Recriando-Home-Instagram/',
-        image: '/recriando_home_instagram.png',
-        ti: 'HTML',
-        rank: 3,
-      },
-      11: {
         title: 'Training Record versão web',
         description:
           'O projeto "Training Record versão web" foi meticulosamente desenvolvido usando a biblioteca ReactJS, oferecendo uma experiência web fluida e responsiva para seus usuários. Vale ressaltar que este sistema foi inspirado e baseado em outro projeto chamado "MChiodi - Training Record", que foi originalmente desenvolvido usando a tecnologia React Native. Essa transição e recriação atestam a flexibilidade e adaptabilidade das ferramentas React, fornecendo soluções consistentes para plataformas móveis e web.',
@@ -226,7 +208,7 @@ const Projects = ({ language }) => {
         ti: 'ReactJS',
         rank: 2,
       },
-      12: {
+      11: {
         title: 'Novo Spotify beta',
         description:
           'Este projeto foi desenvolvido usando ReactJS e TailwindCSS, oferecendo uma experiência web fluida e responsiva para seus usuários. Ele foi inspirado na plataforma Spotify e oferece uma rica experiência para os amantes da música. Servindo como uma ferramenta divertida para entretenimento e um recurso valioso para o estudo do ReactJS.',
