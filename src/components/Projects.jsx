@@ -202,7 +202,7 @@ const Projects = ({ language }) => {
       10: {
         title: 'Training Record versão web',
         description:
-          'O projeto "Training Record versão web" foi meticulosamente desenvolvido usando a biblioteca ReactJS, oferecendo uma experiência web fluida e responsiva para seus usuários. Vale ressaltar que este sistema foi inspirado e baseado em outro projeto chamado "MChiodi - Training Record", que foi originalmente desenvolvido usando a tecnologia React Native. Essa transição e recriação atestam a flexibilidade e adaptabilidade das ferramentas React, fornecendo soluções consistentes para plataformas móveis e web.',
+          'O projeto "Training Record versão web" foi meticulosamente desenvolvido usando a biblioteca ReactJS, oferecendo uma experiência web fluida e responsiva para seus usuários. Vale ressaltar que este sistema foi inspirado e baseado em outro projeto chamado "MChiodi - Training Record", que foi originalmente desenvolvido usando a tecnologia React Native.',
         link: 'https://matheuschiodi.github.io/Training/',
         image: '/trainingrecordweb.png',
         ti: 'ReactJS',
