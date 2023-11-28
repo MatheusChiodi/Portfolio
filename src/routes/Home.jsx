@@ -46,7 +46,7 @@ const Home = () => {
         {!isExpanded ? (
           <button
             onClick={() => setIsExpanded(true)}
-            className="flex items-center w-[140px] text-center font-bold text-[#44475A] hover:text-[#FF5555] transition-colors mx-auto"
+            className="flex items-center text-center font-bold text-[#44475A] hover:text-[#FF5555] transition-colors mx-auto"
           >
             {translations[language].click}
             <Plus className="inline-block ml-1" size={20} />

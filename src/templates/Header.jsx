@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Contact from './Contact';
 
-const Header = ({ onLanguage,onHandleClick }) => {
+const Header = ({ onLanguage, onHandleClick }) => {
   var status = false;
 
   if (window.innerWidth > 992) {
@@ -62,7 +62,7 @@ const Header = ({ onLanguage,onHandleClick }) => {
                     checked={isOpen}
                     onChange={toggleMenu}
                   />
-                  <svg viewBox="0 0 32 32">
+                  <svg viewBox="0 0 32 32" className="absolute left-[15%]">
                     <path
                       className={
                         isOpen
