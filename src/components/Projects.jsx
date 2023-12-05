@@ -117,12 +117,21 @@ const Projects = ({ language }) => {
       },
       12: {
         title: 'Card Manager',
-        description:'Card Manager is an innovative app designed for efficient personal finance management, now entirely offline. It offers instant tracking of spending, easy management of credit and debit cards, and smart statistical analysis for financial decision-making. Ensuring data security, the app operates 100% offline. Available on the PlayStore, Card Manager is developed using React Native.',
-        link:'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
+        description:
+          'Card Manager is an innovative app designed for efficient personal finance management, now entirely offline. It offers instant tracking of spending, easy management of credit and debit cards, and smart statistical analysis for financial decision-making. Ensuring data security, the app operates 100% offline. Available on the PlayStore, Card Manager is developed using React Native.',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
         image: '/cardmanager.png',
         ti: 'React Native',
         rank: 1,
-      } 
+      },
+      13: {
+        title: 'Help link',
+        description:'"Help Link" is an innovative resource designed to support beginner programmers. This project brings together a carefully curated collection of links, chosen through artificial intelligence, to provide an effective and intuitive learning path in the world of programming.',
+        link: 'https://matheuschiodi.github.io/HelpLinks/',
+        image: '/helplink.png',
+        ti: 'ReactJS',
+        rank: 2,
+      },
     },
 
     pt: {
@@ -227,12 +236,21 @@ const Projects = ({ language }) => {
       },
       12: {
         title: 'Gerenciador de cartões',
-        description:'Gerenciador de cartões é um aplicativo inovador projetado para gerenciamento eficiente de finanças pessoais, agora totalmente offline. Ele oferece rastreamento instantâneo de gastos, gerenciamento fácil de cartões de crédito e débito e análise estatística inteligente para tomada de decisões financeiras. Garantindo a segurança dos dados, o aplicativo opera 100% offline. Disponível no PlayStore, Card Manager é desenvolvido usando React Native.',
-        link:'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
+        description:
+          'Gerenciador de cartões é um aplicativo inovador projetado para gerenciamento eficiente de finanças pessoais, agora totalmente offline. Ele oferece rastreamento instantâneo de gastos, gerenciamento fácil de cartões de crédito e débito e análise estatística inteligente para tomada de decisões financeiras. Garantindo a segurança dos dados, o aplicativo opera 100% offline. Disponível no PlayStore, Card Manager é desenvolvido usando React Native.',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
         image: '/cardmanager.png',
         ti: 'React Native',
         rank: 1,
-      }
+      },
+      13: {
+        title: 'Ajuda com link',
+        description:'"Ajuda com Link" é um recurso inovador desenhado para apoiar programadores iniciantes. Este projeto reúne uma coleção cuidadosamente curada de links, escolhidos através de inteligência artificial, para fornecer um caminho de aprendizado eficaz e intuitivo no mundo da programação',
+        link: 'https://matheuschiodi.github.io/HelpLinks/',
+        image: '/helplink.png',
+        ti: 'ReactJS',
+        rank: 2,
+      },
     },
   };
 

@@ -42,7 +42,6 @@ const Home = () => {
         </>
       ) : null}
       <div className="flex mb-1 p-0">
-        {/* Conteúdo do componente Projects */}
         {!isExpanded ? (
           <button
             onClick={() => setIsExpanded(true)}
@@ -53,8 +52,6 @@ const Home = () => {
           </button>
         ) : null}
       </div>
-
-      {/* Conteúdo do componente Projects */}
       {isExpanded ? <Projects language={language} /> : null}
       <ScrollToTopButton />
       <Footer language={language} onHandleClick={handleVerMaisClick} />
