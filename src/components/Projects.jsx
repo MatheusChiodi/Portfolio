@@ -37,7 +37,7 @@ const Projects = ({ language }) => {
       3: {
         title: 'Pomodoro Prime Timer',
         description:
-          'The Pomodoro Prime Timer project was created with the intention of helping people learn and improve their productivity. It is a simple and intuitive application that allows users to set a timer for their tasks, helping them to focus and manage their time more efficiently. The project was developed using React Native, and it is available for download on the Google Play Store.',
+          'The Pomodoro Prime Timer project was created with the intention of helping people learn and improve their productivity. It is a simple and intuitive application that allows users to set a timer for their tasks, helping them to focus and manage their time more efficiently. The project was developed using React Native and it is available for download on the Google Play Store.',
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
         image: '/pomodoro_prime_timer.png',
         ti: 'React Native',
@@ -73,7 +73,7 @@ const Projects = ({ language }) => {
       7: {
         title: 'Project Tic Tac Toe',
         description:
-          'The Tic Tac Toe (Noughts and Crosses) project, developed using ReactJS, provides an engaging and interactive gaming experience for both study and entertainment purposes. Users can enjoy exciting matches with friends or online players through a user-friendly website. It features player name customization, a scoring system, and a sleek interface, serving as both an enjoyable tool for entertainment and a valuable resource for ReactJS study.',
+          'The Tic Tac Toe (Noughts and Crosses) project, developed using ReactJS, provides an engaging and interactive gaming experience for both study and entertainment purposes. Users can enjoy exciting matches with friends or online players through a user-friendly website. It features player name customization, a scoring system and a sleek interface, serving as both an enjoyable tool for entertainment and a valuable resource for ReactJS study.',
         link: 'https://matheuschiodi.github.io/tic-tac-toe/',
         image: '/tic_tac_toe.png',
         ti: 'ReactJS',
@@ -91,7 +91,7 @@ const Projects = ({ language }) => {
       9: {
         title: 'TCC Parque Vivo',
         description:
-          "Developed for the TIIEM at IFSP - Campus Araraquara, this capstone project supports nonprofit 'Parque Vivo', integrating basic and technical knowledge acquired during the course. Utilizing HTML, CSS, MySQL, PHP, Ajax, and JavaScript, it reflects our learning journey and hands-on skills. It's a practical demonstration of comprehensive understanding and application of these technologies, showcasing seamless integration of theory and practice.",
+          "Developed for the TIIEM at IFSP - Campus Araraquara, this capstone project supports nonprofit 'Parque Vivo', integrating basic and technical knowledge acquired during the course. Utilizing HTML, CSS, MySQL, PHP, Ajax and JavaScript, it reflects our learning journey and hands-on skills. It's a practical demonstration of comprehensive understanding and application of these technologies, showcasing seamless integration of theory and practice.",
         link: 'https://github.com/MatheusChiodi/TccParqueVivoV1',
         image: '/parquevivo.png',
         ti: 'HTML',
@@ -109,7 +109,7 @@ const Projects = ({ language }) => {
       11: {
         title: 'New Spotify beta',
         description:
-          'This project was developed using ReactJS and TailwindCSS, offering a fluid and responsive web experience for its users. It was inspired by the Spotify platform, and it provides a rich user experience for music lovers. Serving as both an enjoyable tool for entertainment and a valuable resource for ReactJS study.',
+          'This project was developed using ReactJS and TailwindCSS, offering a fluid and responsive web experience for its users. It was inspired by the Spotify platform and it provides a rich user experience for music lovers. Serving as both an enjoyable tool for entertainment and a valuable resource for ReactJS study.',
         link: 'https://matheuschiodi.github.io/spotify/',
         image: '/spotify.png',
         ti: 'ReactJS',
@@ -118,7 +118,7 @@ const Projects = ({ language }) => {
       12: {
         title: 'Card Manager',
         description:
-          'Card Manager is an innovative app designed for efficient personal finance management, now entirely offline. It offers instant tracking of spending, easy management of credit and debit cards, and smart statistical analysis for financial decision-making. Ensuring data security, the app operates 100% offline. Available on the PlayStore, Card Manager is developed using React Native.',
+          'Card Manager is an innovative app designed for efficient personal finance management, now entirely offline. It offers instant tracking of spending, easy management of credit and debit cards and smart statistical analysis for financial decision-making. Ensuring data security, the app operates 100% offline. Available on the PlayStore, Card Manager is developed using React Native.',
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
         image: '/cardmanager.png',
         ti: 'React Native',
@@ -126,11 +126,21 @@ const Projects = ({ language }) => {
       },
       13: {
         title: 'Help link',
-        description:'"Help Link" is an innovative resource designed to support beginner programmers. This project brings together a carefully curated collection of links, chosen through artificial intelligence, to provide an effective and intuitive learning path in the world of programming.',
+        description:
+          '"Help Link" is an innovative resource designed to support beginner programmers. This project brings together a carefully curated collection of links, chosen through artificial intelligence, to provide an effective and intuitive learning path in the world of programming.',
         link: 'https://matheuschiodi.github.io/HelpLinks/',
         image: '/helplink.png',
         ti: 'ReactJS',
         rank: 2,
+      },
+      14: {
+        title: 'Portfolio Mobile',
+        description:
+          'This project is the result of the skills and knowledge acquired during the "React Native Developer Training" program. Designed to demonstrate the practical application of React Native in mobile application development, this project covers three main screens: Home, Timeline and Projects.',
+        link: 'https://github.com/MatheusChiodi/App-Portfolio',
+        image: '/portfolioMobile.png',
+        ti: 'React Native',
+        rank: 1,
       },
     },
 
@@ -245,11 +255,21 @@ const Projects = ({ language }) => {
       },
       13: {
         title: 'Ajuda com link',
-        description:'"Ajuda com Link" é um recurso inovador desenhado para apoiar programadores iniciantes. Este projeto reúne uma coleção cuidadosamente curada de links, escolhidos através de inteligência artificial, para fornecer um caminho de aprendizado eficaz e intuitivo no mundo da programação',
+        description:
+          '"Ajuda com Link" é um recurso inovador desenhado para apoiar programadores iniciantes. Este projeto reúne uma coleção cuidadosamente curada de links, escolhidos através de inteligência artificial, para fornecer um caminho de aprendizado eficaz e intuitivo no mundo da programação',
         link: 'https://matheuschiodi.github.io/HelpLinks/',
         image: '/helplink.png',
         ti: 'ReactJS',
         rank: 2,
+      },
+      14: {
+        title: 'Portfolio Mobile',
+        description:
+          'Este projeto é o resultado das habilidades e conhecimentos adquiridos durante o programa "Formação React Native Developer". Projetado para demonstrar a aplicação prática do React Native no desenvolvimento de aplicações móveis, este projeto abrange três telas principais: Home, Timeline e Projects.',
+        link: 'https://github.com/MatheusChiodi/App-Portfolio',
+        image: '/portfolioMobile.png',
+        ti: 'React Native',
+        rank: 1,
       },
     },
   };
@@ -277,6 +297,7 @@ const Projects = ({ language }) => {
       'ReactJS',
       'ReactJS.',
       'React',
+      '"React',
       'Native,',
       'Native.',
       'Native',
