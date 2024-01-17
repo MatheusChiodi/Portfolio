@@ -142,6 +142,15 @@ const Projects = ({ language }) => {
         ti: 'React Native',
         rank: 1,
       },
+      15: {
+        title: 'Bibliotrack',
+        description:
+          'Your reading app in React Native. Manage your personal library, add books, save inspiring quotes, set goals and track your reading progress, all in one place. Your reader life, simplified.',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Bibliotrack&hl=pt_BR&',
+        image: '/bibliotrack.png',
+        ti: 'React Native',
+        rank: 1,
+      },
     },
 
     pt: {
@@ -173,7 +182,7 @@ const Projects = ({ language }) => {
         rank: 1,
       },
       4: {
-        title: 'MChiodi - Training Record',
+        title: 'MChiodi - Registro de treinamento',
         description:
           'O projeto "MChiodi - Training Record" é uma ferramenta projetada para auxiliar atletas. Desenvolvido usando React Native, este aplicativo intuitivo e simples facilita o gerenciamento eficiente do tempo para os usuários, ajudando-os em seus treinos. Disponível para download no Google Play Store, "MChiodi - Training Record" é um testemunho do auxílio proativo no dia a dia dos atletas.',
         link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.TrainingRecord',
@@ -227,9 +236,9 @@ const Projects = ({ language }) => {
         rank: 3,
       },
       10: {
-        title: 'Training Record versão web',
+        title: 'Registro de treinamento versão web',
         description:
-          'O projeto "Training Record versão web" foi meticulosamente desenvolvido usando a biblioteca ReactJS, oferecendo uma experiência web fluida e responsiva para seus usuários. Vale ressaltar que este sistema foi inspirado e baseado em outro projeto chamado "MChiodi - Training Record", que foi originalmente desenvolvido usando a tecnologia React Native.',
+          'O projeto "Registro de treinamento versão web" foi meticulosamente desenvolvido usando a biblioteca ReactJS, oferecendo uma experiência web fluida e responsiva para seus usuários. Vale ressaltar que este sistema foi inspirado e baseado em outro projeto chamado "MChiodi - Training Record", que foi originalmente desenvolvido usando a tecnologia React Native.',
         link: 'https://matheuschiodi.github.io/Training/',
         image: '/trainingrecordweb.png',
         ti: 'ReactJS',
@@ -268,6 +277,15 @@ const Projects = ({ language }) => {
           'Este projeto é o resultado das habilidades e conhecimentos adquiridos durante o programa "Formação React Native Developer". Projetado para demonstrar a aplicação prática do React Native no desenvolvimento de aplicações móveis, este projeto abrange três telas principais: Home, Timeline e Projects.',
         link: 'https://github.com/MatheusChiodi/App-Portfolio',
         image: '/portfolioMobile.png',
+        ti: 'React Native',
+        rank: 1,
+      },
+      15: {
+        title: 'Bibliotrack',
+        description:
+          'Conheça o Bibliotrack: Seu aplicativo de leitura desenvolvido em React Native. Com ele, você pode gerenciar sua biblioteca pessoal com facilidade, adicionar novos livros, salvar citações inspiradoras, estabelecer metas de leitura e acompanhar seu progresso, tudo em um único lugar. Simplifique e aprimore sua experiência como leitor com o Bibliotrack.',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Bibliotrack&hl=pt_BR&',
+        image: '/bibliotrack.png',
         ti: 'React Native',
         rank: 1,
       },

@@ -1,13 +1,10 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, ChevronDown } from 'lucide-react';
-import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
-export default function ContainerProjects({language}) {
-
+export default function ContainerProjects({ language }) {
   const translations2 = {
     en: {
       title: 'My Projects',
-      
     },
     pt: {
       title: 'Projetos',
@@ -34,16 +31,17 @@ export default function ContainerProjects({language}) {
       3: {
         title: 'Card Manager',
         description: 'Smart Financial Management',
-        subdescription: 'Experience financial freedom, developed in React Native',
-        link:'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
+        subdescription:
+          'Experience financial freedom, developed in React Native',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
         image: '/cardmanager.png',
       },
       4: {
-        title: 'Pomodoro Prime Timer',
-        description: 'Project created with the intention of helping learning',
-        subdescription: 'First app in React Native App',
-        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
-        image: './pomodoro_prime_timer.png',
+        title: 'Bibliotrack',
+        description: 'Application to manage books',
+        subdescription: 'Developed in React Native',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Bibliotrack',
+        image: '/bibliotrack.png',
       },
     },
     pt: {
@@ -65,16 +63,17 @@ export default function ContainerProjects({language}) {
       3: {
         title: 'Card Manager',
         description: 'Gestão financeira inteligente',
-        subdescription: 'Experimente a liberdade financeira, desenvolvido em React Native',
-        link:'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
+        subdescription:
+          'Experimente a liberdade financeira, desenvolvido em React Native',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
         image: '/cardmanager.png',
       },
       4: {
-        title: 'Pomodoro Prime Timer',
-        description: 'Projeto criado com a intenção de ajudar no aprendizado',
-        subdescription: 'Primeiro app em React Native',
-        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer',
-        image: './pomodoro_prime_timer.png',
+        title: 'Bibliotrack',
+        description: 'Aplicativo para gerenciar livros',
+        subdescription: 'Desenvolvido em React Native',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Bibliotrack',
+        image: '/bibliotrack.png',
       },
     },
   };
@@ -96,7 +95,7 @@ export default function ContainerProjects({language}) {
             }}
           >
             <h1 className="lg:text-[50px] text-[30px] font-semibold w-full text-center">
-            {translations2[language].title}
+              {translations2[language].title}
             </h1>
           </div>
           <div className="lineMyProjects">
