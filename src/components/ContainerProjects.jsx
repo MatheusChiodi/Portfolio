@@ -1,13 +1,10 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, ChevronDown } from 'lucide-react';
-import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
-export default function ContainerProjects({language}) {
-
+export default function ContainerProjects({ language }) {
   const translations2 = {
     en: {
       title: 'My Projects',
-      
     },
     pt: {
       title: 'Projetos',
@@ -98,7 +95,7 @@ export default function ContainerProjects({language}) {
             }}
           >
             <h1 className="lg:text-[50px] text-[30px] font-semibold w-full text-center">
-            {translations2[language].title}
+              {translations2[language].title}
             </h1>
           </div>
           <div className="lineMyProjects">
