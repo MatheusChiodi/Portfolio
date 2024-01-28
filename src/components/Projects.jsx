@@ -155,7 +155,7 @@ const Projects = ({ language }) => {
         title: 'InstantQrCode',
         description:
           'Basically, InstantQrCode is a QRCode reader made in React Native. It was developed to be simple and intuitive, aiming to facilitate QRCode reading, link sharing and reading history viewing.',
-        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.InstantQrCode',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.InstantQRCode',
         image: '/instantqrcode.png',
         ti: 'React Native',
         rank: 1,
@@ -302,7 +302,7 @@ const Projects = ({ language }) => {
         title: 'InstantQrCode',
         description:
           'Basicamente, InstantQrCode é um leitor de QRCode feito em React Native. Ele foi desenvolvido para ser simples e intuitivo, visando facilitar a leitura de QRCode, compartilhamento de links e visualização do histórico de leitura.',
-        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.InstantQrCode',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.InstantQRCode',
         image: '/instantqrcode.png',
         ti: 'React Native',
         rank: 1,
