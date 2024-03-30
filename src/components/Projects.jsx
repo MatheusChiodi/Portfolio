@@ -151,7 +151,15 @@ const Projects = ({ language }) => {
         ti: 'React Native',
         rank: 1,
       },
-      
+      16: {
+        title: 'FitForge',
+        description:
+          'FitForge is a fitness app developed in React Native. It allows you to log your daily workouts with ease, track your water intake, use an integrated timer for high-intensity intervals or rest time between sets, view your workout history to track your progress, export your workout data for analysis or sharing, and create custom workout routines. Set which muscles will be trained each day and let the app guide you through each workout.',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FitForge',
+        image: '/fitforge.png',
+        ti: 'React Native',
+        rank: 1,
+      },
     },
 
     pt: {
@@ -290,7 +298,15 @@ const Projects = ({ language }) => {
         ti: 'React Native',
         rank: 1,
       },
-      
+      16: {
+        title: 'FitForge',
+        description:
+          'FitForge é um aplicativo de fitness desenvolvido em React Native. Ele permite que você registre seus treinos diários com facilidade, acompanhe sua ingestão de água, use um timer integrado para intervalos de alta intensidade ou tempo de descanso entre as séries, visualize seu histórico de treinos para acompanhar seu progresso, exporte seus dados de treino para análise ou compartilhamento e crie rotinas de treino personalizadas. Defina quais músculos serão treinados a cada dia e deixe o aplicativo guiá-lo durante cada treino.',
+        link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FitForge',
+        image: '/fitforge.png',
+        ti: 'React Native',
+        rank: 1,
+      },
     },
   };
 
@@ -464,7 +480,7 @@ const Projects = ({ language }) => {
                 />
               </div>
               <div className="p-3 border-2 rounded-b-xl lg:rounded-bl-[0px] lg:border-l-0 lg:rounded-e-xl text-[#44475A]">
-                <h1 className="text-center text-xl font-bold mb-2 lg:text-[20px] xl:text-[25px]">
+                <h1 className="text-center text-xl font-bold mb-1 lg:text-[20px] xl:text-[25px]">
                   {project.title}
                 </h1>
                 <p className=" leading-relaxed lg:text-[15px] xl:text-[20px] text-justify">
