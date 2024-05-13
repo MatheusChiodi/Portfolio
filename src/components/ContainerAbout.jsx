@@ -12,15 +12,12 @@ export default function About({language}) {
       name: 'Matheus Chiodi',
       description1:
         'I am a professional programmer',
-      description2:
-        'with more than 2 years of experience',
     },
     pt: {
       title: 'Meu nome é',
       name: 'Matheus Chiodi',
       description1:
         'Sou programador profissional',
-      description2: 'com mais de 2 anos de experiência',
     },
   };
 
@@ -51,7 +48,6 @@ export default function About({language}) {
           >
             {translations[language].description1}{' '}
             <span className="text-[#FF5555] font-bold">Fullstack</span>{' '}
-            {translations[language].description2}
           </motion.p>
 
           <motion.div initial="hidden" animate="visible" variants={fadeIn}>
