@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function About({language}) {
+export default function About({ language }) {
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -10,14 +10,12 @@ export default function About({language}) {
     en: {
       title: 'My Name is',
       name: 'Matheus Chiodi',
-      description1:
-        'I am a professional programmer',
+      description1: 'I am a professional programmer',
     },
     pt: {
       title: 'Meu nome é',
       name: 'Matheus Chiodi',
-      description1:
-        'Sou programador profissional',
+      description1: 'Sou programador profissional',
     },
   };
 
@@ -30,11 +28,11 @@ export default function About({language}) {
         id="ContainerAbout"
       >
         <div className="m-0 p-0">
-          <h1 className="md:text-[45px] lg:text-[40px] xl:text-[60px] text-[30px] text-center md:text-left">
+          <h1 className="md:text-[40px] lg:text-[40px] xl:text-[60px] text-[30px] text-center md:text-left">
             {translations[language].title}
           </h1>
 
-          <h1 className="md:text-[45px] lg:text-[45px] text-[30px] text-center md:text-left font-medium text-[#44475a]">
+          <h1 className="md:text-[45px] lg:text-[40px] text-[30px] text-center md:text-left font-medium text-[#44475a]">
             <span className="text-[#FF5555] font-medium">&lt;</span>
             {translations[language].name}
             <span className="text-[#FF5555] font-medium"> /</span>
@@ -53,7 +51,7 @@ export default function About({language}) {
           <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <p className="lg:mt-[50px] mt-[30px] text-center md:text-left md:text-[20px] lg:text-[25px] xl:text-[30px] text-[15px]">
               <motion.a
-                className="inline-block px-7 py-2 leading-none border rounded-xl border-[#FF5555] text-white font-bold bg-[#FF5555]"
+                className="inline-block px-5 py-2 leading-none border rounded-xl border-[#FF5555] text-white font-bold bg-[#FF5555]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.2 } }}
                 style={{
@@ -64,7 +62,7 @@ export default function About({language}) {
                 React Native
               </motion.a>
               <motion.a
-                className="mt-2 lg:mt-0 mx-3 inline-block px-7 py-2 leading-none border rounded-xl border-[#6272A4] text-white font-bold bg-[#6272A4]"
+                className="mt-2 lg:mt-0 mx-3 inline-block px-5 py-2 leading-none border rounded-xl border-[#6272A4] text-white font-bold bg-[#6272A4]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 0.4 } }}
                 style={{
@@ -102,7 +100,7 @@ export default function About({language}) {
                 Php
               </motion.a>
               <motion.a
-                className="lg:mt-3 mt-2 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#282A36] font-bold bg-[#282A36]"
+                className="me-3 lg:mt-3 mt-2 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#282A36] font-bold bg-[#282A36]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 1 } }}
                 style={{
@@ -112,6 +110,7 @@ export default function About({language}) {
               >
                 SQL
               </motion.a>
+              
             </p>
           </motion.div>
         </div>
