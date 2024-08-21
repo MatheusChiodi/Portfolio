@@ -110,6 +110,17 @@ export default function About({ language }) {
               >
                 SQL
               </motion.a>
+              <motion.a
+                className="me-3 lg:mt-3 mt-2 inline-block px-7 py-2 leading-none border rounded-xl text-white  border-[#339933] font-bold bg-[#339933]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { delay: 1.2 } }}
+                style={{
+                  boxShadow:
+                    '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                }}
+              >
+                NodeJS
+              </motion.a>
               
             </p>
           </motion.div>

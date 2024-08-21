@@ -160,6 +160,15 @@ const Projects = ({ language }) => {
         ti: 'React Native',
         rank: 1,
       },
+      17: {
+        title: 'QR Code Generator for E-commerce',
+        description:
+          'This system, developed with Node.js, allows users to create QR Codes for URLs, texts, images and other data with ease, offering various customization options such as size, color and format.',
+        link: 'https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces',
+        image: '/geradorQrcodeNodeJs.png',
+        ti: 'NodeJS',
+        rank: 2,
+      },
     },
 
     pt: {
@@ -307,6 +316,15 @@ const Projects = ({ language }) => {
         ti: 'React Native',
         rank: 1,
       },
+      17: {
+        title: 'Gerador de QR Codes para E commerces',
+        description:
+          'Este sistema, desenvolvido com Node.js, permite aos usuários criar QR Codes para URLs, textos, imagens e outros dados com facilidade, oferecendo diversas opções para personalização, como tamanho, cor e formato.',
+        link: 'https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces',
+        image: '/geradorQrcodeNodeJs.png',
+        ti: 'NodeJS',
+        rank: 2,
+      },
     },
   };
 
@@ -350,6 +368,7 @@ const Projects = ({ language }) => {
       'Store,',
       'Store.',
       'TailwindCSS,',
+      'Node.js,',
     ];
 
     const tokens = text.split(/(\s+)/).map((word) => {
@@ -419,6 +438,16 @@ const Projects = ({ language }) => {
                   </button>
                 </div>
                 <div className="flex justify-center items-center mt-2">
+                  <button
+                    className="inline-block px-2 py-1 leading-none border rounded-xl border-[#339933] font-bold bg-[#339933] text-[#282A36] hoverBrightness me-2"
+                    onClick={() => handleTechnology('NodeJS')}
+                    style={{
+                      boxShadow:
+                        '0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }}
+                  >
+                    NodeJS
+                  </button>
                   <button
                     className="inline-block px-2 py-1 leading-none border rounded-xl border-[#BD93F9] font-bold bg-[#BD93F9] text-[#282A36] hoverBrightness"
                     onClick={() => handleTechnology('')}
