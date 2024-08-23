@@ -9,10 +9,10 @@ const buttonStyles = {
 function TechButton({ name, color, delay }) {
   return (
     <motion.a
-      className={`${buttonStyles.base} border-[${color}] bg-[${color}] me-3 mb-3`}
+      className={`${buttonStyles.base} me-3 mb-3`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay } }}
-      style={buttonStyles}
+      style={{ backgroundColor: color, borderColor: color }}
     >
       {name}
     </motion.a>
