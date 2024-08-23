@@ -25,12 +25,12 @@ const ProjectCard = ({ project, language }) => {
   };
 
   return (
-    <div className="relative flex flex-col lg:flex-row items-center gap-8 p-6 bg-[#f8f8f2] rounded-xl duration-300 mt-4 border-[5px] border-dashed border-[#44475A]">
+    <div className="z-[-1] flex flex-col lg:flex-row items-center gap-8 p-6 bg-[#f8f8f2] rounded-xl duration-300 mt-4 border-[5px] border-dashed border-[#44475A]">
       <div className="w-full lg:w-1/3">
         <img
           src={`${import.meta.env.BASE_URL}${project.image}`}
           alt={`${project.title} screenshot`}
-          className="rounded-lg object-cover w-full h-64 lg:h-auto transition-transform transform hover:scale-105"
+          className="rounded-lg object-cover w-full h-64 lg:h-auto"
         />
       </div>
       <div className="flex flex-col justify-between text-center lg:text-left w-full lg:w-2/3 text-[#282a36] ">
