@@ -5,7 +5,7 @@ const ModalTech = ({
   selectTechnology,
 }) => {
   return (
-    <div className="flex justify-center items-center fixed inset-0 bg-gray-900 bg-opacity-75 z-50 overflow-y-auto transition-opacity ease-out duration-300">
+    <div className="flex justify-center items-center fixed inset-0 bg-gray-900 bg-opacity-75 z-50 overflow-y-auto transition-opacity ease-out duration-300 ">
       <div className="relative bg-[#44475A] rounded-lg mx-auto mt-10 w-[300px] overflow-hidden shadow-xl">
         <div className="pt-2 pb-3">
           <div className="flex justify-between items-center border-b pb-1">

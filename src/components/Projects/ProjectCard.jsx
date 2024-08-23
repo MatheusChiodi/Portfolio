@@ -58,7 +58,7 @@ const ProjectCard = ({ project, language }) => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center self-center lg:self-start text-white bg-gradient-to-r from-[#ff5555] to-[#ff6e6e] hover:from-[#ff6e6e] hover:to-[#ff5555] rounded-lg px-6 py-1 font-medium shadow-md transition-transform transform hover:scale-105"
+          className="inline-flex items-center self-center lg:self-start text-white bg-gradient-to-r from-[#ff5555] to-[#ff6e6e] hover:from-[#ff6e6e] hover:to-[#ff5555] rounded-lg px-6 py-1 font-medium shadow-md"
         >
           {interfaceTexts[language].button}
           <ArrowRight className="ml-3" size={24} />
