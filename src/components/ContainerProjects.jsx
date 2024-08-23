@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import ProjectsTitle from './Projects/ProjectCard';
-import ProjectCard from './Projects/ProjectCard';
+import ProjectsTitle from './ContainerProjects/ProjectCard';
+import ProjectCard from './ContainerProjects/ProjectCard';
 import { translationsProjects } from '../context/translationsProjects.js';
 
 const ContainerProjects = ({ language }) => {

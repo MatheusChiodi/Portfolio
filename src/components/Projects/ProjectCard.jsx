@@ -1,47 +1,68 @@
-const ProjectCard = ({ project }) => {
-  if (!project) {
-    return null;
-  }
+import { useState, useEffect } from 'react';
+import { ArrowRight } from 'lucide-react';
+import HighlightKeywords from './HighlightKeywords';
+import { interfaceTexts } from '../../context/translationsMyProjects';
+
+const ProjectCard = ({ project, language }) => {
+  const [maxCharacters, setMaxCharacters] = useState(250);
+  const [showDetails, setShowDetails] = useState('hide');
+
+  const truncateText = (text, maxLength) => {
+    if (text.length <= maxLength) {
+      return text;
+    }
+    return text.substring(0, maxLength) + '...';
+  };
+
+  const translationButton = (language, type) => {
+    if (language === 'en') {
+      if (type == 'show') return 'Close Details';
+      else return 'Show Details ';
+    } else {
+      if (type == 'show') return 'Fechar Detalhes';
+      else return 'Ver Detalhes';
+    }
+  };
+
   return (
-    <div
-      key={project.id}
-      className="w-[250px] h-[250px] mb-[20px] lg:mb-[10px] bg-[#44475A] rounded-t-[20px] rounded-b-[20px] card mx-auto"
-      style={{
-        boxShadow:
-          '2px 5px 6px -1px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      }}
-    >
-      <div className="rounded-br-[40px] h-[140px] rounded-t-[20px] imgCard">
+    <div className="relative flex flex-col lg:flex-row items-center gap-8 p-6 bg-[#f8f8f2] rounded-xl duration-300 mt-4 border-[5px] border-dashed border-[#44475A]">
+      <div className="w-full lg:w-1/3">
         <img
-          src={`${import.meta.env.BASE_URL}/${project.image}`}
-          alt={`${project.title} image`}
-          className="w-full rounded-br-[40px] h-[140px] text-[#F8F8F2] rounded-t-[20px]"
+          src={`${import.meta.env.BASE_URL}${project.image}`}
+          alt={`${project.title} screenshot`}
+          className="rounded-lg object-cover w-full h-64 lg:h-auto transition-transform transform hover:scale-105"
         />
       </div>
-      <div className="rounded-br-[40px] h-[140px] lg:text-[#44475A] text-[#F8F8F2] rounded-b-[20px] textCard">
-        <p className="w-full text-center font-medium text-[20px] text-[#FF5555] mt-2">
-          {project.title}
-        </p>
-        <div className="m-0 p-0 text-[16px]">
-          <p className="w-full text-center text-[#F8F8F2]">
-            {project.description}
-          </p>
-          {project.subdescription && (
-            <p className="restTextCard w-full text-center mt-4 text-[#F8F8F2]">
-              {project.subdescription}
-            </p>
-          )}
-          <p className="restTextCard w-full text-center mt-2">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#F8F8F2] hover:text-[#FF5555]"
+      <div className="flex flex-col justify-between text-center lg:text-left w-full lg:w-2/3 text-[#282a36] ">
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">{project.title}</h2>
+          <p className="text-[#282a36] text-lg mb-6 md:leading-relaxed text-justify">
+            {HighlightKeywords(
+              truncateText(project.description, maxCharacters)
+            )}
+
+            <button
+              className="inline-block px-2 py-1 leading-none border rounded-md border-[#FF5555] text-white font-bold bg-[#ea4e4e] hover:brightness-125 text-[14px] ml-2"
+              onClick={() => {
+                setMaxCharacters(maxCharacters === 250 ? 1050 : 250);
+                setShowDetails(showDetails === 'hide' ? 'show' : 'hide');
+              }}
             >
-              <i className="fas fa-eye"></i>
-            </a>
+              {translationButton(language, showDetails)}{' '}
+            </button>
+
+            <br />
           </p>
         </div>
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center self-center lg:self-start text-white bg-gradient-to-r from-[#ff5555] to-[#ff6e6e] hover:from-[#ff6e6e] hover:to-[#ff5555] rounded-lg px-6 py-1 font-medium shadow-md transition-transform transform hover:scale-105"
+        >
+          {interfaceTexts[language].button}
+          <ArrowRight className="ml-3" size={24} />
+        </a>
       </div>
     </div>
   );

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  transition: all 0.5s ease;
+}
+
 body {
   background: #f8f8f2 !important;
   max-width: 2000px !important;
@@ -318,7 +322,7 @@ h1 {
   background-color: #44475a;
   padding: 5px 5px;
   border-radius: 5px;
-  color: #ffffff; 
+  color: #ffffff;
   cursor: pointer;
   font-size: 18px;
 }
@@ -329,7 +333,7 @@ h1 {
   duration: 0.5s;
 }
 
-.hoverBrightness:hover{
+.hoverBrightness:hover {
   filter: brightness(0.8);
   transition: filter 0.5s ease;
   duration: 0.5s;
