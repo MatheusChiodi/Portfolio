@@ -5,13 +5,13 @@ const ModalTech = ({
   selectTechnology,
 }) => {
   return (
-    <div className="flex justify-center items-center fixed inset-0 bg-gray-900 bg-opacity-75 z-50 overflow-y-auto transition-opacity ease-out duration-300 ">
+    <div className="flex justify-center items-center fixed inset-0 bg-gray-900 bg-opacity-75 z-50 overflow-y-auto transition-opacity ease-out duration-300">
       <div className="relative bg-[#44475A] rounded-lg mx-auto mt-10 w-[300px] overflow-hidden shadow-xl">
         <div className="pt-2 pb-3">
-          <div className="flex justify-between items-center border-b pb-1">
+          <div className="flex justify-between items-center border-b pb-1 px-2">
             <p className="text-[#F8F8F2]">{interfaceTexts[language].title}</p>
             <button
-              className="text-[#F8F8F2] hover:text-[#FF5555] focus:outline-none"
+              className="text-[#F8F8F2] hover:text-[#FF5555] transition-colors duration-300"
               onClick={toggleModal}
             >
               <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
@@ -44,7 +44,7 @@ const ModalTech = ({
             </div>
             <div className="flex justify-center items-center mt-2">
               <button
-                className="inline-block px-2 py-1 leading-none border rounded-xl border-[#339933] font-bold bg-[#339933] text-[#282A36] hover:brightness-125"
+                className="inline-block px-2 py-1 me-2 leading-none border rounded-xl border-[#339933] font-bold bg-[#339933] text-[#282A36] hover:brightness-125"
                 onClick={() => selectTechnology('NodeJS')}
               >
                 NodeJS

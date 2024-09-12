@@ -29,7 +29,7 @@ const Footer = ({language, onHandleClick}) => {
     onHandleClick(false);
   };
   return (
-    <div className="justify-center items-center w-full bg-[#44475A] border-t-[3px] border-[#FF5555]">
+    <div className="justify-center items-center w-full bg-[#44475A] border-t-[3px] border-[#FF5555] mt-[10px]">
       <div className="grid md:grid-cols-3 grid-cols-1 w-full mt-[10px] justify-center items-center">
         <div className="justify-center items-center text-center text-[#F8F8F2]">
           <h2 className="font-medium">
