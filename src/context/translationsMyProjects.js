@@ -153,6 +153,15 @@ const translationsMyProjects = {
       ti: 'NodeJS',
       rank: 2,
     },
+    18: {
+      title: 'DailyDone',
+      description:
+        'DailyDone: organize your tasks without internet and simplify your routine. Record commitments, mark achievements, and delete what’s unnecessary, keeping focus on what matters. Access everything in one place, offline and reliably. Take control and boost productivity with DailyDone!',
+      link: 'https://github.com/MatheusChiodi/Aplicativo-DailyDone',
+      image: '/dailydone.png',
+      ti: 'React Native',
+      rank: 1,
+    },
   },
 
   pt: {
@@ -308,6 +317,14 @@ const translationsMyProjects = {
       image: '/geradorQrcodeNodeJs.png',
       ti: 'NodeJS',
       rank: 2,
+    },
+    18: {
+      title: 'DailyDone',
+      description: 'DailyDone: organize suas tarefas sem depender de internet e simplifique sua rotina. Registre compromissos, marque realizações e exclua o desnecessário, mantendo foco no que importa. Acesse tudo em um só lugar, offline e de forma confiável. Ganhe controle e produtividade com o DailyDone!',
+      link: 'https://github.com/MatheusChiodi/Aplicativo-DailyDone',
+      image: '/dailydone.png',
+      ti: 'React Native',
+      rank: 1,
     },
   },
 };
