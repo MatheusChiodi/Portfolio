@@ -147,7 +147,7 @@ const translationsMyProjects = {
     17: {
       title: 'QR Code Generator for E-commerce',
       description:
-        'This system, developed with Node.js, allows users to create QR Codes for URLs, texts, images and other data with ease, offering various customization options such as size, color and format.',
+        'This system, developed with NodeJS, allows users to create QR Codes for URLs, texts, images and other data with ease, offering various customization options such as size, color and format.',
       link: 'https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces',
       image: '/geradorQrcodeNodeJs.png',
       ti: 'NodeJS',
@@ -161,6 +161,14 @@ const translationsMyProjects = {
       image: '/dailydone.png',
       ti: 'React Native',
       rank: 1,
+    },
+    19: {
+      title: 'Podcast Manager',
+      description:'Project developed in NodeJS to organize and manage podcasts. Includes Listing of Episodes, Editing of Episodes, Deletion of Episodes and filtering by name, with scalability and security',
+      link: 'github.com/MatheusChiodi/Gerenciador-de-Podcasts',
+      image: '/gerenciadorPodcasts.png',
+      ti: 'NodeJS',
+      rank: 2,
     },
   },
 
@@ -312,7 +320,7 @@ const translationsMyProjects = {
     17: {
       title: 'Gerador de QR Codes para E commerces',
       description:
-        'Este sistema, desenvolvido com Node.js, permite aos usuários criar QR Codes para URLs, textos, imagens e outros dados com facilidade, oferecendo diversas opções para personalização, como tamanho, cor e formato.',
+        'Este sistema, desenvolvido com NodeJS, permite aos usuários criar QR Codes para URLs, textos, imagens e outros dados com facilidade, oferecendo diversas opções para personalização, como tamanho, cor e formato.',
       link: 'https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces',
       image: '/geradorQrcodeNodeJs.png',
       ti: 'NodeJS',
@@ -320,11 +328,21 @@ const translationsMyProjects = {
     },
     18: {
       title: 'DailyDone',
-      description: 'DailyDone: organize suas tarefas sem depender de internet e simplifique sua rotina. Registre compromissos, marque realizações e exclua o desnecessário, mantendo foco no que importa. Acesse tudo em um só lugar, offline e de forma confiável. Ganhe controle e produtividade com o DailyDone!',
+      description:
+        'DailyDone: organize suas tarefas sem depender de internet e simplifique sua rotina. Registre compromissos, marque realizações e exclua o desnecessário, mantendo foco no que importa. Acesse tudo em um só lugar, offline e de forma confiável. Ganhe controle e produtividade com o DailyDone!',
       link: 'https://github.com/MatheusChiodi/Aplicativo-DailyDone',
       image: '/dailydone.png',
       ti: 'React Native',
       rank: 1,
+    },
+    19: {
+      title: 'Gerenciador de Podcasts',
+      description:
+        ' Projeto desenvolvido em NodeJS para organizar e gerenciar podcasts. Inclui Listagem de Episódios, Edição de Episódios, Exclusão de Episódios e filtro por nome, com escalabilidade e segurança',
+      link: 'https://github.com/MatheusChiodi/Gerenciador-de-Podcasts',
+      image: '/gerenciadorPodcasts.png',
+      ti: 'NodeJS',
+      rank: 2,
     },
   },
 };

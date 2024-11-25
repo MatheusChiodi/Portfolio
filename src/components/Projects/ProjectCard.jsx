@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import HighlightKeywords from './HighlightKeywords';
 import { interfaceTexts } from '../../context/translationsMyProjects';
@@ -8,6 +8,7 @@ const ProjectCard = ({ project, language }) => {
   const [showDetails, setShowDetails] = useState('hide');
 
   const truncateText = (text, maxLength) => {
+    if (!text) return '';
     if (text.length <= maxLength) {
       return text;
     }
@@ -16,11 +17,9 @@ const ProjectCard = ({ project, language }) => {
 
   const translationButton = (language, type) => {
     if (language === 'en') {
-      if (type == 'show') return 'Close Details';
-      else return 'Show Details ';
+      return type === 'show' ? 'Close Details' : 'Show Details';
     } else {
-      if (type == 'show') return 'Fechar Detalhes';
-      else return 'Ver Detalhes';
+      return type === 'show' ? 'Fechar Detalhes' : 'Ver Detalhes';
     }
   };
 
@@ -33,25 +32,24 @@ const ProjectCard = ({ project, language }) => {
           className="rounded-lg object-cover w-full h-64 lg:h-auto"
         />
       </div>
-      <div className="flex flex-col justify-between text-center lg:text-left w-full lg:w-2/3 text-[#282a36] ">
+      <div className="flex flex-col justify-between text-center lg:text-left w-full lg:w-2/3 text-[#282a36]">
         <div>
           <h2 className="text-3xl font-semibold mb-4">{project.title}</h2>
           <p className="text-[#282a36] text-lg mb-6 md:leading-relaxed text-justify">
             {HighlightKeywords(
               truncateText(project.description, maxCharacters)
             )}
-
-            <button
-              className="inline-block px-2 py-1 leading-none border rounded-md border-[#FF5555] text-white font-bold bg-[#ea4e4e] hover:brightness-125 text-[14px] ml-2"
-              onClick={() => {
-                setMaxCharacters(maxCharacters === 250 ? 1050 : 250);
-                setShowDetails(showDetails === 'hide' ? 'show' : 'hide');
-              }}
-            >
-              {translationButton(language, showDetails)}{' '}
-            </button>
-
-            <br />
+            {project.description?.length > 250 && (
+              <button
+                className="inline-block px-2 py-1 leading-none border rounded-md border-[#FF5555] text-white font-bold bg-[#ea4e4e] hover:brightness-125 text-[14px] ml-2"
+                onClick={() => {
+                  setMaxCharacters(maxCharacters === 250 ? 1050 : 250);
+                  setShowDetails(showDetails === 'hide' ? 'show' : 'hide');
+                }}
+              >
+                {translationButton(language, showDetails)}
+              </button>
+            )}
           </p>
         </div>
         <a
