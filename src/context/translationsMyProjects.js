@@ -165,7 +165,7 @@ const translationsMyProjects = {
     19: {
       title: 'Podcast Manager',
       description:'Project developed in NodeJS to organize and manage podcasts. Includes Listing of Episodes, Editing of Episodes, Deletion of Episodes and filtering by name, with scalability and security',
-      link: 'github.com/MatheusChiodi/Gerenciador-de-Podcasts',
+      link: 'https://github.com/MatheusChiodi/Gerenciador-de-Podcasts',
       image: '/gerenciadorPodcasts.png',
       ti: 'NodeJS',
       rank: 2,
