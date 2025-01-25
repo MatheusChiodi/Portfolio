@@ -1,0 +1,152 @@
+{
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "footer": {
+    "info": "Information",
+    "link1": "About",
+    "link2": "Projects",
+    "link3": "Certificates",
+    "link4": "Experience",
+    "tec": "Technologies"
+  },
+  "about": {
+    "title": "My name is",
+    "text1": "I am",
+    "text2": "Developer",
+    "text3": "I transform ideas into digital experiences! I develop modern websites and applications, with optimized and engaging interfaces."
+  },
+  "projects": {
+    "title": "See some of my projects",
+    "link": "See more projects"
+  },
+  "AllProjects": {
+    "title": "All Projects 🚀",
+    "back": "Back"
+  },
+  "ProjectCard": {
+    "link": "Learn more"
+  },
+  "Modal": {
+    "link": "View project"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "subtitle": "Here are some of my certificates from courses and training."
+  },
+  "experience": {
+    "title": "My Journey",
+    "subtitle": "See my professional and academic trajectory.",
+    "ifsp": {
+      "title": "IFSP - Araraquara",
+      "text1": "During my years of study at the Instituto Federal de Araraquara, I completed a technical course integrated with high school, which lasted four years. It was during this period that I had my first exposure and learned programming languages, including HTML, CSS, PHP, SQL, JavaScript, AJAX and jQuery.",
+      "text2": "This course provided me with a solid foundation of basic and technological knowledge. As part of the completion of my course, I developed a special project. The main objective of this project was to integrate and apply the knowledge acquired throughout my education. I chose to create an initiative focused on the non-profit organization 'Parque Vivo'. In this project, I was able to combine my technical and academic learnings, contributing significantly to a relevant and beneficial cause for the community. This experience not only solidified my knowledge, but also allowed me to witness first-hand the practical possibilities of applying technology to impactful social projects."
+    },
+    "job": {
+      "title": "First Job",
+      "text1": "As I embark on the journey of my first job as a Fullstack Developer, I realize that every line of code I write is infused with effort, continuous learning, and commitment to excellence. My responsibilities are heavy; they involve the creation of vital institutional websites, the development of crucial systems for file management, and the implementation of platforms that strictly comply with the LGPD.",
+      "text2": "This position requires not only refined technical skills in languages ​​such as CodeIgniter, JavaScript, SQL, PHP, HTML5, and CSS, but also a deep operational understanding of the practical issues faced by end users. I am the one who optimizes and keeps websites running smoothly, and I am the one who intervenes when unexpected bugs arise, working diligently to resolve each issue and ensure a perfect user experience."
+    },
+    "courses": {
+      "title": "Extra Courses",
+      "text1": "Upon completing my studies at the Federal Institute, I embraced the perpetual and captivating journey of learning. With dedicated effort, I participated in several courses offered by platforms such as Dio, significantly sharpening and expanding my skills.",
+      "text2": "Currently, my focus is on improving my proficiency in React Js and React Native. This continuous investment in self-knowledge and improvement goes beyond acquiring technical skills. It is about fostering a resilient and innovative mindset capable of navigating and overcoming the challenges presented by the dynamic and constantly evolving professional scenario of which I am a part."
+    },
+    "MChiodi": {
+      "title": "Creation of MChiodi",
+      "text1": "When I started my studies in React Native, I had no idea how much of an impact it would have on my life. With dedication and passion for development, I created MChiodi, a developer account that now has more than 7 apps launched!",
+      "text2": "But the most incredible thing about this journey was not just building apps, but the opportunities that arose. Through this project, I had the honor of speaking at some schools, sharing my experience and encouraging students to believe in the power of learning and technology."
+    }
+  },
+  "projects": {
+    "title": "See some of my projects",
+    "link": "See more projects",
+    "reactNative": {
+      "futuroGarantido": {
+        "title": "Futuro Garantido",
+        "description": "The 'Futuro Garantido' project is a tool designed to assist students. Developed using React Native, this intuitive and simple application facilitates efficient time management for users, helping them in their academic studies. Available for download on the Google Play Store, 'Futuro Garantido' is a testament to the proactive assistance it provides in the daily lives of students."
+      },
+      "dualGame": {
+        "title": "Games for Two",
+        "description": "'Fun for Two' is my first project developed from scratch using React Native. Designed as a lightweight and user-friendly gaming platform, it provides fun games for friends to play together. With a focus on simplicity, the application is available on the Google Play Store, marking my first independent application of my development skills and learnings with React Native."
+      },
+      "PomodoroPrimeTimer": {
+        "title": "Pomodoro Prime Timer",
+        "description": "The Pomodoro Prime Timer project was created with the intention of helping people learn and improve their productivity. It is a simple and intuitive application that allows users to set a timer for their tasks, helping them focus and manage their time more efficiently. The project was developed using React Native and is available for download on the Google Play Store."
+      },
+      "RegistroTreinamento": {
+        "title": "Training Record",
+        "description": "The 'MChiodi - Training Record' project is a tool designed to assist athletes. Developed using React Native, this intuitive and simple application facilitates efficient time management for users, helping them in their training. Available for download on the Google Play Store, 'MChiodi - Training Record' is a testament to the proactive assistance athletes have in their daily lives."
+      },
+      "GerenciadorCartoes": {
+        "title": "Card Manager",
+        "description": "Card Manager is an innovative application designed for efficient personal finance management, now completely offline. It offers instant expense tracking, easy credit and debit card management, and intelligent statistical analysis for financial decision making. Ensuring data security, the application operates 100% offline. Available on the PlayStore, Card Manager is developed using React Native."
+      },
+      "PortfolioMobile": {
+        "title": "Portfolio Mobile",
+        "description": "This project is the result of the skills and knowledge acquired during the 'React Native Developer Training' program. Designed to demonstrate the practical application of React Native in mobile application development, this project covers three main screens: Home, Timeline, and Projects."
+      },
+      "Bibliotrack": {
+        "title": "Bibliotrack",
+        "description": "Meet Bibliotrack: Your reading app built on React Native. With it, you can easily manage your personal library, add new books, save inspirational quotes, set reading goals and track your progress, all in one place. Simplify and enhance your reading experience with Bibliotrack."
+      },
+      "FitForge": {
+        "title": "FitForge",
+        "description": "FitForge is a fitness app built on React Native. It allows you to easily log your daily workouts, track your water intake, use a built-in timer for high-intensity intervals or rest time between sets, view your workout history to track your progress, export your workout data for analysis or sharing and create custom workout routines. Define which muscles to train each day and let the app guide you through each workout."
+      },
+      "DailyDone": {
+        "title": "DailyDone",
+        "description": "DailyDone: organize your tasks without relying on the internet and simplify your routine. Record appointments, mark accomplishments and delete unnecessary tasks, keeping focus on what matters. Access everything in one place, offline and reliably. Gain control and productivity with DailyDone!"
+      }
+    },
+    "reactJS": {
+      "windows": {
+        "title": "Windows Project",
+        "description": "This educational project was designed using ReactJS to explore various language techniques. The goal was to create components that resemble the Windows system using custom code, without relying on ready-made APIs. Each component was designed to enhance understanding and proficiency in ReactJS, providing a rich learning experience while experimenting with various coding approaches within the framework."
+      },
+      "projectShop": {
+        "title": "Shop Project",
+        "description": "Welcome to our Online Marketplace for Electronics Projects! Developed with ReactJS for educational purposes, this platform simulates e-commerce experiences, providing hands-on learning in buying and selling electronics projects. Engage with this interactive tool to apply key web development concepts and technologies, enhancing your understanding and skills in e-commerce."
+      },
+      "ProjetoJogoVelha": {
+        "title": "Tic Tac Toe",
+        "description": "The game Tic Tac Toe project, developed using ReactJS, provides an engaging and interactive gaming experience for study and entertainment purposes. Users can enjoy exciting matches with friends or online players through a user-friendly website. It features player name customization, a scoring system, and a sleek interface, serving as a fun tool for entertainment and a valuable resource for studying ReactJS."
+      },
+      "NLWSpacetime": {
+        "title": "NLW Spacetime",
+        "description": "During this inspiring event, I had the opportunity to participate and delve into the creation of a memory recall application using powerful technologies such as ReactJS, React Native, NextJS, among others. Over the course of five intense days, the Rocketseat team provided valuable lessons, opening the door to a world of possibilities and learning."
+      },
+      "RegistroTreinamento": {
+        "title": "Training Record",
+        "description": "The 'Training Record Web Version' project was meticulously developed using the ReactJS library, offering a fluid and responsive web experience for its users. It is worth mentioning that this system was inspired and based on another project called 'MChiodi - Training Record', which was originally developed using React Native technology."
+      },
+      "NovoSpotifyBeta": {
+        "title": "New Spotify beta",
+        "description": "This project was developed using ReactJS and TailwindCSS, offering a fluid and responsive web experience for its users. It was inspired by the Spotify platform and offers a rich experience for music lovers. Serving as a fun tool for entertainment and a valuable resource for studying ReactJS."
+      },
+      "AjudaLink": {
+        "title": "Help with Link",
+        "description": "'Help with Link' is an innovative resource designed to support beginning programmers. This project brings together a carefully curated collection of links, chosen through artificial intelligence, to provide an effective and intuitive learning path into the world of programming"
+      }
+    },
+    "NodeJS": {
+      "QRCodesGenerator": {
+        "title": "QR Code Generator for E-commerce",
+        "description": "This system, developed with NodeJS, allows users to easily create QR Codes for URLs, texts, images and other data, offering several options for customization, such as size, color and format."
+      },
+      "PodcastsManager": {
+        "title": "PodcastsManager",
+        "description": "Project developed in NodeJS to organize and manage podcasts. Includes Episode Listing, Episode Editing, Episode Deletion and filter by name, with scalability and security"
+      }
+    },
+    "HTMLCSSJavaScript": {
+      "TCCParqueVivo": {
+        "title": "TCC Parque Vivo",
+        "description": "Developed for TIIEM at IFSP - Campus Araraquara, this final project supports the non-profit organization 'Parque Vivo', integrating basic and technical knowledge acquired during the course. Using HTML, CSS, MySQL, PHP, Ajax and JavaScript, it reflects our learning journey and practical skills. It is a practical demonstration of the comprehensive understanding and application of these technologies, showing the perfect integration between theory and practice."
+      }
+    }
+  }
+}
