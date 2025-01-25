@@ -73,7 +73,7 @@ export default function About() {
           <span className="text-[#FF5555]">/&gt;</span>
         </motion.h1>
 
-        <p className="text-[18px] md:text-[22px] text-gray-300 mt-4 w-[70%] mx-auto">
+        <p className="text-[18px] md:text-[22px] text-gray-300 mt-4 md:w-[70%] w-full mx-auto">
           {t('about.text1')}{' '}
           <spam className="font-bold text-xl bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
           {t('about.text2')} Fullstack
@@ -83,7 +83,7 @@ export default function About() {
       </motion.div>
 
       <motion.div
-        className="relative flex flex-wrap justify-center gap-4  bg-white/10 backdrop-blur-md rounded-xl shadow-lg mt-[30px] text-center lg:text-[25px] text-[20px] pb-3 pt-6"
+        className="relative flex flex-wrap justify-center md:gap-4 bg-white/10 backdrop-blur-md rounded-xl shadow-lg mt-[30px] text-center lg:text-[20px] md:text-[20px] text-[16px] pb-3 pt-6 px-2"
         variants={container}
         initial="hidden"
         animate="visible"
