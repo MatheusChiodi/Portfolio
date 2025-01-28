@@ -130,6 +130,10 @@
       "AjudaLink": {
         "title": "Help with Link",
         "description": "'Help with Link' is an innovative resource designed to support beginning programmers. This project brings together a carefully curated collection of links, chosen through artificial intelligence, to provide an effective and intuitive learning path into the world of programming"
+      },
+      "ShopSupplements": {
+        "title": "Shop Supplements",
+        "description": "Shop Supplements is a basic layout for supplement stores, designed to showcase different visual options in a modern, responsive and interactive way. With product carousels, 3D effects and smooth animations, it provides an engaging and professional experience. Created by MChiodi, the design combines usability and strong visual identity, allowing customers to explore and choose the best style for their business."
       }
     },
     "NodeJS": {

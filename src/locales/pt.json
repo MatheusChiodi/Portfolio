@@ -130,6 +130,10 @@
       "AjudaLink": {
         "title": "Ajuda com link",
         "description": "'Ajuda com Link' é um recurso inovador desenhado para apoiar programadores iniciantes. Este projeto reúne uma coleção cuidadosamente curada de links, escolhidos através de inteligência artificial, para fornecer um caminho de aprendizado eficaz e intuitivo no mundo da programação"
+      },
+      "ShopSupplements": {
+        "title": "Shop Supplements",
+        "description": "Shop Supplements é um layout base para lojas de suplementos, projetado para demonstrar diferentes opções visuais de forma moderna, responsiva e interativa. Com carrosséis de produtos, efeitos 3D e animações suaves, ele proporciona uma experiência envolvente e profissional. Criado por MChiodi, o design combina usabilidade e identidade visual forte, permitindo que clientes explorem e escolham o melhor estilo para seus negócios."
       }
     },
     "NodeJS": {

@@ -133,6 +133,13 @@ const AllProjectsContext = () => {
             link: 'https://matheuschiodi.github.io/HelpLinks/',
             image: '/helplink.png',
           },
+          {
+            id: 8,
+            title: t('projects.reactJS.ShopSupplements.title'),
+            description: t('projects.reactJS.ShopSupplements.description'),
+            link: 'https://matheuschiodi.github.io/shop-supplements/',
+            image: '/shop-supplements.png',
+          }
         ],
       },
 
