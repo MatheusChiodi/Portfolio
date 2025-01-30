@@ -37,7 +37,7 @@ export default function NavBar() {
         transition: { duration: 0.6, ease: 'easeOut' },
       }}
     >
-      <div className="bg-gray-800 text-white shadow-lg border-b border-white/10 max-w-[1920px] mx-auto rounded-2xl">
+      <div className="bg-gray-800 text-white shadow-lg border-b border-white/10 max-w-[1920px] mx-auto rounded-b-2xl">
         <div className="flex justify-between items-center h-16 px-4 md:px-10">
           <div className="flex items-center space-x-2">
             <motion.img

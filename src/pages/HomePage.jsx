@@ -12,16 +12,11 @@ import Experience from '../components/Experience';
 function HomePage() {
   const [visibleLoading, setVisibleLoading] = useState(false);
   const [visibleContent, setVisibleContent] = useState(false);
-  const [visibleAbout, setVisibleAbout] = useState(false);
-  const [visibleProjects, setVisibleProjects] = useState(false);
-  const [visibleCertificates, setVisibleCertificates] = useState(false);
-  const [visibleExperience, setVisibleExperience] = useState(false);
-  const [visibleFooter, setVisibleFooter] = useState(false);
 
   useEffect(() => {
     const lastVisit = localStorage.getItem('lastVisit');
     const now = Date.now();
-    const oneHour = 60 * 60 * 1000;
+    const oneHour = 60 * 60 * 3000;
 
     if (!lastVisit || now - parseInt(lastVisit, 10) > oneHour) {
       setVisibleLoading(true);
@@ -34,26 +29,20 @@ function HomePage() {
     } else {
       setVisibleContent(true);
     }
-
-    setTimeout(() => setVisibleAbout(true), 2200);
-    setTimeout(() => setVisibleProjects(true), 3600);
-    setTimeout(() => setVisibleCertificates(true), 4500);
-    setTimeout(() => setVisibleExperience(true), 4800);
-    setTimeout(() => setVisibleFooter(true), 5000);
   }, []);
 
   return (
-    <div className='max-w-[1920px] mx-auto'>
+    <div className="max-w-[1920px] mx-auto">
       {visibleLoading && <Loading />}
       {visibleContent && (
         <>
           <NavBar />
           <div className="p-3 w-full">
-            {visibleAbout && <About />}
-            {visibleProjects && <Projects />}
-            {visibleCertificates && <Certificates />}
-            {visibleExperience && <Experience />}
-            {visibleFooter && <Footer />}
+            <About />
+            <Projects />
+            <Certificates />
+            <Experience />
+            <Footer />
           </div>
         </>
       )}

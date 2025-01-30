@@ -37,7 +37,7 @@ export default function About() {
 
   return (
     <section
-      className="relative mt-20 w-full py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xl text-white overflow-hidden shadow-2xl"
+      className="relative mt-18 w-full py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xl text-white overflow-hidden shadow-2xl"
       id="About"
     >
       <motion.div

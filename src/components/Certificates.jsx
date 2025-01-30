@@ -24,9 +24,12 @@ export default function CertificatesCarousel() {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   return (
-    <section
+    <motion.section
       className="w-full py-16 px-6 bg-gray-100 rounded-3xl text-gray-900 shadow-lg mt-10"
       id="Certificates"
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -20 }}
+      viewport={{ once: true, margin: '-100px' }}
     >
       <motion.div
         initial="hidden"
@@ -40,11 +43,11 @@ export default function CertificatesCarousel() {
           </h2>
           <GraduationCap
             size={40}
-            className="text-[#FF5555] text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] pt-2"
+            className="text-[#FF5555] text-[30px] md:text-[25px] lg:text-[30px] xl:text-[60px] pt-2"
           />
         </div>
 
-        <p className="text-gray-600 mt-2 md:text-[20px] lg:text-[30px] text-[20px]">
+        <p className="text-gray-600 mt-2 lg:text-[25px] text-[20px]">
           {t('certificates.subtitle')}
         </p>
       </motion.div>
@@ -86,6 +89,6 @@ export default function CertificatesCarousel() {
           onClose={() => setSelectedCertificate(null)}
         />
       )}
-    </section>
+    </motion.section>
   );
 }

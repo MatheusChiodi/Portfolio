@@ -48,16 +48,18 @@ export default function Experience() {
   ];
 
   return (
-    <section
+    <motion.section
       className="w-full py-16 px-6 bg-gray-100 rounded-3xl text-gray-900 shadow-lg mt-10"
       id="Experience"
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -20 }}
+      viewport={{ once: true, margin: '-100px' }}
     >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
         className="text-center"
       >
-        
         <div className="flex flex-wrap items-center gap-2 justify-center">
           <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl">
             {t('experience.title')}
@@ -117,6 +119,6 @@ export default function Experience() {
           }
         </p>
       </motion.div>
-    </section>
+    </motion.section>
   );
 }

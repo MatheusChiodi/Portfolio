@@ -15,9 +15,12 @@ export default function Projects() {
   const allProjects = AllProjectsContext();
 
   return (
-    <div
+    <motion.div
       className="w-full p-4 bg-gray-100 rounded-2xl mb-4 mt-10"
       id="Projects"
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -20 }}
+      viewport={{ once: true, margin: '-100px' }}
     >
       <motion.div
         className="flex flex-wrap items-center gap-2 justify-center md:justify-start"
@@ -60,6 +63,6 @@ export default function Projects() {
           <Button title={t('projects.link')} icon="plus" />
         </Link>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }

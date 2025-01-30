@@ -140,7 +140,7 @@
     },
     "NodeJS": {
       "QRCodesGenerator": {
-        "title": "Gerador de QR Codes para E commerces",
+        "title": "Gerador de QR Codes",
         "description": "Este sistema, desenvolvido com NodeJS, permite aos usuários criar QR Codes para URLs, textos, imagens e outros dados com facilidade, oferecendo diversas opções para personalização, como tamanho, cor e formato."
       },
       "PodcastsManager": {
