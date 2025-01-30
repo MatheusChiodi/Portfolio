@@ -43,7 +43,7 @@ function HomePage() {
   }, []);
 
   return (
-    <>
+    <div className='max-w-[1920px] mx-auto'>
       {visibleLoading && <Loading />}
       {visibleContent && (
         <>
@@ -59,7 +59,7 @@ function HomePage() {
       )}
 
       <ScrollToTopButton />
-    </>
+    </div>
   );
 }
 

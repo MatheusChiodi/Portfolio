@@ -25,7 +25,9 @@
   },
   "AllProjects": {
     "title": "All Projects 🚀",
-    "back": "Back"
+    "back": "Back",
+    "select": "Choose technology",
+    "all": "All"
   },
   "ProjectCard": {
     "link": "Learn more"

@@ -25,7 +25,9 @@
   },
   "AllProjects": {
     "title": "Todos os Projetos 🚀",
-    "back": "Voltar"
+    "back": "Voltar",
+    "select": "Escolha a tecnologia",
+    "all": "Todas"
   },
   "ProjectCard": {
     "link": "Saber mais"
