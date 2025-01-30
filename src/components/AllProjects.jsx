@@ -90,12 +90,23 @@ export default function AllProjects() {
         />
       </motion.div>
 
-      <button
-        className="fixed bottom-3 left-3 z-50 cursor-pointer bg-gray-900 text-white p-1 rounded-lg shadow-lg px-3 hover:bg-[#FF5555]"
+      <motion.button
+        className="fixed bottom-3 left-3 z-50 cursor-pointer bg-gray-900 text-white p-1 rounded-lg shadow-lg px-3"
         onClick={toggleModal}
+        initial={{ opacity: 0, scale: 0.5, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.5, y: 20 }}
+        whileHover={{
+          scale: 1.05,
+          backgroundColor: '#ff5555',
+          color: '#fff',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.25)',
+        }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
       >
         {t('AllProjects.select')}
-      </button>
+      </motion.button>
 
       {isVisibleTechnology && (
         <ModalTech
