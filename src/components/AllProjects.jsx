@@ -69,7 +69,6 @@ export default function AllProjects() {
                     scale: 1,
                     transition: { duration: 0.3, ease: 'easeOut' },
                   }}
-                  whileHover={{ scale: 1.05 }}
                 >
                   <ProjectCard
                     project={project}
