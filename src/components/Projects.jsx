@@ -15,15 +15,23 @@ export default function Projects() {
   const allProjects = AllProjectsContext();
 
   return (
-    <div className="w-full p-4 bg-gray-100 rounded-2xl mb-4 mt-10" id="Projects">
-      <motion.h2
-        className="md:text-[20px] lg:text-[30px] xl:text-[60px] text-[30px] text-center md:text-left mb-5 font-extrabold text-gray-900 drop-shadow-2xl"
+    <div
+      className="w-full p-4 bg-gray-100 rounded-2xl mb-4 mt-10"
+      id="Projects"
+    >
+      <motion.div
+        className="flex flex-wrap items-center gap-2 justify-center md:justify-start"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.4 } }}
       >
-        {t('projects.title')}{' '}
-        <FontAwesomeIcon icon={faBarsProgress} className="text-[#FF5555]" />
-      </motion.h2>
+        <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl">
+          {t('projects.title')}
+        </h2>
+        <FontAwesomeIcon
+          icon={faBarsProgress}
+          className="text-[#FF5555] text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] pt-2"
+        />
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}

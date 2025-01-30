@@ -34,11 +34,14 @@ export default function CertificatesCarousel() {
         variants={fadeInUp}
         className="text-center"
       >
-        <div className="flex items-center justify-center gap-4">
-          <h2 className="md:text-[20px] lg:text-[30px] xl:text-[60px] text-[30px] text-center md:text-left mb-5 font-extrabold text-gray-900 drop-shadow-2xl">
+        <div className="flex flex-wrap items-center gap-2 justify-center">
+          <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl text-center">
             {t('certificates.title')}
           </h2>
-          <GraduationCap size={40} className="text-[#ff5555]" />
+          <GraduationCap
+            size={40}
+            className="text-[#FF5555] text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] pt-2"
+          />
         </div>
 
         <p className="text-gray-600 mt-2 md:text-[20px] lg:text-[30px] text-[20px]">
