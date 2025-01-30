@@ -24,7 +24,7 @@ export default function Projects() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.4 } }}
       >
-        <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl">
+        <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl text-center md:text-left">
           {t('projects.title')}
         </h2>
         <FontAwesomeIcon
