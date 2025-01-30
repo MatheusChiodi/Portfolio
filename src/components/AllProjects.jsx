@@ -91,7 +91,7 @@ export default function AllProjects() {
       </motion.div>
 
       <button
-        className="fixed bottom-3 left-3 z-50 cursor-pointer bg-gray-900 text-white p-1 rounded-lg shadow-lg px-3"
+        className="fixed bottom-3 left-3 z-50 cursor-pointer bg-gray-900 text-white p-1 rounded-lg shadow-lg px-3 hover:bg-[#FF5555]"
         onClick={toggleModal}
       >
         {t('AllProjects.select')}
