@@ -139,7 +139,14 @@ const AllProjectsContext = () => {
             description: t('projects.reactJS.ShopSupplements.description'),
             link: 'https://matheuschiodi.github.io/shop-supplements/',
             image: '/shop-supplements.png',
-          }
+          },
+          {
+            id: 9,
+            title: t('projects.reactJS.ExpressoDesign.title'),
+            description: t('projects.reactJS.ExpressoDesign.description'),
+            link: 'https://matheuschiodi.github.io/ExpressoDesign/',
+            image: '/ExpressoDesign.png',
+          },
         ],
       },
 
