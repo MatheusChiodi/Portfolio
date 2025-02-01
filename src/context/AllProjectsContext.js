@@ -168,6 +168,13 @@ const AllProjectsContext = () => {
             link: 'https://github.com/MatheusChiodi/Gerenciador-de-Podcasts',
             image: '/gerenciadorPodcasts.png',
           },
+          {
+            id: 3,
+            title: t('projects.NodeJS.CryptoApi.title'),
+            description: t('projects.NodeJS.CryptoApi.description'),
+            link: 'https://github.com/MatheusChiodi/crypto-api',
+            image: '/crypto-api.png',
+          },
         ],
       },
       {
@@ -177,7 +184,9 @@ const AllProjectsContext = () => {
           {
             id: 1,
             title: t('projects.HTMLCSSJavaScript.TCCParqueVivo.title'),
-            description: t('projects.HTMLCSSJavaScript.TCCParqueVivo.description'),
+            description: t(
+              'projects.HTMLCSSJavaScript.TCCParqueVivo.description'
+            ),
             link: 'https://github.com/MatheusChiodi/TccParqueVivoV1',
             image: '/parquevivo.png',
           },

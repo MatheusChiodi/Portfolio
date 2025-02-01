@@ -150,6 +150,10 @@
       "PodcastsManager": {
         "title": "Gerenciador de Podcasts",
         "description": "Projeto desenvolvido em NodeJS para organizar e gerenciar podcasts. Inclui Listagem de Episódios, Edição de Episódios, Exclusão de Episódios e filtro por nome, com escalabilidade e segurança"
+      },
+      "CryptoApi": {
+        "title": "CryptoApi",
+        "description": "Crypto API é uma API REST em Node.js que fornece dados em tempo real sobre criptomoedas, incluindo preços, histórico de mercado, conversão de moedas e alertas personalizados. Com endpoints para rastreamento de preços, favoritos e cotação do dólar, a API é ideal para aplicações que necessitam de informações atualizadas sobre o mercado cripto."
       }
     },
     "HTMLCSSJavaScript": {
