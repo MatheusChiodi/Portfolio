@@ -9,19 +9,14 @@ export default function CertificatesCarousel() {
   const { t } = useTranslation();
   const [width, setWidth] = useState(0);
   const carousel = useRef(null);
-
-  const fadeInUp = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     if (carousel.current) {
       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
     }
   }, []);
-
-  const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   return (
     <motion.section
@@ -32,9 +27,8 @@ export default function CertificatesCarousel() {
       viewport={{ once: true, margin: '-100px' }}
     >
       <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInUp}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
         className="text-center"
       >
         <div className="flex flex-wrap items-center gap-2 justify-center">
@@ -61,14 +55,17 @@ export default function CertificatesCarousel() {
           className="flex space-x-6"
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
-          animate={{ x: [0, -width, 0] }}
+          animate={isPaused ? {} : { x: [0, -width, 0] }}
           transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
         >
           {certificates.map((certificate) => (
             <motion.div
               key={certificate.id}
               className="bg-white rounded-xl p-4 transition-all duration-300 min-w-[250px] md:min-w-[300px] flex flex-col items-center justify-between"
-              onClick={() => setSelectedCertificate(certificate)}
+              onClick={() => {
+                setSelectedCertificate(certificate);
+                setIsPaused(true); 
+              }}
             >
               <img
                 src={`./` + certificate.image}
@@ -83,10 +80,14 @@ export default function CertificatesCarousel() {
           ))}
         </motion.div>
       </motion.div>
+
       {selectedCertificate && (
         <CertificateModal
           certificate={selectedCertificate}
-          onClose={() => setSelectedCertificate(null)}
+          onClose={() => {
+            setSelectedCertificate(null);
+            setTimeout(() => setIsPaused(false), 500);
+          }}
         />
       )}
     </motion.section>
