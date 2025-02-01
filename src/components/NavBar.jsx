@@ -15,7 +15,7 @@ export default function NavBar() {
   };
 
   const menuItems = [
-    { name: 'about', path: '/#About' },
+    { name: 'about', path: '/' },
     { name: 'projects', path: '/projects' },
   ];
 
