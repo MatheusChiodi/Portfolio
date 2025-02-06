@@ -41,17 +41,16 @@ Aqui você encontrará alguns dos projetos que desenvolvi, demonstrando minhas h
 
 - [**Projeto Windows**](https://matheuschiodi.github.io/windows/)
 - [**Projeto Loja**](https://matheuschiodi.github.io/Project-Shop/)
-- [**Jogo da Velha**](https://matheuschiodi.github.io/tic-tac-toe/)
 - [**NLW Spacetime**](https://matheuschiodi.github.io/NLW-Spacetime-not-Prisma/)
-- [**Shop Supplements**](https://matheuschiodi.github.io/Shop-Supplements/)
-- [**Expresso Design**](https://matheuschiodi.github.io/Expresso-Design/)
-- [**Ajuda com Link**](https://matheuschiodi.github.io/Ajuda-Link/)
+- [**Shop Supplements**](https://matheuschiodi.github.io/shop-supplements/)
+- [**Expresso Design**](https://matheuschiodi.github.io/ExpressoDesign/)
+- [**Ajuda com Link**](https://matheuschiodi.github.io/HelpLinks/)
 
 ### ⚙️ Projetos NodeJS
 
-- **[Gerador de QR Codes](https://github.com/matheuschiodi/QRCodesGenerator)** - Sistema para criar QR Codes personalizados.
-- **[Gerenciador de Podcasts](https://github.com/matheuschiodi/PodcastsManager)** - Plataforma para organização e gerenciamento de podcasts.
-- **[Crypto API](https://github.com/matheuschiodi/CryptoApi)** - API REST para fornecer dados sobre criptomoedas em tempo real.
+- **[Gerador de QR Codes](https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces)** - Sistema para criar QR Codes personalizados.
+- **[Gerenciador de Podcasts](https://github.com/MatheusChiodi/Gerenciador-de-Podcasts)** - Plataforma para organização e gerenciamento de podcasts.
+- **[Crypto API](https://github.com/MatheusChiodi/crypto-api)** - API REST para fornecer dados sobre criptomoedas em tempo real.
 
 ---
 
