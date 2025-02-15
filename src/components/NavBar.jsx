@@ -98,7 +98,7 @@ export default function NavBar() {
             </button>
           </div>
 
-          <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+          <button className="md:hidden min-h-s" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>

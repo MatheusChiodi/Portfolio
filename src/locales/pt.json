@@ -137,9 +137,13 @@
         "title": "Shop Supplements",
         "description": "Shop Supplements é um layout base para lojas de suplementos, projetado para demonstrar diferentes opções visuais de forma moderna, responsiva e interativa. Com carrosséis de produtos, efeitos 3D e animações suaves, ele proporciona uma experiência envolvente e profissional. Criado por MChiodi, o design combina usabilidade e identidade visual forte, permitindo que clientes explorem e escolham o melhor estilo para seus negócios."
       },
-      "ExpressoDesign":{
+      "ExpressoDesign": {
         "title": "Expresso Design",
         "description": "Expresso Design é um projeto desenvolvido com ReactJS para demonstrar a aplicação prática de conceitos de design responsivo e interativo. Com uma interface moderna e elegante, ele oferece uma experiência de usuário atraente e envolvente. Este projeto é uma demonstração do compromisso de MChiodi com a excelência e a inovação, combinando habilidades técnicas e criativas para criar soluções de design de alta qualidade."
+      },
+      "TaskManager": {
+        "title": "Gerenciador de Tarefas",
+        "description": "Este projeto é um sistema de gerenciamento de tarefas que permite aos usuários registrar, listar, editar e excluir tarefas. O sistema consiste em um frontend desenvolvido em React.js com Tailwind CSS e um backend usando Node.js com Express e Sequelize para comunicação com o banco de dados."
       }
     },
     "NodeJS": {

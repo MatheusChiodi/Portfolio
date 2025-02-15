@@ -147,6 +147,14 @@ const AllProjectsContext = () => {
             link: 'https://matheuschiodi.github.io/ExpressoDesign/',
             image: '/ExpressoDesign.png',
           },
+          {
+            id: 10,
+            title: t('projects.reactJS.TaskManager.title'),
+            description: t('projects.reactJS.TaskManager.description'),
+            link: 'https://github.com/MatheusChiodi/Task-Manager',
+            image: '/TaskManager.jpg',
+          },
+          
         ],
       },
 

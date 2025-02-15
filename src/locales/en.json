@@ -140,6 +140,10 @@
       "ExpressoDesign": {
         "title": "Expresso Design",
         "description": "Expresso Design is a project developed with ReactJS to demonstrate the practical application of responsive and interactive design concepts. With a modern and elegant interface, it offers an attractive and engaging user experience. This project is a demonstration of MChiodi's commitment to excellence and innovation, combining technical and creative skills to create high-quality design solutions."
+      },
+      "TaskManager": {
+        "title": "Task Manager",
+        "description": "This project is a task management system that allows users to register, list, edit and delete tasks. The system consists of a frontend developed in React.js with Tailwind CSS and a backend using Node.js with Express and Sequelize for communication with the database."
       }
     },
     "NodeJS": {
