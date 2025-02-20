@@ -147,14 +147,6 @@ const AllProjectsContext = () => {
             link: 'https://matheuschiodi.github.io/ExpressoDesign/',
             image: '/ExpressoDesign.png',
           },
-          {
-            id: 10,
-            title: t('projects.reactJS.TaskManager.title'),
-            description: t('projects.reactJS.TaskManager.description'),
-            link: 'https://github.com/MatheusChiodi/Task-Manager',
-            image: '/TaskManager.jpg',
-          },
-          
         ],
       },
 
@@ -182,6 +174,20 @@ const AllProjectsContext = () => {
             description: t('projects.NodeJS.CryptoApi.description'),
             link: 'https://github.com/MatheusChiodi/crypto-api',
             image: '/crypto-api.png',
+          },
+          {
+            id: 10,
+            title: t('projects.NodeJS.TaskManager.title'),
+            description: t('projects.NodeJS.TaskManager.description'),
+            link: 'https://github.com/MatheusChiodi/Task-Manager',
+            image: '/TaskManager.jpg',
+          },
+          {
+            id: 4,
+            title: t('projects.NodeJS.URLShortener.title'),
+            description: t('projects.NodeJS.URLShortener.description'),
+            link: 'https://github.com/MatheusChiodi/url-shortener',
+            image: '/url-shortener.jpg',
           },
         ],
       },

@@ -140,10 +140,6 @@
       "ExpressoDesign": {
         "title": "Expresso Design",
         "description": "Expresso Design is a project developed with ReactJS to demonstrate the practical application of responsive and interactive design concepts. With a modern and elegant interface, it offers an attractive and engaging user experience. This project is a demonstration of MChiodi's commitment to excellence and innovation, combining technical and creative skills to create high-quality design solutions."
-      },
-      "TaskManager": {
-        "title": "Task Manager",
-        "description": "This project is a task management system that allows users to register, list, edit and delete tasks. The system consists of a frontend developed in React.js with Tailwind CSS and a backend using Node.js with Express and Sequelize for communication with the database."
       }
     },
     "NodeJS": {
@@ -158,6 +154,14 @@
       "CryptoApi": {
         "title": "CryptoApi",
         "description": "Crypto API is a Node.js REST API that provides real-time data about cryptocurrencies, including prices, market history, currency conversions, and custom alerts. With endpoints for price tracking, favorites, and dollar quotes, the API is ideal for applications that need up-to-date information about the crypto market."
+      },
+      "TaskManager": {
+        "title": "Task Manager",
+        "description": "This project is a task management system that allows users to register, list, edit and delete tasks. The system consists of a frontend developed in React.js with Tailwind CSS and a backend using Node.js with Express and Sequelize for communication with the database."
+      },
+      "URLShortener": {
+        "title": "URL Shortener",
+        "description": "This project is a complete URL shortener that transforms long links into short and easily shareable versions. Divided into two parts, the system has a robust backend, developed in Node.js with Express, which shortens URLs, automatically generates QR Codes and manages redirection to the original links. On the frontend, I used React, Tailwind CSS and Framer Motion to create a modern, interactive and responsive interface, enriched with dynamic animations."
       }
     },
     "HTMLCSSJavaScript": {

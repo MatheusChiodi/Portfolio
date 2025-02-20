@@ -140,10 +140,6 @@
       "ExpressoDesign": {
         "title": "Expresso Design",
         "description": "Expresso Design é um projeto desenvolvido com ReactJS para demonstrar a aplicação prática de conceitos de design responsivo e interativo. Com uma interface moderna e elegante, ele oferece uma experiência de usuário atraente e envolvente. Este projeto é uma demonstração do compromisso de MChiodi com a excelência e a inovação, combinando habilidades técnicas e criativas para criar soluções de design de alta qualidade."
-      },
-      "TaskManager": {
-        "title": "Gerenciador de Tarefas",
-        "description": "Este projeto é um sistema de gerenciamento de tarefas que permite aos usuários registrar, listar, editar e excluir tarefas. O sistema consiste em um frontend desenvolvido em React.js com Tailwind CSS e um backend usando Node.js com Express e Sequelize para comunicação com o banco de dados."
       }
     },
     "NodeJS": {
@@ -158,6 +154,14 @@
       "CryptoApi": {
         "title": "CryptoApi",
         "description": "Crypto API é uma API REST em Node.js que fornece dados em tempo real sobre criptomoedas, incluindo preços, histórico de mercado, conversão de moedas e alertas personalizados. Com endpoints para rastreamento de preços, favoritos e cotação do dólar, a API é ideal para aplicações que necessitam de informações atualizadas sobre o mercado cripto."
+      },
+      "TaskManager": {
+        "title": "Gerenciador de Tarefas",
+        "description": "Este projeto é um sistema de gerenciamento de tarefas que permite aos usuários registrar, listar, editar e excluir tarefas. O sistema consiste em um frontend desenvolvido em React.js com Tailwind CSS e um backend usando Node.js com Express e Sequelize para comunicação com o banco de dados."
+      },
+      "URLShortener":{
+        "title": "URL Shortener",
+        "description": "Este projeto é um encurtador de URLs completo que transforma links extensos em versões curtas e facilmente compartilháveis. Dividido em duas partes, o sistema conta com um backend robusto, desenvolvido em Node.js com Express, que realiza o encurtamento das URLs, gera QR Codes automaticamente e gerencia o redirecionamento para os links originais. No frontend, utilizei React, Tailwind CSS e Framer Motion para criar uma interface moderna, interativa e responsiva, enriquecida com animações dinâmicas."
       }
     },
     "HTMLCSSJavaScript": {
