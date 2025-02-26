@@ -1,69 +1,67 @@
-# 🚀 Meu Portfólio - ReactJS
+# 🚀 My Portfolio - ReactJS
 
 ---
 
-👋 Olá! Com alguns anos na área de desenvolvimento, venho aprimorando minhas habilidades e me dedicando a oferecer soluções tecnológicas eficientes.
+👋 Hello! With a few years in the development area, I have been improving my skills and dedicating myself to offering efficient technological solutions.
 
 ---
 
-## 🛠️ Habilidades Técnicas
+## 🛠️ Technical Skills
 
-- **PHP & CodeIgniter**: Desenvolvimento robusto no back-end.
-- **MySQL**: Gerenciamento de banco de dados otimizado.
-- **HTML, CSS & JavaScript**: Criação de interfaces atrativas e funcionais.
-- **ReactJS & React Native**: Atualmente aprofundando meus conhecimentos para desenvolvimento front-end de alta qualidade.
-- **NodeJS**: Desenvolvimento de APIs e aplicações escaláveis.
-
----
-
-## 🎯 Objetivos
-
-Como um **entusiasta da tecnologia**, meu principal objetivo é encontrar uma oportunidade que me permita demonstrar, por meio do meu desempenho, todo o conhecimento e paixão que venho acumulando ao longo dos anos.
+- **PHP & CodeIgniter**: Robust back-end development.
+- **MySQL**: Optimized database management.
+- **HTML, CSS & JavaScript**: Creation of attractive and functional interfaces.
+- **ReactJS & React Native**: Currently deepening my knowledge for high-quality front-end development.
+- **NodeJS**: Development of APIs and scalable applications.
 
 ---
 
-## 🌐 Projetos
+## 🎯 Goals
 
-Aqui você encontrará alguns dos projetos que desenvolvi, demonstrando minhas habilidades em ação. Sinta-se à vontade para explorá-los!
+As a **technology enthusiast**, my main goal is to find an opportunity that allows me to demonstrate, through my performance, all the knowledge and passion that I have accumulated over the years.
 
-### 📱 Alguns Aplicativos
+---
+## 🌐 Projects
 
-- [**Futuro Garantido**](https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido)
-- [**Diversão em Dupla: Jogos para Dois**](https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame)
+Here you will find some of the projects I have developed, demonstrating my skills in action. Feel free to explore them!
+
+### 📱 Some Applications
+
+- [**Guaranteed Future**](https://play.google.com/store/apps/details?id=com.matheuschiodi.FuturoGarantido)
+- [**Fun for Two: Games for Two**](https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame)
 - [**Pomodoro Prime Timer**](https://play.google.com/store/apps/details?id=com.matheuschiodi.PomodoroPrimeTimer)
 - [**MChiodi - Training Record**](https://play.google.com/store/apps/details?id=com.matheuschiodi.TrainingRecord)
-- [**Gerenciador de Cartões**](https://play.google.com/store/apps/details?id=com.matheuschiodi.CardManager)
+- [**Card Manager**](https://play.google.com/store/apps/details?id=com.matheuschiodi.CardManager)
 - [**DailyDone**](https://play.google.com/store/apps/details?id=com.matheuschiodi.DailyDone)
 - [**Bibliotrack**](https://play.google.com/store/apps/details?id=com.matheuschiodi.Bibliotrack)
 - [**FitForge**](https://play.google.com/store/apps/details?id=com.matheuschiodi.FitForge)
 
-### 🌐 Alguns Sites
+### 🌐 Some Sites
 
-- [**Projeto Windows**](https://matheuschiodi.github.io/windows/)
-- [**Projeto Loja**](https://matheuschiodi.github.io/Project-Shop/)
+- [**Windows Project**](https://matheuschiodi.github.io/windows/)
+- [**Shop Project**](https://matheuschiodi.github.io/Project-Shop/)
 - [**NLW Spacetime**](https://matheuschiodi.github.io/NLW-Spacetime-not-Prisma/)
 - [**Shop Supplements**](https://matheuschiodi.github.io/shop-supplements/)
 - [**Expresso Design**](https://matheuschiodi.github.io/ExpressoDesign/)
-- [**Ajuda com Link**](https://matheuschiodi.github.io/HelpLinks/)
+- [**Help with Link**](https://matheuschiodi.github.io/HelpLinks/)
 
-### ⚙️ Projetos NodeJS
+### ⚙️ NodeJS Projects
 
-- **[Gerador de QR Codes](https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces)** - Sistema para criar QR Codes personalizados.
-- **[Gerenciador de Podcasts](https://github.com/MatheusChiodi/Gerenciador-de-Podcasts)** - Plataforma para organização e gerenciamento de podcasts.
-- **[Crypto API](https://github.com/MatheusChiodi/crypto-api)** - API REST para fornecer dados sobre criptomoedas em tempo real.
+- **[QR Code Generator](https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces)** - System to create personalized QR Codes.
+- **[Podcast Manager](https://github.com/MatheusChiodi/Gerenciador-de-Podcasts)** - Platform for organizing and managing podcasts.
+- **[Crypto API](https://github.com/MatheusChiodi/crypto-api)** - REST API to provide real-time cryptocurrency data.
 
 ---
 
-## 💼 Experiência Profissional
+## 💼 Professional Experience
 
 ### IFSP - Araraquara
 
-Durante meus anos de estudo no Instituto Federal de Araraquara, concluí um curso técnico integrado ao ensino médio, onde tive minha primeira exposição a linguagens como HTML, CSS, PHP, SQL, JavaScript, AJAX e jQuery. Como projeto final, desenvolvi uma plataforma para a organização sem fins lucrativos **Parque Vivo**, aplicando conhecimentos adquiridos ao longo do curso.
+During my years of study at the Instituto Federal de Araraquara, I completed a technical course integrated with high school, where I had my first exposure to languages ​​such as HTML, CSS, PHP, SQL, JavaScript, AJAX and jQuery. As a final project, I developed a platform for the non-profit organization **Parque Vivo**, applying knowledge acquired throughout the course.
 
-### Primeiro Emprego
+### First Job
 
-Atualmente, atuo como **Desenvolvedor Fullstack**, onde sou responsável pelo desenvolvimento de sistemas internos, criação de sites institucionais e implementação de plataformas que seguem rigorosamente a **LGPD**. Trabalho com **CodeIgniter, JavaScript, SQL, PHP, HTML5 e CSS**, otimizando e garantindo a manutenção dos sistemas da empresa.
+I currently work as a **Fullstack Developer**, where I am responsible for developing internal systems, creating institutional websites and implementing platforms that strictly follow the **LGPD**. I work with **CodeIgniter, JavaScript, SQL, PHP, HTML5 and CSS**, optimizing and ensuring the maintenance of the company's systems.
 
 ---
-
-📥 Para qualquer dúvida, feedback ou oportunidades, sinta-se à vontade para entrar em contato!
+📥 For any questions, feedback or opportunities, feel free to contact me!
