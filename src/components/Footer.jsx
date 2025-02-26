@@ -18,8 +18,8 @@ export default function Footer() {
 
   const resumeLink =
   i18n.language === 'en'
-    ? 'https://drive.google.com/file/d/1QwfWtw3y9tPlLXLWUTDkMjpl8xx7fysZ/view?usp=sharing'
-    : 'https://drive.google.com/file/d/1WMEaiYW6C2tolByeC62TIE2KhvYeg8NL/view?usp=sharing';
+    ? 'https://drive.google.com/file/d/1JZOj3ACM7_tNmMlVUs1_PTvEbpNp-Ze_/view?usp=sharing'
+    : 'https://drive.google.com/file/d/1E1wQCnrVhsZjFRVbcMLFBGI4oMd8L1LW/view?usp=sharing';
 
   // Links externos (Redes Sociais)
   const externalLinks = [
