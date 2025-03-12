@@ -13,9 +13,15 @@ export default function CertificatesCarousel() {
   const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    if (carousel.current) {
-      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    }
+    const updateWidth = () => {
+      if (carousel.current) {
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+      }
+    };
+
+    updateWidth(); 
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
   return (
@@ -55,6 +61,8 @@ export default function CertificatesCarousel() {
           className="flex space-x-6"
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
+          onDragStart={() => setIsPaused(true)}
+          onDragEnd={() => setIsPaused(false)}
           animate={isPaused ? {} : { x: [0, -width, 0] }}
           transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
         >
@@ -64,7 +72,7 @@ export default function CertificatesCarousel() {
               className="bg-white rounded-xl p-4 transition-all duration-300 min-w-[250px] md:min-w-[300px] flex flex-col items-center justify-between"
               onClick={() => {
                 setSelectedCertificate(certificate);
-                setIsPaused(true); 
+                setIsPaused(true);
               }}
             >
               <img
