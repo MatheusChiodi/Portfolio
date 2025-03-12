@@ -7,7 +7,7 @@ import CertificateModal from './CertificateModal';
 
 export default function CertificatesCarousel() {
   const { t } = useTranslation();
-  const [width, setWidth] = useState(0);
+  const [containerWidth, setContainerWidth] = useState(0);
   const carousel = useRef(null);
   const [selectedCertificate, setSelectedCertificate] = useState(null);
   const [isPaused, setIsPaused] = useState(false);
@@ -15,14 +15,19 @@ export default function CertificatesCarousel() {
   useEffect(() => {
     const updateWidth = () => {
       if (carousel.current) {
-        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+        setContainerWidth(
+          carousel.current.scrollWidth - carousel.current.offsetWidth
+        );
       }
     };
 
-    updateWidth(); 
+    updateWidth();
     window.addEventListener('resize', updateWidth);
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
+
+  const duplicatedCertificates = [...certificates, ...certificates];
+  const loopDistance = containerWidth / 2;
 
   return (
     <motion.section
@@ -46,7 +51,6 @@ export default function CertificatesCarousel() {
             className="text-[#FF5555] text-[30px] md:text-[25px] lg:text-[30px] xl:text-[60px] pt-2"
           />
         </div>
-
         <p className="text-gray-600 mt-2 lg:text-[25px] text-[20px]">
           {t('certificates.subtitle')}
         </p>
@@ -54,29 +58,28 @@ export default function CertificatesCarousel() {
 
       <motion.div
         ref={carousel}
-        className="overflow-hidden mt-8 cursor-grab justify-center flex space-x-6"
+        className="overflow-hidden mt-8 cursor-grab flex"
         whileTap={{ cursor: 'grabbing' }}
       >
         <motion.div
-          className="flex space-x-6"
+          className="flex"
           drag="x"
-          dragConstraints={{ right: 0, left: -width }}
           onDragStart={() => setIsPaused(true)}
           onDragEnd={() => setIsPaused(false)}
-          animate={isPaused ? {} : { x: [0, -width, 0] }}
+          animate={isPaused ? {} : { x: -loopDistance }}
           transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
         >
-          {certificates.map((certificate) => (
+          {duplicatedCertificates.map((certificate, index) => (
             <motion.div
-              key={certificate.id}
-              className="bg-white rounded-xl p-4 transition-all duration-300 min-w-[250px] md:min-w-[300px] flex flex-col items-center justify-between"
+              key={`${certificate.id}-${index}`}
+              className="bg-white rounded-xl p-4 transition-all duration-300 min-w-[250px] md:min-w-[300px] flex flex-col items-center justify-between mx-3"
               onClick={() => {
                 setSelectedCertificate(certificate);
                 setIsPaused(true);
               }}
             >
               <img
-                src={`./` + certificate.image}
+                src={`./${certificate.image}`}
                 alt={certificate.title}
                 className="w-full h-40 object-cover rounded-md"
               />
