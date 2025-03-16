@@ -81,7 +81,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.whatsapp {
+.youtube {
   margin-top: 1em;
   margin-left: 1.2em;
 }
@@ -119,7 +119,7 @@
 .card4:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #4cc85a;
+  background-color: #ff0000;
 }
 
 .card4:hover .discord {

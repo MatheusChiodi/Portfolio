@@ -34,9 +34,9 @@ export default function Footer() {
       title: 'Github',
     },
     {
-      href: 'https://api.whatsapp.com/send/?phone=5516988400100&type=phone_number&app_absent=0',
-      icon: 'fab fa-whatsapp',
-      title: 'Whatsapp',
+      href: 'https://www.youtube.com/@MChiodiDev',
+      icon: 'fab fa-youtube',
+      title: 'Youtube',
     },
     {
       href: resumeLink,

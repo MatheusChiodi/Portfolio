@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { AtSign, Github, Linkedin, Phone, X } from 'lucide-react';
+import { AtSign, Github, Linkedin, Youtube, X } from 'lucide-react';
 
 const Contact = ({ setIsOpenContact }) => {
   const handleClose = () => {
@@ -70,13 +70,13 @@ const Contact = ({ setIsOpenContact }) => {
                   <Github className="github text-[25px] text-gray-900"></Github>
                 </a>
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5516988400100&type=phone_number&app_absent=0"
+                  href="https://www.youtube.com/@MChiodiDev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card4 hover:text-[#F8F8F2]"
-                  title="Whatsapp"
+                  title="Youtube"
                 >
-                  <Phone className="whatsapp text-[25px] text-gray-900"></Phone>
+                  <Youtube className="youtube text-[25px] text-gray-900"/>
                 </a>
               </div>
             </div>
