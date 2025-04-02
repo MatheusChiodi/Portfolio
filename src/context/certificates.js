@@ -29,6 +29,12 @@ const certificates = [
     issuer: 'Inter',
     image: '/certificates/Orange Tech 2023.png',
   },
+  {
+    id: 6,
+    title: 'DIO Campus Expert',
+    issuer: 'DIO',
+    image: '/certificates/DioCampusExpertT11.png',
+  },
 ];
 
 export default certificates;
