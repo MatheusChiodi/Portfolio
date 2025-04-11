@@ -1,7 +1,9 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { AtSign, Github, Linkedin, Youtube, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = ({ setIsOpenContact }) => {
+  const { t } = useTranslation();
   const handleClose = () => {
     setIsOpenContact(false);
   };
@@ -27,7 +29,7 @@ const Contact = ({ setIsOpenContact }) => {
           {/* Header */}
           <div className="flex justify-between items-center p-4 bg-gray-800 text-gray-300">
             <h1 className="text-[22px] font-bold bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
-              Contato
+              {t('navbar.contact')}
             </h1>
             <button onClick={handleClose} aria-label="Fechar">
               <X
@@ -76,7 +78,7 @@ const Contact = ({ setIsOpenContact }) => {
                   className="card4 hover:text-[#F8F8F2]"
                   title="Youtube"
                 >
-                  <Youtube className="youtube text-[25px] text-gray-900"/>
+                  <Youtube className="youtube text-[25px] text-gray-900" />
                 </a>
               </div>
             </div>
