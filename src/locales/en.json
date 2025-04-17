@@ -11,6 +11,7 @@
     "link2": "Projects",
     "link3": "Certificates",
     "link4": "Experience",
+    "link5": "Tech Content",
     "tec": "Technologies"
   },
   "about": {
@@ -59,8 +60,8 @@
     },
     "MChiodi": {
       "title": "Creation of MChiodi",
-      "text1": "When I started my studies in React Native, I had no idea how much of an impact it would have on my life. With dedication and passion for development, I created MChiodi, a developer account that now has more than 7 apps launched!",
-      "text2": "But the most incredible thing about this journey was not just building apps, but the opportunities that arose. Through this project, I had the honor of speaking at some schools, sharing my experience and encouraging students to believe in the power of learning and technology."
+      "text1": "When I started studying React Native, I had no idea how much it would impact my life. With dedication and a passion for development, I created MChiodi — a developer account that now features over 7 published apps, as well as a YouTube channel focused on programming content!",
+      "text2": "But the most incredible part of this journey wasn't just building apps — it was the opportunities that came along the way. Through this project, I had the honor of speaking at several schools, sharing my experience and encouraging students to believe in the power of learning and technology."
     }
   },
   "projects": {
@@ -169,6 +170,35 @@
         "title": "TCC Parque Vivo",
         "description": "Developed for TIIEM at IFSP - Campus Araraquara, this final project supports the non-profit organization 'Parque Vivo', integrating basic and technical knowledge acquired during the course. Using HTML, CSS, MySQL, PHP, Ajax and JavaScript, it reflects our learning journey and practical skills. It is a practical demonstration of the comprehensive understanding and application of these technologies, showing the perfect integration between theory and practice."
       }
+    },
+    "VScodeExtensions": {
+      "hydration-reminder": {
+        "title": "Hydration Reminder",
+        "description": "Hydration Reminder is a Visual Studio Code extension that helps developers stay hydrated during long coding sessions. It sends regular reminders to drink water, promoting healthy habits and increasing productivity."
+      },
+      "Snake-in-VSCode": {
+        "title": "Snake in VSCode",
+        "description": "Snake in VSCode is a fun and interactive game that brings the classic snake experience to the Visual Studio Code environment. Developed as an extension, it allows users to play while coding, providing a fun and relaxing break from work."
+      }
     }
+  },
+  "youtubeVideos": {
+    "video1": {
+      "title": "From Developer to Content Creator",
+      "description": "In this video, I share my journey from being a developer to becoming a content creator. I talk about the challenges and lessons I’ve learned along the way and how it helped me grow professionally. If you're thinking about taking this path, this video is for you!"
+    },
+    "video2": {
+      "title": "Lynx: A New Threat to React Native and Flutter?",
+      "description": "In this video, we discuss Lynx, a new programming language that promises to revolutionize mobile app development. We'll explore its features, advantages, and how it compares to React Native and Flutter. If you're a developer or interested in tech, don’t miss it!"
+    },
+    "video3": {
+      "title": "You're Not a Real Front-End Dev If You Don't Know These 6 Libraries!",
+      "description": "In this video, I present 6 essential libraries that every front-end developer should know. Each one offers amazing features that can simplify and speed up your work. If you want to stand out in the field, make sure to check them out!"
+    }
+  },
+  "YoutubeSection": {
+    "title": "Tech Content",
+    "text": "Here are some videos and content productions that I publish on my channel and social networks!",
+    "link": "See more on the channel →"
   }
 }

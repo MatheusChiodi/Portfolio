@@ -8,6 +8,7 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 import Footer from '../components/Footer';
 import Certificates from '../components/Certificates';
 import Experience from '../components/Experience';
+import YoutubeSection from '../components/YoutubeSection';
 
 function HomePage() {
   const [visibleLoading, setVisibleLoading] = useState(false);
@@ -42,6 +43,7 @@ function HomePage() {
             <Projects />
             <Certificates />
             <Experience />
+            <YoutubeSection />
             <Footer />
           </div>
         </>

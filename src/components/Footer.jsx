@@ -14,12 +14,13 @@ export default function Footer() {
     { to: 'Projects', text: t('footer.link2') },
     { to: 'Certificates', text: t('footer.link3') },
     { to: 'Experience', text: t('footer.link4') },
+    { to: 'YoutubeSection', text: t('footer.link5') },
   ];
 
   const resumeLink =
   i18n.language === 'en'
-    ? 'https://drive.google.com/file/d/1JZOj3ACM7_tNmMlVUs1_PTvEbpNp-Ze_/view?usp=sharing'
-    : 'https://drive.google.com/file/d/1E1wQCnrVhsZjFRVbcMLFBGI4oMd8L1LW/view?usp=sharing';
+    ? 'https://matheuschiodi.github.io/Portfolio/curriculum/matheus-chiodi-en.pdf'
+    : 'https://matheuschiodi.github.io/Portfolio/curriculum/matheus-chiodi-ptBr.pdf';
 
   // Links externos (Redes Sociais)
   const externalLinks = [
@@ -49,13 +50,12 @@ export default function Footer() {
     if (location.pathname === '/') {
       document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // Se estiver em outra página, redireciona para Home e rola depois
       navigate('/');
       setTimeout(() => {
         document
           .getElementById(section)
           ?.scrollIntoView({ behavior: 'smooth' });
-      }, 6000);
+      }, 1000);
     }
   };
 
@@ -69,7 +69,6 @@ export default function Footer() {
         transition: { duration: 0.6, ease: 'easeOut' },
       }}
     >
-      {/* Logo e Redes Sociais */}
       <div className="flex flex-col justify-center items-center text-center text-[#F8F8F2] md:w-[33.3%] w-[100%]">
         <motion.h2
           className="font-bold text-xl bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent"
@@ -78,7 +77,6 @@ export default function Footer() {
           &lt; Matheus Chiodi /&gt;
         </motion.h2>
 
-        {/* Ícones de redes sociais */}
         <motion.div
           className="text-[1.8rem] flex justify-center gap-4 mt-2"
           initial={{ opacity: 0 }}
@@ -102,7 +100,6 @@ export default function Footer() {
           ))}
         </motion.div>
 
-        {/* E-mail */}
         <p className="text-sm mt-2">
           <a
             href="mailto:mchiodidev@gmail.com"
@@ -115,7 +112,6 @@ export default function Footer() {
         </p>
       </div>
 
-      {/* Links internos para navegação */}
       <div className="flex flex-col justify-center items-center text-center text-[#F8F8F2] md:w-[33.3%] w-[100%] mt-5 md:mt-0">
         <h2 className="font-bold text-lg text-[#FF5555]">{t('footer.info')}</h2>
         {internalLinks.map((info, index) => (
@@ -139,7 +135,6 @@ export default function Footer() {
         ))}
       </div>
 
-      {/* Tecnologias */}
       <div className="flex flex-col justify-center items-center text-center text-[#F8F8F2] md:w-[33.3%] w-[100%] mt-5 md:mt-0">
         <h2 className="font-bold text-lg text-[#FF5555]">{t('footer.tec')}</h2>
         {[

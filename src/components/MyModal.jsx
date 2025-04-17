@@ -40,7 +40,6 @@ export default function MyModal({ projectActive, openProject, handleClose }) {
               {projectActive.description}
             </motion.p>
 
-            {/* Botão Ver Projeto */}
             <motion.div
               className="flex justify-center mb-8"
               whileHover={{ scale: 1.1 }}

@@ -191,8 +191,33 @@ const AllProjectsContext = () => {
           },
         ],
       },
+      
       {
         id: 4,
+        name: 'VSCode Extensions',
+        projects: [
+          {
+            id: 1,
+            title: t('projects.VScodeExtensions.hydration-reminder.title'),
+            description: t(
+              'projects.VScodeExtensions.hydration-reminder.description'
+            ),
+            link: 'https://github.com/MatheusChiodi/hydration-reminder',
+            image: '/hydration-reminder.png',
+          },
+          {
+            id: 2,
+            title: t('projects.VScodeExtensions.Snake-in-VSCode.title'),
+            description: t(
+              'projects.VScodeExtensions.Snake-in-VSCode.description'
+            ),
+            link: 'https://github.com/MatheusChiodi/Snake-in-VSCode-LiveCoding',
+            image: '/snake-in-VSCode.png',
+          },
+        ],
+      },
+      {
+        id: 5,
         name: 'HTML, CSS e JavaScript',
         projects: [
           {

@@ -11,6 +11,7 @@
     "link2": "Projetos",
     "link3": "Certificados",
     "link4": "Experiência",
+    "link5": "Conteúdo Tech",
     "tec": "Tecnologias"
   },
   "about": {
@@ -59,7 +60,7 @@
     },
     "MChiodi": {
       "title": "Criação de MChiodi",
-      "text1": "Quando comecei meus estudos em React Native, não imaginava o impacto que isso teria na minha vida. Com dedicação e paixão pelo desenvolvimento, criei a MChiodi, uma conta de desenvolvedor que hoje conta com mais de 7 apps lançados!",
+      "text1": "Quando comecei meus estudos em React Native, não imaginava o impacto que isso teria na minha vida. Com dedicação e paixão pelo desenvolvimento, criei a MChiodi, uma conta de desenvolvedor que hoje conta com mais de 7 apps lançados, além de um canal no YouTube com conteúdos voltados à programação!",
       "text2": "Mas o mais incrível dessa jornada não foi apenas construir aplicativos, e sim as oportunidades que surgiram. Através desse projeto, tive a honra de palestrar em algumas escolas, compartilhando minha experiência e incentivando alunos a acreditarem no poder do aprendizado e da tecnologia."
     }
   },
@@ -159,7 +160,7 @@
         "title": "Gerenciador de Tarefas",
         "description": "Este projeto é um sistema de gerenciamento de tarefas que permite aos usuários registrar, listar, editar e excluir tarefas. O sistema consiste em um frontend desenvolvido em React.js com Tailwind CSS e um backend usando Node.js com Express e Sequelize para comunicação com o banco de dados."
       },
-      "URLShortener":{
+      "URLShortener": {
         "title": "URL Shortener",
         "description": "Este projeto é um encurtador de URLs completo que transforma links extensos em versões curtas e facilmente compartilháveis. Dividido em duas partes, o sistema conta com um backend robusto, desenvolvido em Node.js com Express, que realiza o encurtamento das URLs, gera QR Codes automaticamente e gerencia o redirecionamento para os links originais. No frontend, utilizei React, Tailwind CSS e Framer Motion para criar uma interface moderna, interativa e responsiva, enriquecida com animações dinâmicas."
       }
@@ -169,6 +170,35 @@
         "title": "TCC Parque Vivo",
         "description": "Desenvolvido para o TIIEM no IFSP - Campus Araraquara, este projeto final apoia a organização sem fins lucrativos 'Parque Vivo', integrando conhecimentos básicos e técnicos adquiridos durante o curso. Utilizando HTML, CSS, MySQL, PHP, Ajax e JavaScript, ele reflete nossa jornada de aprendizado e habilidades práticas. É uma demonstração prática da compreensão e aplicação abrangentes dessas tecnologias, mostrando a integração perfeita entre teoria e prática."
       }
+    },
+    "VScodeExtensions": {
+      "hydration-reminder": {
+        "title": "Hydration Reminder",
+        "description": "O Hydration Reminder é uma extensão do Visual Studio Code que ajuda os desenvolvedores a se manterem hidratados durante longas sessões de codificação. Ele envia lembretes regulares para beber água, promovendo hábitos saudáveis e aumentando a produtividade."
+      },
+      "Snake-in-VSCode": {
+        "title": "Snake in VSCode",
+        "description": "O Snake in VSCode é um jogo divertido e interativo que traz a clássica experiência do jogo da cobrinha para o ambiente do Visual Studio Code. Desenvolvido como uma extensão, ele permite que os usuários joguem enquanto codificam, proporcionando uma pausa divertida e relaxante durante o trabalho."
+      }
     }
+  },
+  "youtubeVideos": {
+    "video1": {
+      "title": "De Programador a Criador de Conteúdo",
+      "description": "Neste vídeo, compartilho minha jornada de programador a criador de conteúdo. Falo sobre os desafios e aprendizados que enfrentei ao longo do caminho e como isso me ajudou a crescer profissionalmente. Se você está pensando em seguir esse caminho, este vídeo é para você!"
+    },
+    "video2": {
+      "title": "Lynx: Uma Nova Ameaça ao React Native e Flutter?",
+      "description": "Neste vídeo, discutimos o Lynx, uma nova linguagem de programação que promete revolucionar o desenvolvimento de aplicativos móveis. Vamos explorar suas características, vantagens e como ela se compara ao React Native e Flutter. Se você é desenvolvedor ou está interessado em tecnologia, não perca!"
+    },
+    "video3": {
+      "title": "Você Não É Front-End de Verdade se Não Conhece Essas 6 Bibliotecas!",
+      "description": "Neste vídeo, apresento 6 bibliotecas essenciais que todo desenvolvedor front-end deve conhecer. Cada uma delas traz funcionalidades incríveis que podem facilitar e agilizar o seu trabalho. Se você quer se destacar na área, não deixe de conferir!"
+    }
+  },
+  "YoutubeSection": {
+    "title": "Conteúdo Tech",
+    "text": "Aqui estão alguns vídeos e produções de conteúdo que publico no meu canal e redes sociais!",
+    "link": "Ver mais no canal →"
   }
 }
