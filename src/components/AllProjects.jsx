@@ -29,7 +29,6 @@ export default function AllProjects() {
 
   return (
     <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 mt-20 rounded-3xl overflow-hidden">
-      {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-soft-light" />
 
@@ -46,7 +45,6 @@ export default function AllProjects() {
         </motion.div>
       </section>
 
-      {/* Technology Sections */}
       <div className="max-w-7xl mx-auto px-6">
         <AnimatePresence>
           {filteredProjects.map((technology) => (
@@ -103,7 +101,6 @@ export default function AllProjects() {
         </AnimatePresence>
       </div>
 
-      {/* Floating Navigation */}
       <div className="fixed bottom-3 left-6 flex gap-4 z-50">
         <motion.button
           className="flex items-center gap-2 bg-gradient-to-br from-red-500 to-pink-600 text-white p-1 px-3 rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-pointer"
@@ -119,7 +116,6 @@ export default function AllProjects() {
         </motion.button>
       </div>
 
-      {/* Modal */}
       {isVisibleTechnology && (
         <ModalTech
           toggleModal={toggleModal}
