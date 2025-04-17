@@ -74,29 +74,32 @@ export default function Experience() {
         </p>
       </motion.div>
 
-      {/* Timeline de Experiência */}
-      <div className="flex flex-wrap justify-center items-center gap-6 mt-8 ">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 w-full">
         {experiences.map((exp) => (
           <motion.div
             key={exp.id}
-            className={`h-[128px] w-[190px] cursor-pointer flex flex-col items-center justify-center  rounded-xl shadow-md ${
-              selectedExperience === exp.id
-                ? 'bg-[#ff5555] text-white'
-                : 'bg-white text-gray-800 hover:bg-[#ff5555]'
-            } transition-all duration-300`}
-            whileHover={{ scale: 1.05 }}
             onClick={() => setSelectedExperience(exp.id)}
+            whileHover={{ scale: 1.02 }}
+            className={`
+        flex flex-col items-center justify-center p-4 rounded-xl shadow-md transition-all duration-500 cursor-pointer 
+        ${
+          selectedExperience === exp.id
+            ? 'bg-[#ff5555] text-white shadow-xl'
+            : 'bg-white text-gray-800 hover:bg-[#ff5555] hover:text-white'
+        }
+      `}
           >
-            {exp.icon}
-            <h3 className="text-lg font-semibold mt-2">{exp.title}</h3>
+            <div className="mb-2">{exp.icon}</div>
+            <h3 className="text-md md:text-lg font-semibold text-center">
+              {exp.title}
+            </h3>
             {exp.subtitle && (
-              <p className="text-sm text-justify">{exp.subtitle}</p>
+              <p className="text-xs md:text-sm text-center">{exp.subtitle}</p>
             )}
           </motion.div>
         ))}
       </div>
 
-      {/* Descrição da Experiência Selecionada */}
       <motion.div
         key={selectedExperience}
         initial={{ opacity: 0, y: 20 }}
