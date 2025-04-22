@@ -141,6 +141,10 @@
       "ExpressoDesign": {
         "title": "Expresso Design",
         "description": "Expresso Design é um projeto desenvolvido com ReactJS para demonstrar a aplicação prática de conceitos de design responsivo e interativo. Com uma interface moderna e elegante, ele oferece uma experiência de usuário atraente e envolvente. Este projeto é uma demonstração do compromisso de MChiodi com a excelência e a inovação, combinando habilidades técnicas e criativas para criar soluções de design de alta qualidade."
+      },
+      "FlagCustomizer": {
+        "title": "Flag Customizer",
+        "description": "Personalize suas fotos com sobreposições de bandeiras estilosas em formato redondo ou quadrado, adicionando texto e cores personalizados. Ideal para campanhas, redes sociais ou qualquer conteúdo visual que expresse sua identidade ou marca."
       }
     },
     "NodeJS": {
