@@ -16,7 +16,7 @@ export default function Projects() {
 
   return (
     <motion.div
-      className="w-full p-4 bg-gray-100 rounded-2xl mb-4 mt-10"
+      className="w-full p-4 px-3 bg-gray-100 rounded-2xl mb-4 mt-10"
       id="Projects"
       whileInView={{ opacity: 1, x: 0 }}
       initial={{ opacity: 0, x: -20 }}

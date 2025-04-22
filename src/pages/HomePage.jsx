@@ -44,8 +44,8 @@ function HomePage() {
             <Certificates />
             <Experience />
             <YoutubeSection />
-            <Footer />
           </div>
+          <Footer />
         </>
       )}
 

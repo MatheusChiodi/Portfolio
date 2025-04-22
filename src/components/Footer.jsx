@@ -61,7 +61,7 @@ export default function Footer() {
 
   return (
     <motion.footer
-      className="flex flex-wrap justify-between items-center bg-gray-900/90 backdrop-blur-lg text-white rounded-2xl p-6 shadow-2xl border border-gray-700 mt-10"
+      className="flex flex-wrap justify-between items-center bg-gray-900/90 backdrop-blur-lg text-white rounded-t-2xl p-6 w-[98%] mx-auto shadow-2xl border border-gray-700 mt-10"
       initial={{ opacity: 0, y: 30 }}
       animate={{
         opacity: 1,
