@@ -45,12 +45,12 @@ export default function AllProjects() {
         </motion.div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto lg:px-6 px-2">
         <AnimatePresence>
           {filteredProjects.map((technology) => (
             <motion.div
               key={technology.id}
-              className="mb-20 bg-gray-800/30 rounded-2xl p-8 shadow-2xl border border-gray-700/50"
+              className="mb-20 bg-gray-800/30 rounded-2xl lg:p-8 p-3 shadow-2xl border border-gray-700/50"
               initial={{ opacity: 0, y: 20 }}
               animate={{
                 opacity: 1,
