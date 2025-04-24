@@ -19,7 +19,7 @@ export default function YoutubeSection() {
     >
       <div className="text-center">
         <div className="flex flex-wrap items-center gap-2 justify-center">
-          <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl">
+          <h2 className="text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl">
             {t('YoutubeSection.title')}
           </h2>
           <Youtube size={50} className="text-[#FF5555] pt-2" />

@@ -43,12 +43,12 @@ export default function CertificatesCarousel() {
         className="text-center"
       >
         <div className="flex flex-wrap items-center gap-2 justify-center">
-          <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl text-center">
+          <h2 className="text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl text-center">
             {t('certificates.title')}
           </h2>
           <GraduationCap
             size={40}
-            className="text-[#FF5555] text-[30px] md:text-[25px] lg:text-[30px] xl:text-[60px] pt-2"
+            className="text-[#FF5555] text-[30px] md:text-[25px] lg:text-[35px] xl:text-[50px] pt-2"
           />
         </div>
         <p className="text-gray-600 mt-2 lg:text-[25px] text-[20px]">
@@ -56,23 +56,12 @@ export default function CertificatesCarousel() {
         </p>
       </motion.div>
 
-      <motion.div
-        ref={carousel}
-        className="overflow-hidden mt-8 cursor-grab flex"
-        whileTap={{ cursor: 'grabbing' }}
-      >
-        <motion.div
-          className="flex"
-          drag="x"
-          onDragStart={() => setIsPaused(true)}
-          onDragEnd={() => setIsPaused(false)}
-          animate={isPaused ? {} : { x: -loopDistance }}
-          transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
-        >
+      <div className="relative mt-6 w-full overflow-hidden rounded-md">
+        <div className="animate-marquee flex w-max gap-4 px-4">
           {duplicatedCertificates.map((certificate, index) => (
             <motion.div
               key={`${certificate.id}-${index}`}
-              className="bg-white rounded-xl p-4 transition-all duration-300 min-w-[250px] md:min-w-[300px] flex flex-col items-center justify-between mx-3"
+              className="bg-white rounded-xl p-4 transition-all duration-300 min-w-[250px] md:min-w-[300px] flex flex-col items-center justify-between mx-3 cursor-pointer"
               onClick={() => {
                 setSelectedCertificate(certificate);
                 setIsPaused(true);
@@ -89,8 +78,8 @@ export default function CertificatesCarousel() {
               <p className="text-gray-500 text-sm">{certificate.issuer}</p>
             </motion.div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       {selectedCertificate && (
         <CertificateModal

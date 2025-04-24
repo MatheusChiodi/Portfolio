@@ -61,12 +61,12 @@ export default function Experience() {
         className="text-center"
       >
         <div className="flex flex-wrap items-center gap-2 justify-center">
-          <h2 className="text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] font-extrabold text-gray-900 drop-shadow-2xl">
+          <h2 className="text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl">
             {t('experience.title')}
           </h2>
           <Route
             size={40}
-            className="text-[#FF5555] text-[30px] md:text-[20px] lg:text-[30px] xl:text-[60px] pt-2"
+            className="text-[#FF5555] text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] pt-2"
           />
         </div>
         <p className="text-gray-600 mt-2 md:text-[20px] lg:text-[30px] text-[20px]">
