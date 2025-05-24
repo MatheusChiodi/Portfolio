@@ -145,6 +145,10 @@
       "FlagCustomizer": {
         "title": "Flag Customizer",
         "description": "Personalize suas fotos com sobreposições de bandeiras estilosas em formato redondo ou quadrado, adicionando texto e cores personalizados. Ideal para campanhas, redes sociais ou qualquer conteúdo visual que expresse sua identidade ou marca."
+      },
+      "MChiodiTools":{
+        "title": "MChiodi Tools",
+        "description": "MChiodi Tools é um projeto desenvolvido com ReactJS que oferece uma coleção de ferramentas úteis para desenvolvedores e entusiastas de tecnologia. Com uma interface intuitiva e responsiva, ele permite acesso fácil a diversas funcionalidades, como conversão de unidades, gerador de senhas seguras e muito mais. Este projeto reflete o compromisso de MChiodi em fornecer soluções práticas e eficientes para a comunidade de tecnologia."
       }
     },
     "NodeJS": {

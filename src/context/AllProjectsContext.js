@@ -154,6 +154,13 @@ const AllProjectsContext = () => {
             link: 'https://matheuschiodi.github.io/Flag-Customizer/',
             image: '/FlagCustomizer.png',
           },
+          {
+            id: 11,
+            title: t('projects.reactJS.MChiodiTools.title'),
+            description: t('projects.reactJS.MChiodiTools.description'),
+            link: 'https://mchiodi-tools.vercel.app/',
+            image: '/mchioditools.png',
+          },
         ],
       },
 

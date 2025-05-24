@@ -145,6 +145,10 @@
       "FlagCustomizer": {
         "title": "Flag Customizer",
         "description": "Personalize your photos with stylish flag overlays in round or square format, adding custom text and personalized colors. Ideal for campaigns, social media, or any visual content where you want to express your identity or brand."
+      },
+      "MChiodiTools": {
+        "title": "MChiodi Tools",
+        "description": "MChiodi Tools is a collection of useful tools for developers, designed to facilitate and optimize daily tasks. With a focus on practicality and efficiency, this project offers a variety of functionalities that can be easily integrated into any development workflow."
       }
     },
     "NodeJS": {
