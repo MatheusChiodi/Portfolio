@@ -149,6 +149,10 @@
       "MChiodiTools": {
         "title": "MChiodi Tools",
         "description": "MChiodi Tools is a collection of useful tools for developers, designed to facilitate and optimize daily tasks. With a focus on practicality and efficiency, this project offers a variety of functionalities that can be easily integrated into any development workflow."
+      },
+      "InfraDraw": {
+        "title": "InfraDraw",
+        "description": "InfraDraw is a web application designed to facilitate the creation of infrastructure drawings. With a user-friendly interface and intuitive tools, it allows users to create detailed and accurate drawings quickly and efficiently. The application is built with ReactJS, ensuring a smooth and responsive user experience."
       }
     },
     "NodeJS": {

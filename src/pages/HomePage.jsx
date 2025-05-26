@@ -11,15 +11,14 @@ import Experience from '../components/Experience';
 import YoutubeSection from '../components/YoutubeSection';
 
 function HomePage() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const lastVisit = localStorage.getItem('lastVisit');
     const now = Date.now();
-    const oneHour = 60 * 60 * 1000; 
+    const oneHour = 60 * 60 * 1000;
 
     if (!lastVisit || now - parseInt(lastVisit, 10) > oneHour) {
-      setIsLoading(true);
       localStorage.setItem('lastVisit', now.toString());
 
       const timer = setTimeout(() => {
@@ -27,6 +26,8 @@ function HomePage() {
       }, 1300);
 
       return () => clearTimeout(timer);
+    } else {
+      setIsLoading(false);
     }
   }, []);
 
