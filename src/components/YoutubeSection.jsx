@@ -11,25 +11,26 @@ export default function YoutubeSection() {
 
   return (
     <motion.section
-      className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg mt-10"
       id="YoutubeSection"
-      whileInView={{ opacity: 1, x: 0 }}
-      initial={{ opacity: 0, x: -20 }}
-      viewport={{ once: true, margin: '-100px' }}
+      className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg mt-10"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className="text-center">
-        <div className="flex flex-wrap items-center gap-2 justify-center">
-          <h2 className="text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl">
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 drop-shadow-2xl">
             {t('YoutubeSection.title')}
           </h2>
-          <Youtube size={50} className="text-[#FF5555] pt-2" />
+          <Youtube size={45} className="text-[#FF5555] pt-1" />
         </div>
-        <p className="text-gray-600 mt-2 text-[18px] md:text-[20px] lg:text-[25px]">
+        <p className="mt-4 text-lg md:text-xl text-gray-600">
           {t('YoutubeSection.text')}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {videos.map((video) => (
           <VideoCard
             key={video.id}
@@ -40,11 +41,13 @@ export default function YoutubeSection() {
         ))}
       </div>
 
-      <div className="text-center mt-10">
+      <div className="mt-10 text-center">
         <Link
           to="https://www.youtube.com/@MChiodiDev"
           target="_blank"
-          className="inline-block px-8 py-3 text-white font-bold bg-[#FF5555] rounded-lg shadow-lg hover:bg-[#e04242] hover:scale-105 transition-all duration-500"
+          rel="noopener noreferrer"
+          aria-label="Acessar canal do YouTube MChiodiDev"
+          className="inline-block rounded-lg bg-[#FF5555] px-8 py-3 font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-[#e04242] hover:shadow-xl duration-500"
         >
           {t('YoutubeSection.link')}
         </Link>

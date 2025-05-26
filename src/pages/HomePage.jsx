@@ -11,44 +11,44 @@ import Experience from '../components/Experience';
 import YoutubeSection from '../components/YoutubeSection';
 
 function HomePage() {
-  const [visibleLoading, setVisibleLoading] = useState(false);
-  const [visibleContent, setVisibleContent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const lastVisit = localStorage.getItem('lastVisit');
     const now = Date.now();
-    const oneHour = 60 * 60 * 3000;
+    const oneHour = 60 * 60 * 1000; 
 
     if (!lastVisit || now - parseInt(lastVisit, 10) > oneHour) {
-      setVisibleLoading(true);
-      localStorage.setItem('lastVisit', now);
+      setIsLoading(true);
+      localStorage.setItem('lastVisit', now.toString());
 
-      setTimeout(() => {
-        setVisibleLoading(false);
-        setVisibleContent(true);
+      const timer = setTimeout(() => {
+        setIsLoading(false);
       }, 1300);
-    } else {
-      setVisibleContent(true);
+
+      return () => clearTimeout(timer);
     }
   }, []);
 
+  if (isLoading) {
+    return (
+      <div className="max-w-[1920px] mx-auto">
+        <Loading />
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-[1920px] mx-auto">
-      {visibleLoading && <Loading />}
-      {visibleContent && (
-        <>
-          <NavBar />
-          <div className="p-3 w-full">
-            <About />
-            <Projects />
-            <Certificates />
-            <Experience />
-            <YoutubeSection />
-          </div>
-          <Footer />
-        </>
-      )}
-
+      <NavBar />
+      <div className="p-3 w-full">
+        <About />
+        <Projects />
+        <Certificates />
+        <Experience />
+        <YoutubeSection />
+      </div>
+      <Footer />
       <ScrollToTopButton />
     </div>
   );
