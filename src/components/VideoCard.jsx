@@ -17,7 +17,6 @@ export default function VideoCard({ link, title, description, index }) {
       transition={{ duration: 0.5, ease: 'easeOut', delay }}
       className="relative bg-white rounded-2xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl w-full max-w-md mx-auto"
     >
-      {/* Container do vídeo */}
       <div className="relative w-full h-56 sm:h-64 overflow-hidden rounded-t-2xl">
         <motion.iframe
           className="w-full h-full absolute top-0 left-0 rounded-t-2xl z-10"
@@ -29,8 +28,6 @@ export default function VideoCard({ link, title, description, index }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: delay + 0.3 } }}
         />
-        {/* Overlay ao passar o mouse */}
-        <motion.div className="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition-all duration-300 z-20" />
       </div>
 
       {/* Conteúdo textual */}

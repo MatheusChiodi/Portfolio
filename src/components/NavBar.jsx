@@ -35,7 +35,6 @@ export default function NavBar() {
       >
         {!menuOpen && (
           <div className="max-w-[1920px] mx-auto flex justify-between items-center h-16 px-5 md:px-10 text-[#f8f8f2] bg-gray-900 backdrop-blur-lg border-b border-[#44475a] shadow-xl md:rounded-0 rounded-b-xl">
-            {/* Branding */}
             <div className="flex items-center gap-3">
               <motion.img
                 src="./logo.png"
@@ -55,7 +54,6 @@ export default function NavBar() {
               </span>
             </div>
 
-            {/* Links Desktop */}
             <div className="hidden md:flex items-center gap-8">
               {menuItems.map((item, index) => (
                 <motion.div
@@ -103,7 +101,7 @@ export default function NavBar() {
         <AnimatePresence>
           {menuOpen && (
             <motion.aside
-              className="fixed top-0 right-0 w-[85%] max-w-xs h-screen bg-[#1e1f29] text-[#f8f8f2] shadow-2xl z-50 flex flex-col pt-10 px-5 rounded-l-3xl"
+              className="fixed top-0 right-0 w-[85%] max-w-xs h-screen bg-gray-900 backdrop-blur-lg text-[#f8f8f2] shadow-2xl z-50 flex flex-col pt-10 px-5 rounded-l-3xl"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
