@@ -18,13 +18,34 @@ const AllProjectsContext = () => {
           },
           {
             id: 2,
+            title: t('projects.reactNative.Bibliotrack.title'),
+            description: t('projects.reactNative.Bibliotrack.description'),
+            link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Bibliotrack&hl=pt_BR&',
+            image: '/bibliotrack.png',
+          },
+          {
+            id: 3,
+            title: t('projects.reactNative.FitForge.title'),
+            description: t('projects.reactNative.FitForge.description'),
+            link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FitForge',
+            image: '/fitforge.png',
+          },
+          {
+            id: 4,
+            title: t('projects.reactNative.DailyDone.title'),
+            description: t('projects.reactNative.DailyDone.description'),
+            link: 'https://github.com/MatheusChiodi/Aplicativo-DailyDone',
+            image: '/dailydone.png',
+          },
+          {
+            id: 5,
             title: t('projects.reactNative.dualGame.title'),
             description: t('projects.reactNative.dualGame.description'),
             link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.dualgame',
             image: '/dualgame.png',
           },
           {
-            id: 3,
+            id: 6,
             title: t('projects.reactNative.PomodoroPrimeTimer.title'),
             description: t(
               'projects.reactNative.PomodoroPrimeTimer.description'
@@ -33,50 +54,13 @@ const AllProjectsContext = () => {
             image: '/pomodoro_prime_timer.png',
           },
           {
-            id: 4,
-            title: t('projects.reactNative.RegistroTreinamento.title'),
-            description: t(
-              'projects.reactNative.RegistroTreinamento.description'
-            ),
-            link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.TrainingRecord',
-            image: '/trainingrecord.png',
-          },
-          {
-            id: 5,
+            id: 7,
             title: t('projects.reactNative.GerenciadorCartoes.title'),
             description: t(
               'projects.reactNative.GerenciadorCartoes.description'
             ),
             link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Invest',
             image: '/cardmanager.png',
-          },
-          {
-            id: 6,
-            title: t('projects.reactNative.PortfolioMobile.title'),
-            description: t('projects.reactNative.PortfolioMobile.description'),
-            link: 'https://github.com/MatheusChiodi/App-Portfolio',
-            image: '/portfolioMobile.png',
-          },
-          {
-            id: 7,
-            title: t('projects.reactNative.Bibliotrack.title'),
-            description: t('projects.reactNative.Bibliotrack.description'),
-            link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.Bibliotrack&hl=pt_BR&',
-            image: '/bibliotrack.png',
-          },
-          {
-            id: 8,
-            title: t('projects.reactNative.FitForge.title'),
-            description: t('projects.reactNative.FitForge.description'),
-            link: 'https://play.google.com/store/apps/details?id=com.matheuschiodi.FitForge',
-            image: '/fitforge.png',
-          },
-          {
-            id: 9,
-            title: t('projects.reactNative.DailyDone.title'),
-            description: t('projects.reactNative.DailyDone.description'),
-            link: 'https://github.com/MatheusChiodi/Aplicativo-DailyDone',
-            image: '/dailydone.png',
           },
         ],
       },
@@ -93,81 +77,39 @@ const AllProjectsContext = () => {
           },
           {
             id: 2,
-            title: t('projects.reactJS.projectShop.title'),
-            description: t('projects.reactJS.projectShop.description'),
-            link: 'https://matheuschiodi.github.io/Project-Shop/',
-            image: '/projectShop.png',
-          },
-          {
-            id: 3,
-            title: t('projects.reactJS.ProjetoJogoVelha.title'),
-            description: t('projects.reactJS.ProjetoJogoVelha.description'),
-            link: 'https://matheuschiodi.github.io/tic-tac-toe/',
-            image: '/tic_tac_toe.png',
-          },
-          {
-            id: 4,
-            title: t('projects.reactJS.NLWSpacetime.title'),
-            description: t('projects.reactJS.NLWSpacetime.description'),
-            link: 'https://matheuschiodi.github.io/NLW-Spacetime-not-Prisma/',
-            image: '/spacetime.png',
-          },
-          {
-            id: 5,
-            title: t('projects.reactJS.RegistroTreinamento.title'),
-            description: t('projects.reactJS.RegistroTreinamento.description'),
-            link: 'https://matheuschiodi.github.io/Training/',
-            image: '/trainingrecordweb.png',
-          },
-          {
-            id: 6,
-            title: t('projects.reactJS.NovoSpotifyBeta.title'),
-            description: t('projects.reactJS.NovoSpotifyBeta.description'),
-            link: 'https://matheuschiodi.github.io/spotify/',
-            image: '/spotify.png',
-          },
-          {
-            id: 7,
-            title: t('projects.reactJS.AjudaLink.title'),
-            description: t('projects.reactJS.AjudaLink.description'),
-            link: 'https://matheuschiodi.github.io/HelpLinks/',
-            image: '/helplink.png',
-          },
-          {
-            id: 8,
             title: t('projects.reactJS.ShopSupplements.title'),
             description: t('projects.reactJS.ShopSupplements.description'),
             link: 'https://matheuschiodi.github.io/shop-supplements/',
             image: '/shop-supplements.png',
           },
           {
-            id: 9,
+            id: 3,
             title: t('projects.reactJS.ExpressoDesign.title'),
             description: t('projects.reactJS.ExpressoDesign.description'),
             link: 'https://matheuschiodi.github.io/ExpressoDesign/',
             image: '/ExpressoDesign.png',
           },
           {
-            id: 10,
+            id: 4,
             title: t('projects.reactJS.FlagCustomizer.title'),
             description: t('projects.reactJS.FlagCustomizer.description'),
             link: 'https://matheuschiodi.github.io/Flag-Customizer/',
             image: '/FlagCustomizer.png',
           },
           {
-            id: 11,
+            id: 5,
             title: t('projects.reactJS.MChiodiTools.title'),
             description: t('projects.reactJS.MChiodiTools.description'),
             link: 'https://mchiodi-tools.vercel.app/',
             image: '/mchioditools.png',
           },
           {
-            id: 12,
+            id: 6,
             title: t('projects.reactJS.InfraDraw.title'),
             description: t('projects.reactJS.InfraDraw.description'),
             link: 'https://mchiodi-infradraw.vercel.app/',
             image: '/infradraw.png',
-          }
+          },
         ],
       },
 
@@ -175,29 +117,23 @@ const AllProjectsContext = () => {
         id: 3,
         name: 'NodeJS',
         projects: [
+          
           {
             id: 1,
-            title: t('projects.NodeJS.QRCodesGenerator.title'),
-            description: t('projects.NodeJS.QRCodesGenerator.description'),
-            link: 'https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces',
-            image: '/geradorQrcodeNodeJs.png',
-          },
-          {
-            id: 2,
             title: t('projects.NodeJS.PodcastsManager.title'),
             description: t('projects.NodeJS.PodcastsManager.description'),
             link: 'https://github.com/MatheusChiodi/Gerenciador-de-Podcasts',
             image: '/gerenciadorPodcasts.png',
           },
           {
-            id: 3,
+            id: 2,
             title: t('projects.NodeJS.CryptoApi.title'),
             description: t('projects.NodeJS.CryptoApi.description'),
             link: 'https://github.com/MatheusChiodi/crypto-api',
             image: '/crypto-api.png',
           },
           {
-            id: 10,
+            id: 3,
             title: t('projects.NodeJS.TaskManager.title'),
             description: t('projects.NodeJS.TaskManager.description'),
             link: 'https://github.com/MatheusChiodi/Task-Manager',
@@ -212,7 +148,6 @@ const AllProjectsContext = () => {
           },
         ],
       },
-      
       {
         id: 4,
         name: 'VSCode Extensions',
@@ -234,21 +169,6 @@ const AllProjectsContext = () => {
             ),
             link: 'https://marketplace.visualstudio.com/items?itemName=MChiodi.snake-in-vscode',
             image: '/snake-in-VSCode.png',
-          },
-        ],
-      },
-      {
-        id: 5,
-        name: 'HTML, CSS e JavaScript',
-        projects: [
-          {
-            id: 1,
-            title: t('projects.HTMLCSSJavaScript.TCCParqueVivo.title'),
-            description: t(
-              'projects.HTMLCSSJavaScript.TCCParqueVivo.description'
-            ),
-            link: 'https://github.com/MatheusChiodi/TccParqueVivoV1',
-            image: '/parquevivo.png',
           },
         ],
       },
