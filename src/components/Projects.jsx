@@ -16,9 +16,16 @@ export default function Projects() {
     <motion.div
       id="Projects"
       className="w-full p-4 px-3 bg-gray-100 rounded-2xl shadow-lg"
-      whileInView={{ opacity: 1, x: 0 }}
-      initial={{ opacity: 0, x: -20 }}
-      viewport={{ once: true, margin: '-100px' }}
+      whileInView="visible"
+      initial="hidden"
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.3 },
+        },
+      }}
     >
       <motion.div
         className="flex flex-wrap items-center gap-2 justify-center md:justify-start"
@@ -59,7 +66,7 @@ export default function Projects() {
                       y: 0,
                       transition: { duration: 0.3 },
                     },
-                  }}  
+                  }}
                 >
                   <ProjectCard
                     project={project}
@@ -73,8 +80,16 @@ export default function Projects() {
 
         <motion.div
           className="mt-5 flex justify-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0, transition: { delay: 0.6 } }}
+          whileInView="visible"
+          initial="hidden"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.3 },
+            },
+          }}
         >
           <Link to="/projects">
             <Button title={t('projects.link')} icon="plus" />

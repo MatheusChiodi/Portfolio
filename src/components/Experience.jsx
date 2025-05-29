@@ -50,10 +50,16 @@ export default function Experience() {
     <motion.section
       className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg"
       id="Experience"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      whileInView="visible"
+      initial="hidden"
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.3 },
+        },
+      }}
     >
       {/* Título com animação */}
       <motion.div

@@ -33,9 +33,16 @@ export default function CertificatesCarousel() {
     <motion.section
       className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg"
       id="Certificates"
-      whileInView={{ opacity: 1, x: 0 }}
-      initial={{ opacity: 0, x: -20 }}
-      viewport={{ once: true, margin: '-100px' }}
+      whileInView="visible"
+      initial="hidden"
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.3 },
+        },
+      }}
     >
       <motion.div
         initial={{ opacity: 0, y: -20 }}

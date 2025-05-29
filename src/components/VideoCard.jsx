@@ -7,14 +7,21 @@ export default function VideoCard({ link, title, description, index }) {
     : new URL(link).searchParams.get('v');
 
   const youtubeLink = `https://www.youtube.com/watch?v=${videoId}`;
-  const delay = index * 0.1;
+  const delay = index * 0.4;
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30, scale: 0.95 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: 20 }}
-      transition={{ duration: 0.5, ease: 'easeOut', delay }}
+      whileInView="visible"
+      initial="hidden"
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.3 },
+          delay: delay + 0.4,
+        },
+      }}
       className="relative bg-white rounded-2xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl w-full max-w-md mx-auto"
     >
       <div className="relative w-full h-56 sm:h-64 overflow-hidden rounded-t-2xl">

@@ -37,7 +37,7 @@ export default function AllProjects() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">
               {t('AllProjects.title')}
             </span>
@@ -75,18 +75,29 @@ export default function AllProjects() {
 
               <motion.div
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -20 }}
-                viewport={{ once: true, margin: '-100px' }}
+                whileInView="visible"
+                initial="hidden"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.3 },
+                  },
+                }}
               >
                 {technology.projects.map((project) => (
                   <motion.div
                     key={project.id}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                      transition: { duration: 0.3, ease: 'easeOut' },
+                    whileInView="visible"
+                    initial="hidden"
+                    variants={{
+                      hidden: { opacity: 0, y: 20 },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: 0.3 },
+                      },
                     }}
                   >
                     <ProjectCard
