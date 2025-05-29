@@ -53,10 +53,9 @@ export default function VideoCard({ link, title, description, index }) {
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: 1, x: 0, transition: { delay: delay + 0.5 } }}
         >
-          {description}
+          {description.substring(0, 200)}...
         </motion.p>
 
-        {/* Botão de ação */}
         <motion.a
           href={youtubeLink}
           target="_blank"
