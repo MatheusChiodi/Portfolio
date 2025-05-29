@@ -27,8 +27,8 @@ export default function Projects() {
         },
       }}
     >
-      <motion.div
-        className="flex flex-wrap items-center gap-2 justify-center md:justify-start"
+      <motion.h2
+        className="text-[25px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl text-center md:text-left"
         initial={{ opacity: 0, y: 20 }}
         animate={{
           opacity: 1,
@@ -36,19 +36,17 @@ export default function Projects() {
           transition: { delay: 0.4, duration: 0.6 },
         }}
       >
-        <h2 className="text-[25px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl text-center md:text-left">
-          {t('projects.title')}
-        </h2>
+        {t('projects.title')}
         <motion.span
           animate={{ y: [0, -6, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
           <FontAwesomeIcon
             icon={faBarsProgress}
-            className="text-[#FF5555] text-[25px] md:text-[20px] lg:text-[35px] xl:text-[50px] pt-2"
+            className="text-[#FF5555] text-[25px] md:text-[20px] lg:text-[35px] xl:text-[50px] pt-2 ms-3"
           />
         </motion.span>
-      </motion.div>
+      </motion.h2>
 
       <motion.div>
         {projectsData.categories.slice(0, 2).map((category) => (
