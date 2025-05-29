@@ -68,7 +68,7 @@ export default function AllProjects() {
                 <div className="p-4 bg-gradient-to-br from-red-500 to-pink-600 rounded-xl shadow-lg">
                   <Code className="text-3xl text-white" strokeWidth={2.5} />
                 </div>
-                <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
+                <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
                   {technology.name}
                 </h2>
               </motion.div>
