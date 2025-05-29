@@ -42,12 +42,12 @@ function HomePage() {
   return (
     <div className="max-w-[1920px] mx-auto">
       <NavBar />
-      <div className="p-3 w-full">
+      <div className="p-3 w-full gap-10 flex flex-col items-center justify-center">
         <About />
         <Projects />
-        <Certificates />
         <Experience />
         <YoutubeSection />
+        <Certificates />
       </div>
       <Footer />
       <ScrollToTopButton />

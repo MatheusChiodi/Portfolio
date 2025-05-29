@@ -1,35 +1,32 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Briefcase, School, BookOpen, Route, MapPlus } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function Experience() {
   const { t } = useTranslation();
-  const [selectedExperience, setSelectedExperience] = useState(1);
-
-  const getFullYear = () => new Date().getFullYear();
-
-  const year = getFullYear();
+  const [selectedExperience, setSelectedExperience] = useState(4);
+  const year = new Date().getFullYear();
 
   const experiences = [
     {
       id: 1,
       title: 'IFSP - Araraquara',
       subtitle: '(2017 - 2021)',
-      icon: <School size={40} />,
+      icon: <School size={36} />,
       description: [t('experience.ifsp.text1'), t('experience.ifsp.text2')],
     },
     {
       id: 2,
       title: t('experience.job.title'),
       subtitle: `(2021 - ${year})`,
-      icon: <Briefcase size={40} />,
+      icon: <Briefcase size={36} />,
       description: [t('experience.job.text1'), t('experience.job.text2')],
     },
     {
       id: 3,
       title: t('experience.courses.title'),
-      icon: <BookOpen size={40} />,
+      icon: <BookOpen size={36} />,
       description: [
         t('experience.courses.text1'),
         t('experience.courses.text2'),
@@ -39,7 +36,7 @@ export default function Experience() {
       id: 4,
       title: t('experience.MChiodi.title'),
       subtitle: `(2024 - ${year})`,
-      icon: <MapPlus size={40} />,
+      icon: <MapPlus size={36} />,
       description: [
         t('experience.MChiodi.text1'),
         t('experience.MChiodi.text2'),
@@ -47,81 +44,87 @@ export default function Experience() {
     },
   ];
 
+  const selected = experiences.find((exp) => exp.id === selectedExperience);
+
   return (
     <motion.section
-      className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg mt-10"
+      className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg"
       id="Experience"
-      whileInView={{ opacity: 1, x: 0 }}
-      initial={{ opacity: 0, x: -20 }}
-      viewport={{ once: true, margin: '-100px' }}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
     >
+      {/* Título com animação */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
         className="text-center"
       >
-        <div className="flex flex-wrap items-center gap-2 justify-center">
-          <h2 className="text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl">
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <h2 className="text-[28px] md:text-[36px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-lg">
             {t('experience.title')}
           </h2>
-          <Route
-            size={40}
-            className="text-[#FF5555] text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] pt-2"
-          />
+          <motion.div
+            initial={{ rotate: -20 }}
+            animate={{ rotate: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Route size={40} className="text-[#FF5555]" />
+          </motion.div>
         </div>
-        <p className="text-gray-600 mt-2 md:text-[20px] lg:text-[30px] text-[20px]">
+        <p className="text-gray-600 mt-3 text-lg md:text-xl">
           {t('experience.subtitle')}
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 w-full">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
         {experiences.map((exp) => (
-          <motion.div
+          <motion.button
             key={exp.id}
             onClick={() => setSelectedExperience(exp.id)}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: 'spring', stiffness: 300 }}
             className={`
-        flex flex-col items-center justify-center p-4 rounded-xl shadow-md transition-all duration-500 cursor-pointer 
-        ${
-          selectedExperience === exp.id
-            ? 'bg-[#ff5555] text-white shadow-xl'
-            : 'bg-white text-gray-800 hover:bg-[#ff5555] hover:text-white'
-        }
-      `}
+              flex flex-col items-center justify-center p-4 rounded-xl shadow-md
+              transition-all duration-500 focus:outline-none text-center font-medium cursor-pointer
+              ${
+                selectedExperience === exp.id
+                  ? 'bg-[#FF5555] text-white shadow-xl'
+                  : 'bg-white text-gray-800 hover:bg-[#FF5555] hover:text-white'
+              }
+            `}
           >
             <div className="mb-2">{exp.icon}</div>
-            <h3 className="text-md md:text-lg font-semibold text-center">
-              {exp.title}
-            </h3>
+            <h3 className="text-md md:text-lg">{exp.title}</h3>
             {exp.subtitle && (
-              <p className="text-xs md:text-sm text-center">{exp.subtitle}</p>
+              <p className="text-xs md:text-sm">{exp.subtitle}</p>
             )}
-          </motion.div>
+          </motion.button>
         ))}
       </div>
 
-      <motion.div
-        key={selectedExperience}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-        className="mt-8 bg-white p-6 rounded-xl shadow-md"
-      >
-        <h3 className="text-xl font-semibold text-gray-900">
-          {experiences.find((exp) => exp.id === selectedExperience).title}
-        </h3>
-        <p className="text-gray-900 text-justify mt-2">
-          {
-            experiences.find((exp) => exp.id === selectedExperience)
-              .description[0]
-          }
-        </p>
-        <p className="text-gray-900 text-justify mt-2 mt-2">
-          {
-            experiences.find((exp) => exp.id === selectedExperience)
-              .description[1]
-          }
-        </p>
-      </motion.div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={selected.id}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -30 }}
+          transition={{ duration: 0.2 }}
+          className="mt-10 bg-white p-6 rounded-xl shadow-md"
+        >
+          <h3 className="text-xl font-semibold text-gray-900">
+            {selected.title}
+          </h3>
+          <p className="text-gray-800 text-justify mt-2">
+            {selected.description[0]}
+          </p>
+          <p className="text-gray-800 text-justify mt-2">
+            {selected.description[1]}
+          </p>
+        </motion.div>
+      </AnimatePresence>
     </motion.section>
   );
 }

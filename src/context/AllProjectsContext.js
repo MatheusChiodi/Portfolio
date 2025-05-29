@@ -223,7 +223,7 @@ const AllProjectsContext = () => {
             description: t(
               'projects.VScodeExtensions.hydration-reminder.description'
             ),
-            link: 'https://github.com/MatheusChiodi/hydration-reminder',
+            link: 'https://marketplace.visualstudio.com/items?itemName=MChiodi.hydration-reminder',
             image: '/hydration-reminder.png',
           },
           {
@@ -232,7 +232,7 @@ const AllProjectsContext = () => {
             description: t(
               'projects.VScodeExtensions.Snake-in-VSCode.description'
             ),
-            link: 'https://github.com/MatheusChiodi/Snake-in-VSCode-LiveCoding',
+            link: 'https://marketplace.visualstudio.com/items?itemName=MChiodi.snake-in-vscode',
             image: '/snake-in-VSCode.png',
           },
         ],

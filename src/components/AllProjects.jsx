@@ -103,7 +103,7 @@ export default function AllProjects() {
 
       <div className="fixed bottom-3 left-6 flex gap-4 z-50">
         <motion.button
-          className="flex items-center gap-2 bg-gradient-to-br from-red-500 to-pink-600 text-white p-1 px-3 rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-pointer"
+          className="flex items-center gap-2 bg-gradient-to-br from-red-500 to-pink-600 text-white p-1 px-3 rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-pointer hover:brightness-80"
           onClick={toggleModal}
           initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}

@@ -9,8 +9,8 @@ export default function AllProjectsPage() {
       <NavBar />
       <div className="p-3 w-full">
         <AllProjects />
-        <Footer />
       </div>
+      <Footer />
       <ScrollToTopButton />
     </div>
   );

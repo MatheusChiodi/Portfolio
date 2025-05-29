@@ -37,7 +37,7 @@ export default function About() {
 
   return (
     <section
-      className="relative mt-18 w-full py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xl text-white overflow-hidden shadow-2xl"
+      className="relative mt-17 w-full py-14 px-6 bg-gradient-to-b from-gray-900 to-gray-800 rounded-3xl text-white overflow-hidden shadow-2xl"
       id="About"
     >
       <motion.div
@@ -75,15 +75,15 @@ export default function About() {
 
         <p className="text-[18px] md:text-[22px] text-gray-300 mt-4 md:w-[70%] w-full mx-auto">
           {t('about.text1')}{' '}
-          <spam className="font-bold text-xl bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
+          <span className="font-bold text-xl bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
           {t('about.text2')} Fullstack
-          </spam>{' '}
+          </span>{' '}
           {t('about.text3')}
         </p>
       </motion.div>
 
       <motion.div
-        className="relative flex flex-wrap justify-center md:gap-4 bg-white/10 backdrop-blur-md rounded-xl shadow-lg mt-[30px] text-center lg:text-[20px] md:text-[20px] text-[16px] pb-3 pt-6 px-2"
+        className="relative flex flex-wrap justify-center md:gap-4 bg-white/10 backdrop-blur-md rounded-xl shadow-lg mt-[30px] text-center lg:text-[20px] md:text-[20px] text-[16px] pb-3 pt-6 px-3"
         variants={container}
         initial="hidden"
         animate="visible"

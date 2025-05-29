@@ -31,7 +31,7 @@ export default function CertificatesCarousel() {
 
   return (
     <motion.section
-      className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg mt-10"
+      className="w-full py-16 lg:px-6 px-2 bg-gray-100 rounded-3xl text-gray-900 shadow-lg"
       id="Certificates"
       whileInView={{ opacity: 1, x: 0 }}
       initial={{ opacity: 0, x: -20 }}
@@ -43,7 +43,7 @@ export default function CertificatesCarousel() {
         className="text-center"
       >
         <div className="flex flex-wrap items-center gap-2 justify-center">
-          <h2 className="text-[30px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl text-center">
+          <h2 className="text-[25px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl text-center">
             {t('certificates.title')}
           </h2>
           <GraduationCap
