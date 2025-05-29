@@ -12,39 +12,13 @@ export default function Projects() {
   const { t } = useTranslation();
   const projectsData = mainProjects();
 
-  const sectionVariants = {
-    hidden: { opacity: 0, x: -30 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.3,
-        ease: 'easeOut',
-        when: 'beforeChildren',
-        staggerChildren: 0.1,
-      },
-    },
-    exit: { opacity: 0, x: 30, transition: { duration: 0.4, ease: 'easeIn' } },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, scale: 0.95 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.4, ease: 'easeOut' },
-    },
-  };
-
   return (
     <motion.div
       id="Projects"
       className="w-full p-4 px-3 bg-gray-100 rounded-2xl shadow-lg"
-      variants={sectionVariants}
-      initial="hidden"
-      whileInView="visible"
-      exit="exit"
-      viewport={{ once: true, amount: 0.3 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -20 }}
+      viewport={{ once: true, margin: '-100px' }}
     >
       <motion.div
         className="flex flex-wrap items-center gap-2 justify-center md:justify-start"
@@ -69,17 +43,23 @@ export default function Projects() {
         </motion.span>
       </motion.div>
 
-      <motion.div variants={sectionVariants}>
+      <motion.div>
         {projectsData.categories.slice(0, 2).map((category) => (
           <motion.div key={category.name} className="mt-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
               {category.projects.slice(0, 6).map((project) => (
                 <motion.div
                   key={project.id}
-                  variants={cardVariants}
                   whileInView="visible"
                   initial="hidden"
-                  viewport={{ once: true }}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.3 },
+                    },
+                  }}  
                 >
                   <ProjectCard
                     project={project}

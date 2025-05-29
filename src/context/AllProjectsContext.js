@@ -110,6 +110,13 @@ const AllProjectsContext = () => {
             link: 'https://mchiodi-infradraw.vercel.app/',
             image: '/infradraw.png',
           },
+          {
+            id: 7,
+            title: t('projects.reactJS.MChiodiNews.title'),
+            description: t('projects.reactJS.MChiodiNews.description'),
+            link: 'https://mchiodi-news.vercel.app/',
+            image: '/mchiodinews.png',
+          }
         ],
       },
 

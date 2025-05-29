@@ -80,17 +80,9 @@
         "title": "Pomodoro Prime Timer",
         "description": "The Pomodoro Prime Timer project was created with the intention of helping people learn and improve their productivity. It is a simple and intuitive application that allows users to set a timer for their tasks, helping them focus and manage their time more efficiently. The project was developed using React Native and is available for download on the Google Play Store."
       },
-      "RegistroTreinamento": {
-        "title": "Training Record",
-        "description": "The 'MChiodi - Training Record' project is a tool designed to assist athletes. Developed using React Native, this intuitive and simple application facilitates efficient time management for users, helping them in their training. Available for download on the Google Play Store, 'MChiodi - Training Record' is a testament to the proactive assistance athletes have in their daily lives."
-      },
       "GerenciadorCartoes": {
         "title": "Card Manager",
         "description": "Card Manager is an innovative application designed for efficient personal finance management, now completely offline. It offers instant expense tracking, easy credit and debit card management, and intelligent statistical analysis for financial decision making. Ensuring data security, the application operates 100% offline. Available on the PlayStore, Card Manager is developed using React Native."
-      },
-      "PortfolioMobile": {
-        "title": "Portfolio Mobile",
-        "description": "This project is the result of the skills and knowledge acquired during the 'React Native Developer Training' program. Designed to demonstrate the practical application of React Native in mobile application development, this project covers three main screens: Home, Timeline, and Projects."
       },
       "Bibliotrack": {
         "title": "Bibliotrack",
@@ -110,30 +102,6 @@
         "title": "Windows Project",
         "description": "This educational project was designed using ReactJS to explore various language techniques. The goal was to create components that resemble the Windows system using custom code, without relying on ready-made APIs. Each component was designed to enhance understanding and proficiency in ReactJS, providing a rich learning experience while experimenting with various coding approaches within the framework."
       },
-      "projectShop": {
-        "title": "Shop Project",
-        "description": "Welcome to our Online Marketplace for Electronics Projects! Developed with ReactJS for educational purposes, this platform simulates e-commerce experiences, providing hands-on learning in buying and selling electronics projects. Engage with this interactive tool to apply key web development concepts and technologies, enhancing your understanding and skills in e-commerce."
-      },
-      "ProjetoJogoVelha": {
-        "title": "Tic Tac Toe",
-        "description": "The game Tic Tac Toe project, developed using ReactJS, provides an engaging and interactive gaming experience for study and entertainment purposes. Users can enjoy exciting matches with friends or online players through a user-friendly website. It features player name customization, a scoring system, and a sleek interface, serving as a fun tool for entertainment and a valuable resource for studying ReactJS."
-      },
-      "NLWSpacetime": {
-        "title": "NLW Spacetime",
-        "description": "During this inspiring event, I had the opportunity to participate and delve into the creation of a memory recall application using powerful technologies such as ReactJS, React Native, NextJS, among others. Over the course of five intense days, the Rocketseat team provided valuable lessons, opening the door to a world of possibilities and learning."
-      },
-      "RegistroTreinamento": {
-        "title": "Training Record",
-        "description": "The 'Training Record Web Version' project was meticulously developed using the ReactJS library, offering a fluid and responsive web experience for its users. It is worth mentioning that this system was inspired and based on another project called 'MChiodi - Training Record', which was originally developed using React Native technology."
-      },
-      "NovoSpotifyBeta": {
-        "title": "New Spotify beta",
-        "description": "This project was developed using ReactJS and TailwindCSS, offering a fluid and responsive web experience for its users. It was inspired by the Spotify platform and offers a rich experience for music lovers. Serving as a fun tool for entertainment and a valuable resource for studying ReactJS."
-      },
-      "AjudaLink": {
-        "title": "Help with Link",
-        "description": "'Help with Link' is an innovative resource designed to support beginning programmers. This project brings together a carefully curated collection of links, chosen through artificial intelligence, to provide an effective and intuitive learning path into the world of programming"
-      },
       "ShopSupplements": {
         "title": "Shop Supplements",
         "description": "Shop Supplements is a basic layout for supplement stores, designed to showcase different visual options in a modern, responsive and interactive way. With product carousels, 3D effects and smooth animations, it provides an engaging and professional experience. Created by MChiodi, the design combines usability and strong visual identity, allowing customers to explore and choose the best style for their business."
@@ -148,11 +116,15 @@
       },
       "MChiodiTools": {
         "title": "MChiodi Tools",
-        "description": "MChiodi Tools is a collection of useful tools for developers, designed to facilitate and optimize daily tasks. With a focus on practicality and efficiency, this project offers a variety of functionalities that can be easily integrated into any development workflow."
+        "description": "MChiodi Tools is a productivity-focused platform built with React.js that offers a curated collection of free and online utilities for developers. With a clean and responsive interface, users can access essential tools such as CNPJ validators, CPF generators, unit converters, secure password generators, and more — all in one place. Designed to streamline everyday coding tasks, this project reflects MChiodi's mission to deliver practical, fast, and intuitive tools for the tech community."
       },
       "InfraDraw": {
         "title": "InfraDraw",
-        "description": "InfraDraw is a web application designed to facilitate the creation of infrastructure drawings. With a user-friendly interface and intuitive tools, it allows users to create detailed and accurate drawings quickly and efficiently. The application is built with ReactJS, ensuring a smooth and responsive user experience."
+        "description": "InfraDraw is a client-side diagramming tool built with React.js, designed to simplify the creation of system architecture diagrams and mind maps. It features drag-and-drop blocks, real-time connections, zoom & pan controls, dark/light theme switching, and local autosave — all with a modern UI and smooth animations. Ideal for software architects, developers, and IT teams, InfraDraw empowers users to visually map out complex infrastructures directly in the browser, with no backend or login required."
+      },
+      "MChiodiNews": {
+        "title": "MChiodi News",
+        "description": "MChiodi News is a modern, content-driven platform created using React.js to deliver high-quality technical articles, video tutorials, and developer insights in a fast and engaging way. Designed with an emphasis on clean UI, smooth scroll animations, and responsive design, the platform provides an elegant reading experience. It serves as a hub for dev knowledge, combining education, inspiration, and interactivity — reflecting MChiodi's commitment to sharing value with the development community."
       }
     },
     "NodeJS": {
@@ -175,12 +147,6 @@
       "URLShortener": {
         "title": "URL Shortener",
         "description": "This project is a complete URL shortener that transforms long links into short and easily shareable versions. Divided into two parts, the system has a robust backend, developed in Node.js with Express, which shortens URLs, automatically generates QR Codes and manages redirection to the original links. On the frontend, I used React, Tailwind CSS and Framer Motion to create a modern, interactive and responsive interface, enriched with dynamic animations."
-      }
-    },
-    "HTMLCSSJavaScript": {
-      "TCCParqueVivo": {
-        "title": "TCC Parque Vivo",
-        "description": "Developed for TIIEM at IFSP - Campus Araraquara, this final project supports the non-profit organization 'Parque Vivo', integrating basic and technical knowledge acquired during the course. Using HTML, CSS, MySQL, PHP, Ajax and JavaScript, it reflects our learning journey and practical skills. It is a practical demonstration of the comprehensive understanding and application of these technologies, showing the perfect integration between theory and practice."
       }
     },
     "VScodeExtensions": {
