@@ -84,7 +84,6 @@
         "title": "Gerenciador de cartões",
         "description": "Gerenciador de cartões é um aplicativo inovador projetado para gerenciamento eficiente de finanças pessoais, agora totalmente offline. Ele oferece rastreamento instantâneo de gastos, gerenciamento fácil de cartões de crédito e débito e análise estatística inteligente para tomada de decisões financeiras. Garantindo a segurança dos dados, o aplicativo opera 100% offline. Disponível no PlayStore, Card Manager é desenvolvido usando React Native."
       },
-      
       "Bibliotrack": {
         "title": "Bibliotrack",
         "description": "Conheça o Bibliotrack: Seu aplicativo de leitura desenvolvido em React Native. Com ele, você pode gerenciar sua biblioteca pessoal com facilidade, adicionar novos livros, salvar citações inspiradoras, estabelecer metas de leitura e acompanhar seu progresso, tudo em um único lugar. Simplifique e aprimore sua experiência como leitor com o Bibliotrack."
@@ -126,6 +125,10 @@
       "MChiodiNews": {
         "title": "MChiodi News",
         "description": "MChiodi News é uma plataforma moderna voltada para conteúdo técnico, criada com React.js para oferecer artigos de programação, tutoriais em vídeo e insights para desenvolvedores de forma rápida, envolvente e de alta qualidade. Com ênfase em uma interface limpa, animações suaves ao rolar a página e design responsivo, a plataforma proporciona uma experiência de leitura elegante. Serve como um verdadeiro hub de conhecimento para devs, unindo educação, inspiração e interatividade — refletindo o compromisso de MChiodi em compartilhar valor com a comunidade de desenvolvimento."
+      },
+      "KnowledgeHub": {
+        "title": "KnowledgeHub",
+        "description": "KnowledgeHub é uma biblioteca digital moderna desenvolvida com React.js, Vite, Tailwind CSS e Framer Motion. Ela centraliza artigos e materiais técnicos em PDF sobre APIs, Desenvolvimento, GitHub, Inteligência Artificial, Node.js e Python. Com uma interface responsiva e fluida, permite acesso gratuito e automatizado a conteúdos de alta qualidade, organizados por categorias com base na estrutura de pastas do repositório. O projeto reflete o compromisso de MChiodi em democratizar o conhecimento técnico, promovendo uma experiência educacional intuitiva, acessível e escalável para desenvolvedores de todos os níveis."
       }
     },
     "NodeJS": {

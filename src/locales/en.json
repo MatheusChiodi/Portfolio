@@ -125,6 +125,10 @@
       "MChiodiNews": {
         "title": "MChiodi News",
         "description": "MChiodi News is a modern, content-driven platform created using React.js to deliver high-quality technical articles, video tutorials, and developer insights in a fast and engaging way. Designed with an emphasis on clean UI, smooth scroll animations, and responsive design, the platform provides an elegant reading experience. It serves as a hub for dev knowledge, combining education, inspiration, and interactivity — reflecting MChiodi's commitment to sharing value with the development community."
+      },
+      "KnowledgeHub": {
+        "title": "KnowledgeHub",
+        "description": "KnowledgeHub is a modern digital library built with React.js, Vite, Tailwind CSS, and Framer Motion. It centralizes technical articles and PDF materials on topics such as APIs, Development, GitHub, Artificial Intelligence, Node.js, and Python. With a responsive and fluid interface, it offers free and automated access to high-quality content, organized by category based on the repository's folder structure. The project reflects MChiodi's commitment to democratizing technical knowledge, delivering an intuitive, accessible, and scalable educational experience for developers of all levels."
       }
     },
     "NodeJS": {

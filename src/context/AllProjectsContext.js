@@ -116,7 +116,14 @@ const AllProjectsContext = () => {
             description: t('projects.reactJS.MChiodiNews.description'),
             link: 'https://mchiodi-news.vercel.app/',
             image: '/mchiodinews.png',
-          }
+          },
+          {
+            id: 8,
+            title: t('projects.reactJS.KnowledgeHub.title'),
+            description: t('projects.reactJS.KnowledgeHub.description'),
+            link: 'https://knowledge-hub-matheuschiodis-projects.vercel.app/',
+            image: '/knowledgehub.png',
+          },
         ],
       },
 
@@ -124,7 +131,6 @@ const AllProjectsContext = () => {
         id: 3,
         name: 'NodeJS',
         projects: [
-          
           {
             id: 1,
             title: t('projects.NodeJS.PodcastsManager.title'),
