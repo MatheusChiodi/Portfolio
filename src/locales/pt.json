@@ -129,6 +129,10 @@
       "KnowledgeHub": {
         "title": "KnowledgeHub",
         "description": "KnowledgeHub é uma biblioteca digital moderna desenvolvida com React.js, Vite, Tailwind CSS e Framer Motion. Ela centraliza artigos e materiais técnicos em PDF sobre APIs, Desenvolvimento, GitHub, Inteligência Artificial, Node.js e Python. Com uma interface responsiva e fluida, permite acesso gratuito e automatizado a conteúdos de alta qualidade, organizados por categorias com base na estrutura de pastas do repositório. O projeto reflete o compromisso de MChiodi em democratizar o conhecimento técnico, promovendo uma experiência educacional intuitiva, acessível e escalável para desenvolvedores de todos os níveis."
+      },
+      "MChiodiFocus": {
+        "title": "MChiodi Focus",
+        "description": "um hub de produtividade moderno pensado especialmente para desenvolvedores, que combina performance, estética e organização em um só lugar. Desenvolvido com React.js e outras tecnologias modernas, o aplicativo oferece ferramentas essenciais para manter o foco e gerenciar o tempo com eficiência. Entre os principais recursos estão um gerenciador de tarefas com definição de prioridades, um Pomodoro Timer com animações e histórico, um player de YouTube integrado com música lo-fi por padrão, além de sistemas de metas, calendário, clima e câmbio. A interface é inspirada no macOS, com modo janela, dock e botões de controle, proporcionando uma experiência visual agradável e familiar."
       }
     },
     "NodeJS": {

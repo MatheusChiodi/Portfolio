@@ -124,6 +124,13 @@ const AllProjectsContext = () => {
             link: 'https://knowledge-hub-matheuschiodis-projects.vercel.app/',
             image: '/knowledgehub.png',
           },
+          {
+            id: 9,
+            title: t('projects.reactJS.MChiodiFocus.title'),
+            description: t('projects.reactJS.MChiodiFocus.description'),
+            link: 'https://mchiodi-focus.vercel.app/',
+            image: '/mchiodi-focus.png',
+          },
         ],
       },
 
