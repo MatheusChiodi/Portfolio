@@ -18,28 +18,29 @@ export default function Experience() {
     },
     {
       id: 2,
-      title: t('experience.job.title'),
+      title: t('experience.FISistemas.title'),
       subtitle: `(2021 - ${year})`,
       icon: <Briefcase size={36} />,
-      description: [t('experience.job.text1'), t('experience.job.text2')],
+      description: [t('experience.FISistemas.text1'), t('experience.FISistemas.text2')],
     },
     {
       id: 3,
-      title: t('experience.courses.title'),
-      icon: <BookOpen size={36} />,
-      description: [
-        t('experience.courses.text1'),
-        t('experience.courses.text2'),
-      ],
-    },
-    {
-      id: 4,
       title: t('experience.MChiodi.title'),
-      subtitle: `(2024 - ${year})`,
+      subtitle: `(2024 - 2025)`,
       icon: <MapPlus size={36} />,
       description: [
         t('experience.MChiodi.text1'),
         t('experience.MChiodi.text2'),
+      ],
+    },
+    {
+      id: 4,
+      title: t('experience.MoveMais.title'),
+      subtitle: `(2025 - ♾️)`,
+      icon: <Briefcase size={36} />,
+      description: [
+        t('experience.MoveMais.text1'),
+        t('experience.MoveMais.text2'),
       ],
     },
   ];
@@ -61,7 +62,6 @@ export default function Experience() {
         },
       }}
     >
-      {/* Título com animação */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
@@ -84,7 +84,7 @@ export default function Experience() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+      <div className="flex flex-wrap justify-center gap-4 mt-10">
         {experiences.map((exp) => (
           <motion.button
             key={exp.id}
@@ -93,7 +93,7 @@ export default function Experience() {
             whileTap={{ scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 300 }}
             className={`
-              flex flex-col items-center justify-center p-4 rounded-xl shadow-md
+              flex flex-col items-center justify-center p-4 rounded-xl shadow-md w-[150px] md:w-[180px] lg:w-[200px]
               transition-all duration-500 focus:outline-none text-center font-medium cursor-pointer
               ${
                 selectedExperience === exp.id

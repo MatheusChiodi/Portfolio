@@ -135,9 +135,9 @@ export default function Footer() {
           </h2>
           <ul className="space-y-2 text-sm text-center">
             {[
-              'React JS, React Native, Node JS',
+              'React.js, React Native, Node.js',
               'CodeIgniter 3, SQL e PHP',
-              'HTML, CSS e JavaScript',
+              'HTML, CSS,  JavaScript e TypeScript',
             ].map((tech, index) => (
               <motion.li
                 key={index}

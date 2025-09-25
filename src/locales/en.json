@@ -48,20 +48,20 @@
       "text1": "During my years of study at the Instituto Federal de Araraquara, I completed a technical course integrated with high school, which lasted four years. It was during this period that I had my first exposure and learned programming languages, including HTML, CSS, PHP, SQL, JavaScript, AJAX and jQuery.",
       "text2": "This course provided me with a solid foundation of basic and technological knowledge. As part of the completion of my course, I developed a special project. The main objective of this project was to integrate and apply the knowledge acquired throughout my education. I chose to create an initiative focused on the non-profit organization 'Parque Vivo'. In this project, I was able to combine my technical and academic learnings, contributing significantly to a relevant and beneficial cause for the community. This experience not only solidified my knowledge, but also allowed me to witness first-hand the practical possibilities of applying technology to impactful social projects."
     },
-    "job": {
-      "title": "First Job",
+    "FISistemas": {
+      "title": "FI Sistemas",
       "text1": "As I embark on the journey of my first job as a Fullstack Developer, I realize that every line of code I write is infused with effort, continuous learning, and commitment to excellence. My responsibilities are heavy; they involve the creation of vital institutional websites, the development of crucial systems for file management, and the implementation of platforms that strictly comply with the LGPD.",
       "text2": "This position requires not only refined technical skills in languages ​​such as CodeIgniter, JavaScript, SQL, PHP, HTML5, and CSS, but also a deep operational understanding of the practical issues faced by end users. I am the one who optimizes and keeps websites running smoothly, and I am the one who intervenes when unexpected bugs arise, working diligently to resolve each issue and ensure a perfect user experience."
-    },
-    "courses": {
-      "title": "Extra Courses",
-      "text1": "Upon completing my studies at the Federal Institute, I embraced the perpetual and captivating journey of learning. With dedicated effort, I participated in several courses offered by platforms such as Dio, significantly sharpening and expanding my skills.",
-      "text2": "Currently, my focus is on improving my proficiency in React Js and React Native. This continuous investment in self-knowledge and improvement goes beyond acquiring technical skills. It is about fostering a resilient and innovative mindset capable of navigating and overcoming the challenges presented by the dynamic and constantly evolving professional scenario of which I am a part."
     },
     "MChiodi": {
       "title": "Creation of MChiodi",
       "text1": "When I started studying React Native, I had no idea how much it would impact my life. With dedication and a passion for development, I created MChiodi — a developer account that now features over 7 published apps, as well as a YouTube channel focused on programming content!",
       "text2": "But the most incredible part of this journey wasn't just building apps — it was the opportunities that came along the way. Through this project, I had the honor of speaking at several schools, sharing my experience and encouraging students to believe in the power of learning and technology."
+    },
+    "MoveMais": {
+      "title": "Move Mais",
+      "text1": "At Move Mais, an innovative startup focused on urban mobility solutions, I have the opportunity to work as a Front-End Development Analyst. My main responsibility is to develop and maintain the company's systems, ensuring they are modern, responsive, and aligned with the brand's visual identity.",
+      "text2": ""
     }
   },
   "projects": {
@@ -133,6 +133,10 @@
       "MChiodiFocus": {
         "title": "MChiodi Focus",
         "description": "A modern productivity hub designed especially for developers, combining performance, aesthetics and organization in one place. Developed with React.js and other modern technologies, the application offers essential tools to stay focused and manage time efficiently. Among the main features are a task manager with priority setting, a Pomodoro Timer with animations and history, an integrated YouTube player with lo-fi music by default, as well as goal systems, calendar, weather and exchange rate. The interface is inspired by macOS, with window mode, dock and control buttons, providing a pleasant and familiar visual experience."
+      },
+      "MoveStore": {
+        "title": "Move Store",
+        "description": "MoveStore is a SPA (Single Page Application) that simulates a virtual car store, allowing users to browse products, add to cart, apply discount coupons and complete purchases. Developed with React.js, React Router, TypeScript, Styled-components and Axios."
       }
     },
     "NodeJS": {

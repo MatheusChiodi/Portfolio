@@ -131,9 +131,15 @@ const AllProjectsContext = () => {
             link: 'https://mchiodi-focus.vercel.app/',
             image: '/mchiodi-focus.png',
           },
+          {
+            id: 10,
+            title: t('projects.reactJS.MoveStore.title'),
+            description: t('projects.reactJS.MoveStore.description'),
+            link: 'https://move-store.vercel.app/',
+            image: '/movestore.jpg',
+          },
         ],
       },
-
       {
         id: 3,
         name: 'NodeJS',

@@ -48,20 +48,20 @@
       "text1": "Durante meus anos de estudo no Instituto Federal de Araraquara, concluí um curso técnico integrado ao ensino médio, que durou quatro anos. Foi durante esse período que tive minha primeira exposição e aprendi linguagens de programação, incluindo HTML, CSS, PHP, SQL, JavaScript, AJAX e jQuery.",
       "text2": "Este curso me proporcionou uma base sólida de conhecimentos básicos e tecnológicos. Como parte da conclusão do meu curso, desenvolvi um projeto especial. O objetivo principal deste projeto era integrar e aplicar os conhecimentos adquiridos ao longo da minha educação. Escolhi criar uma iniciativa voltada para a organização sem fins lucrativos 'Parque Vivo'. Neste projeto, consegui combinar meus aprendizados técnicos e acadêmicos, contribuindo significativamente para uma causa relevante e benéfica para a comunidade. Essa experiência não apenas solidificou meu conhecimento, mas também me permitiu testemunhar em primeira mão as possibilidades práticas de aplicar a tecnologia a projetos sociais impactantes."
     },
-    "job": {
-      "title": "Primeiro Emprego",
+    "FISistemas": {
+      "title": "FI Sistemas",
       "text1": "Ao embarcar na jornada do meu primeiro emprego como Desenvolvedor Fullstack, percebo que cada linha de código que escrevo está impregnada de esforço, aprendizado contínuo e compromisso com a excelência. Minhas responsabilidades são pesadas; eles envolvem a criação de sites institucionais vitais, o desenvolvimento de sistemas cruciais para o gerenciamento de arquivos e a implementação de plataformas que cumprem rigorosamente a LGPD.",
       "text2": "Esta posição exige não apenas habilidade técnica refinada em linguagens como CodeIgniter, JavaScript, SQL, PHP, HTML5 e CSS, mas também uma compreensão operacional profunda das questões práticas enfrentadas pelos usuários finais. Sou eu quem otimiza e mantém sites funcionando perfeitamente, e sou o interventor quando surgem bugs inesperados, trabalhando diligentemente para resolver cada problema e garantir uma experiência perfeita para o usuário."
-    },
-    "courses": {
-      "title": "Cursos Extras",
-      "text1": "Ao concluir meus estudos no Instituto Federal, abracei a jornada perpétua e cativante do aprendizado. Com esforço dedicado, participei de vários cursos oferecidos por plataformas como Dio, afiando e ampliando significativamente minhas habilidades.",
-      "text2": "Atualmente, meu foco é aprimorar minha proficiência em React Js e React Native. Este investimento contínuo em autoconhecimento e melhoria vai além da aquisição de habilidades técnicas. Trata-se de promover uma mentalidade resiliente e inovadora capaz de navegar e superar os desafios apresentados pelo cenário profissional dinâmico e em constante evolução do qual faço parte."
     },
     "MChiodi": {
       "title": "Criação de MChiodi",
       "text1": "Quando comecei meus estudos em React Native, não imaginava o impacto que isso teria na minha vida. Com dedicação e paixão pelo desenvolvimento, criei a MChiodi, uma conta de desenvolvedor que hoje conta com mais de 7 apps lançados, além de um canal no YouTube com conteúdos voltados à programação!",
       "text2": "Mas o mais incrível dessa jornada não foi apenas construir aplicativos, e sim as oportunidades que surgiram. Através desse projeto, tive a honra de palestrar em algumas escolas, compartilhando minha experiência e incentivando alunos a acreditarem no poder do aprendizado e da tecnologia."
+    },
+    "MoveMais": {
+      "title": "Move Mais",
+      "text1": "Na Move Mais, uma startup inovadora focada em soluções de mobilidade urbana, tenho a oportunidade de atuar como Analista de Desenvolvimento Front-End. Minha principal responsabilidade é desenvolver e manter os sistemas da empresa, garantindo que eles sejam modernos, responsivos e alinhados com a identidade visual da marca.",
+      "text2": ""
     }
   },
   "projects": {
@@ -133,6 +133,10 @@
       "MChiodiFocus": {
         "title": "MChiodi Focus",
         "description": "um hub de produtividade moderno pensado especialmente para desenvolvedores, que combina performance, estética e organização em um só lugar. Desenvolvido com React.js e outras tecnologias modernas, o aplicativo oferece ferramentas essenciais para manter o foco e gerenciar o tempo com eficiência. Entre os principais recursos estão um gerenciador de tarefas com definição de prioridades, um Pomodoro Timer com animações e histórico, um player de YouTube integrado com música lo-fi por padrão, além de sistemas de metas, calendário, clima e câmbio. A interface é inspirada no macOS, com modo janela, dock e botões de controle, proporcionando uma experiência visual agradável e familiar."
+      },
+      "MoveStore": {
+        "title": "Move Store",
+        "description": "O MoveStore é uma aplicação SPA (Single Page Application) que simula uma loja de carro virtual, permitindo ao usuário navegar por produtos, adicionar ao carrinho, aplicar cupons de desconto e finalizar a compra. Desenvolvido com React.js, React Router, TypeScript, Styled-components e Axios."
       }
     },
     "NodeJS": {
