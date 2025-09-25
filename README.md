@@ -1,4 +1,4 @@
-# 🚀 My Portfolio - ReactJS
+# 🚀 My Portfolio - React.js
 
 ---
 
@@ -11,8 +11,8 @@
 - **PHP & CodeIgniter**: Robust back-end development.
 - **MySQL**: Optimized database management.
 - **HTML, CSS & JavaScript**: Creation of attractive and functional interfaces.
-- **ReactJS & React Native**: Currently deepening my knowledge for high-quality front-end development.
-- **NodeJS**: Development of APIs and scalable applications.
+- **React.js & React Native**: Currently deepening my knowledge for high-quality front-end development.
+- **Node.js**: Development of APIs and scalable applications.
 
 ---
 
@@ -21,6 +21,7 @@
 As a **technology enthusiast**, my main goal is to find an opportunity that allows me to demonstrate, through my performance, all the knowledge and passion that I have accumulated over the years.
 
 ---
+
 ## 🌐 Projects
 
 Here you will find some of the projects I have developed, demonstrating my skills in action. Feel free to explore them!
@@ -45,7 +46,7 @@ Here you will find some of the projects I have developed, demonstrating my skill
 - [**Expresso Design**](https://matheuschiodi.github.io/ExpressoDesign/)
 - [**Help with Link**](https://matheuschiodi.github.io/HelpLinks/)
 
-### ⚙️ NodeJS Projects
+### ⚙️ Node.js Projects
 
 - **[QR Code Generator](https://github.com/MatheusChiodi/Gerador-de-QR-Codes-para-E-commerces)** - System to create personalized QR Codes.
 - **[Podcast Manager](https://github.com/MatheusChiodi/Gerenciador-de-Podcasts)** - Platform for organizing and managing podcasts.
@@ -64,4 +65,5 @@ During my years of study at the Instituto Federal de Araraquara, I completed a t
 I currently work as a **Fullstack Developer**, where I am responsible for developing internal systems, creating institutional websites and implementing platforms that strictly follow the **LGPD**. I work with **CodeIgniter, JavaScript, SQL, PHP, HTML5 and CSS**, optimizing and ensuring the maintenance of the company's systems.
 
 ---
+
 📥 For any questions, feedback or opportunities, feel free to contact me!

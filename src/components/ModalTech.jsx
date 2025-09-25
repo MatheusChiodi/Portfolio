@@ -4,8 +4,8 @@ import Button from './Button';
 
 const techOptions = [
   { name: 'React Native', color: '#ea4e4e' },
-  { name: 'ReactJS', color: '#6272A4' },
-  { name: 'NodeJS', color: '#339933', textColor: '#282A36' },
+  { name: 'React.js', color: '#6272A4' },
+  { name: 'Node.js', color: '#339933', textColor: '#282A36' },
   { name: 'VSCode Extensions', color: '#FF79C6', textColor: '#282A36' },
 ];
 

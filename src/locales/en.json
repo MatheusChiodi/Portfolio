@@ -97,10 +97,10 @@
         "description": "DailyDone: organize your tasks without relying on the internet and simplify your routine. Record appointments, mark accomplishments and delete unnecessary tasks, keeping focus on what matters. Access everything in one place, offline and reliably. Gain control and productivity with DailyDone!"
       }
     },
-    "reactJS": {
+    "React.js": {
       "windows": {
         "title": "Windows Project",
-        "description": "This educational project was designed using ReactJS to explore various language techniques. The goal was to create components that resemble the Windows system using custom code, without relying on ready-made APIs. Each component was designed to enhance understanding and proficiency in ReactJS, providing a rich learning experience while experimenting with various coding approaches within the framework."
+        "description": "This educational project was designed using React.js to explore various language techniques. The goal was to create components that resemble the Windows system using custom code, without relying on ready-made APIs. Each component was designed to enhance understanding and proficiency in React.js, providing a rich learning experience while experimenting with various coding approaches within the framework."
       },
       "ShopSupplements": {
         "title": "Shop Supplements",
@@ -108,7 +108,7 @@
       },
       "ExpressoDesign": {
         "title": "Expresso Design",
-        "description": "Expresso Design is a project developed with ReactJS to demonstrate the practical application of responsive and interactive design concepts. With a modern and elegant interface, it offers an attractive and engaging user experience. This project is a demonstration of MChiodi's commitment to excellence and innovation, combining technical and creative skills to create high-quality design solutions."
+        "description": "Expresso Design is a project developed with React.js to demonstrate the practical application of responsive and interactive design concepts. With a modern and elegant interface, it offers an attractive and engaging user experience. This project is a demonstration of MChiodi's commitment to excellence and innovation, combining technical and creative skills to create high-quality design solutions."
       },
       "FlagCustomizer": {
         "title": "Flag Customizer",
@@ -139,14 +139,14 @@
         "description": "MoveStore is a SPA (Single Page Application) that simulates a virtual car store, allowing users to browse products, add to cart, apply discount coupons and complete purchases. Developed with React.js, React Router, TypeScript, Styled-components and Axios."
       }
     },
-    "NodeJS": {
+    "Node.js": {
       "QRCodesGenerator": {
         "title": "QR Code Generator for E-commerce",
-        "description": "This system, developed with NodeJS, allows users to easily create QR Codes for URLs, texts, images and other data, offering several options for customization, such as size, color and format."
+        "description": "This system, developed with Node.js, allows users to easily create QR Codes for URLs, texts, images and other data, offering several options for customization, such as size, color and format."
       },
       "PodcastsManager": {
         "title": "PodcastsManager",
-        "description": "Project developed in NodeJS to organize and manage podcasts. Includes Episode Listing, Episode Editing, Episode Deletion and filter by name, with scalability and security"
+        "description": "Project developed in Node.js to organize and manage podcasts. Includes Episode Listing, Episode Editing, Episode Deletion and filter by name, with scalability and security"
       },
       "CryptoApi": {
         "title": "CryptoApi",
