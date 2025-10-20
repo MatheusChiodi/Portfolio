@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import Loading from '../components/Loading';
 import NavBar from '../components/NavBar';
 import About from '../components/About';

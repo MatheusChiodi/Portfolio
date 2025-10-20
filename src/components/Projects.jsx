@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBarsProgress } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import { BarChart3 } from 'lucide-react';
 
-import mainProjects from '../context/mainProjects';
+import useMainProjects from '../context/mainProjects';
 import ProjectCard from './ProjectCard';
 import Button from './Button';
 import { Link } from 'react-router-dom';
@@ -10,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Projects() {
   const { t } = useTranslation();
-  const projectsData = mainProjects();
+  const projectsData = useMainProjects();
 
   return (
     <motion.div
@@ -28,7 +27,7 @@ export default function Projects() {
       }}
     >
       <motion.h2
-        className="text-[25px] md:text-[20px] lg:text-[35px] xl:text-[50px] font-extrabold text-gray-900 drop-shadow-2xl text-center md:text-left"
+        className="flex flex-wrap items-center justify-center gap-2"
         initial={{ opacity: 0, y: 20 }}
         animate={{
           opacity: 1,
@@ -36,15 +35,14 @@ export default function Projects() {
           transition: { delay: 0.4, duration: 0.6 },
         }}
       >
-        {t('projects.title')}
         <motion.span
           animate={{ y: [0, -6, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <FontAwesomeIcon
-            icon={faBarsProgress}
-            className="text-[#FF5555] text-[25px] md:text-[20px] lg:text-[35px] xl:text-[50px] pt-2 ms-3"
-          />
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 drop-shadow-2xl">
+            {t('projects.title')}
+          </h2>
+          <BarChart3 size={45} className="text-[#FF5555] pt-1" />
         </motion.span>
       </motion.h2>
 

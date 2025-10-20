@@ -1,26 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, memo, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import MyModal from './MyModal';
+import LazyImage from './LazyImage';
 import { useTranslation } from 'react-i18next';
 
-const ProjectCard = ({ project, technologyName }) => {
+const ProjectCard = memo(({ project, technologyName }) => {
   const [showModal, setShowModal] = useState(false);
   const [projectActive, setProjectActive] = useState(null);
   const { t } = useTranslation();
 
-  const handleActiveModal = (project) => {
+  const handleActiveModal = useCallback((project) => {
     setProjectActive(project);
     setShowModal(true);
-  };
+  }, []);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setShowModal(false);
-  };
+  }, []);
 
-  const openProject = (project) => {
+  const openProject = useCallback((project) => {
     window.open(project.link, '_blank');
-  };
+  }, []);
 
   return (
     <motion.div
@@ -32,10 +33,10 @@ const ProjectCard = ({ project, technologyName }) => {
         transition: { duration: 0.6, ease: 'easeOut' },
       }}
     >
-      <motion.img
+      <LazyImage
         src={`./projects${project.image}`}
-        alt={project.title}
-        className="object-cover w-full h-48 rounded-t-2xl"
+        alt={`Screenshot do projeto ${project.title}`}
+        className="w-full h-48 rounded-t-2xl"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
       />
@@ -66,6 +67,8 @@ const ProjectCard = ({ project, technologyName }) => {
       )}
     </motion.div>
   );
-};
+});
+
+ProjectCard.displayName = 'ProjectCard';
 
 export default ProjectCard;

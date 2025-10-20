@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 
+import { Linkedin, Github, Youtube, FileText } from 'lucide-react';
+
 export default function Footer() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
@@ -23,22 +25,22 @@ export default function Footer() {
   const externalLinks = [
     {
       href: 'https://www.linkedin.com/in/matheus-chiodi/',
-      icon: 'fab fa-linkedin',
+      icon: <Linkedin size={24} />,
       title: 'LinkedIn',
     },
     {
       href: 'https://github.com/MatheusChiodi',
-      icon: 'fab fa-github',
+      icon: <Github size={24} />,
       title: 'GitHub',
     },
     {
       href: 'https://www.youtube.com/@MChiodiDev',
-      icon: 'fab fa-youtube',
+      icon: <Youtube size={24} />,
       title: 'YouTube',
     },
     {
       href: resumeLink,
-      icon: 'far fa-id-card',
+      icon: <FileText size={24} />,
       title: 'Currículo',
     },
   ];
@@ -67,8 +69,7 @@ export default function Footer() {
       }}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
-        {/* Bloco de marca + ícones */}
-        <div className='flex flex-col items-center'>
+        <div className="flex flex-col items-center">
           <motion.h2
             className="text-2xl font-bold bg-gradient-to-r from-[#ff5555] to-pink-500 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
@@ -91,7 +92,7 @@ export default function Footer() {
                 className="hover:text-[#FF5555] transition"
                 whileHover={{ scale: 1.15, rotate: 2 }}
               >
-                <i className={link.icon}></i>
+                {link.icon}
               </motion.a>
             ))}
           </motion.div>
@@ -106,7 +107,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className='flex flex-col items-center'>
+        <div className="flex flex-col items-center">
           <h2 className="text-lg font-semibold text-[#FF5555] mb-3">
             {t('footer.info')}
           </h2>
@@ -129,7 +130,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className='flex flex-col items-center'>
+        <div className="flex flex-col items-center">
           <h2 className="text-lg font-semibold text-[#FF5555] mb-3">
             {t('footer.tec')}
           </h2>

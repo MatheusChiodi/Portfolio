@@ -13,7 +13,7 @@ export default function Loading() {
         const randomX = Math.random() * 100;
         const randomY = Math.random() * 100;
         const size = Math.random() * 8 + 4;
-        const duration = Math.random() * 5 + 3;
+        const duration = Math.random() * 5 + 7;
 
         return (
           <motion.div

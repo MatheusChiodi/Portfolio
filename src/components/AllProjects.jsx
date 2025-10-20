@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import AllProjectsContext from '../context/AllProjectsContext';
+import useAllProjectsContext from '../context/AllProjectsContext';
 import ProjectCard from '../components/ProjectCard';
 import { useTranslation } from 'react-i18next';
 import ModalTech from '../components/ModalTech';
@@ -9,23 +9,28 @@ import { useLocation } from 'react-router-dom';
 
 export default function AllProjects() {
   const { t } = useTranslation();
-  const allProjects = AllProjectsContext();
+  const allProjects = useAllProjectsContext();
 
   const [technology, setTechnology] = useState('');
   const [isVisibleTechnology, setIsVisibleTechnology] = useState(false);
 
-  const toggleModal = () => {
+  const toggleModal = useCallback(() => {
     setIsVisibleTechnology((prevState) => !prevState);
-  };
+  }, []);
 
-  const selectTechnology = (tech) => {
-    setTechnology(tech);
-    toggleModal();
-  };
+  const selectTechnology = useCallback(
+    (tech) => {
+      setTechnology(tech);
+      toggleModal();
+    },
+    [toggleModal]
+  );
 
-  const filteredProjects = technology
-    ? allProjects.technology.filter((project) => project.name === technology)
-    : allProjects.technology;
+  const filteredProjects = useMemo(() => {
+    return technology
+      ? allProjects.technology.filter((project) => project.name === technology)
+      : allProjects.technology;
+  }, [technology, allProjects.technology]);
 
   const location = useLocation();
 
