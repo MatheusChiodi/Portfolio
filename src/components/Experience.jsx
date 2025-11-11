@@ -21,7 +21,10 @@ export default function Experience() {
       title: t('experience.FISistemas.title'),
       subtitle: `(2021 - ${year})`,
       icon: <Briefcase size={36} />,
-      description: [t('experience.FISistemas.text1'), t('experience.FISistemas.text2')],
+      description: [
+        t('experience.FISistemas.text1'),
+        t('experience.FISistemas.text2'),
+      ],
     },
     {
       id: 3,
@@ -104,9 +107,6 @@ export default function Experience() {
           >
             <div className="mb-2">{exp.icon}</div>
             <h3 className="text-md md:text-lg">{exp.title}</h3>
-            {exp.subtitle && (
-              <p className="text-xs md:text-sm">{exp.subtitle}</p>
-            )}
           </motion.button>
         ))}
       </div>

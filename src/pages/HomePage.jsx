@@ -1,16 +1,9 @@
 import { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
-import NavBar from '../components/NavBar';
-import About from '../components/About';
-import Projects from '../components/Projects';
-import ScrollToTopButton from '../components/ScrollToTopButton';
-import Footer from '../components/Footer';
-import Certificates from '../components/Certificates';
-import Experience from '../components/Experience';
-import YoutubeSection from '../components/YoutubeSection';
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
+  const redirectUrl = 'https://mchiodi.vercel.app/';
 
   useEffect(() => {
     const lastVisit = localStorage.getItem('lastVisit');
@@ -36,22 +29,9 @@ function HomePage() {
         <Loading />
       </div>
     );
+  } else {
+    window.location.href = redirectUrl;
   }
-
-  return (
-    <div className="max-w-[1920px] mx-auto">
-      <NavBar />
-      <div className="p-3 w-full gap-10 flex flex-col items-center justify-center">
-        <About />
-        <Projects />
-        <Experience />
-        <YoutubeSection />
-        <Certificates />
-      </div>
-      <Footer />
-      <ScrollToTopButton />
-    </div>
-  );
 }
 
 export default HomePage;
